@@ -1,242 +1,541 @@
 [
   {
     "id": 1,
-    "pertanyaan": "Data berasal dari bahasa Latin, yaitu 'datum' yang berarti sesuatu yang diberikan. Dalam bentuk jamak, istilah ini menjadi...",
-    "pilihan": ["Data", "Dataset", "Database", "Datun"],
-    "jawaban": 0
+    "pertanyaan": "Perhatikan ciri-ciri teks di bawah ini!<br>(1) Menggambarkan atau melukiskan suatu benda, tempat, atau suasana tertentu<br>(2) Tidak menimbulkan salah pengertian<br>(3) Bertujuan agar pembaca seolah-olah melihat, mendengar, atau merasakan sendiri objek yang dideskripsikan<br>(4) Menarik untuk dibaca<br>(5) Menjelaskan ciri-ciri objek seperti warna, ukuran, bentuk, dan keadaan suatu objek secara terperinci<br>Berdasarkan perincian di atas, yang termasuk ciri-ciri teks deskripsi adalah ….",
+    "pilihan": [
+      "(1), (2), dan (3)",
+      "(2), (3), dan (4)",
+      "(1), (3), dan (5)",
+      "(2) dan (4)"
+    ],
+    "jawaban": 2
   },
   {
     "id": 2,
-    "pertanyaan": "Satuan penyimpanan data terkecil dalam sistem komputer adalah...",
-    "pilihan": ["Byte", "Megabyte", "Bit", "Kilobyte"],
-    "jawaban": 2
-  },
-  {
-    "id": 3,
-    "pertanyaan": "Satu Byte terdiri atas kumpulan bit sebanyak...",
-    "pilihan": ["4 bit", "8 bit", "16 bit", "32 bit"],
-    "jawaban": 1
-  },
-  {
-    "id": 4,
-    "pertanyaan": "Berapakah nilai 1 Kilobyte jika dikonversi ke dalam satuan Byte?",
-    "pilihan": ["1.000 Byte", "1.024 Byte", "1.100 Byte", "1.200 Byte"],
-    "jawaban": 1
-  },
-  {
-    "id": 5,
-    "pertanyaan": "Satuan penyimpanan yang setara dengan 1.024 Kilobyte (KB) adalah...",
-    "pilihan": ["1 Megabyte", "1 Gigabyte", "1 Terabyte", "1 Petabyte"],
+    "pertanyaan": "Teks deskripsi memiliki struktur. Berikut struktur teks deskripsi yang tepat adalah ….",
+    "pilihan": [
+      "Identifikasi, deskripsi bagian, simpulan",
+      "Ide pokok, deskripsi bagian, simpulan",
+      "Deskripsi utama, deskripsi bagian, deskripsi spasial",
+      "Pernyataan utama, identifikasi, penutup"
+    ],
     "jawaban": 0
   },
   {
+    "id": 3,
+    "pertanyaan": "Perhatikan gambar berikut!<br><img src='https://i.ibb.co.com/zV6Yrqsz/bindo3.png'><br>Bagian surat diatas dinamakan....",
+    "pilihan": [
+      "Kop surat",
+      "Perihal",
+      "Lampiran",
+      "Salam pembuka"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 4,
+    "pertanyaan": "Ciri bahasa yang paling menonjol pada surat dinas adalah ...",
+    "pilihan": [
+      "Baku, formal, dan efektif",
+      "Puitis dan Panjang",
+      "Menggunakan bahasa gaul",
+      "Santai dan akrab"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 5,
+    "pertanyaan": "Cermati puisi rakyat di bawah ini!<br>Jikalau engkau tidak berilmu<br>Maka hidupmu sesat selalu<br>Struktur yang tepat dari puisi rakyat di atas adalah ….",
+    "pilihan": [
+      "Rima akhirnya berpola a-b, terdiri atas sampiran dan isi",
+      "Rima akhirnya berpola a-b, keseluruhannya berupa isi",
+      "Rima akhirnya berpola a-a, terdiri atas syarat dan jawaban",
+      "Rima akhirnya berpola a-b, keseluruhannya brupa jawaban"
+    ],
+    "jawaban": 2
+  },
+  {
     "id": 6,
-    "pertanyaan": "Urutan satuan penyimpanan data dari yang terkecil hingga terbesar yang benar adalah...",
-    "pilihan": ["KB - MB - TB - GB", "Bit - Byte - KB - MB", "MB - KB - GB - TB", "TB - GB - MB - KB"],
-    "jawaban": 1
+    "pertanyaan": "Bacalah penggalan pantun berikut dengan seksama!<br>Pulang sekolah lalu makan<br>Nasi habis, perut kenyang<br>Lapang hati, ringan tangan<br>…….<br>Kalimat atau larik yang tepat untuk melengkapi pantun tersebut adalah …",
+    "pilihan": [
+      "Itu tandanya tidak menantang",
+      "Jangan selalu memberi barang",
+      "Tidak ada yang akan hilang",
+      "Pasti engkau di sayang orang"
+    ],
+    "jawaban": 3
   },
   {
     "id": 7,
-    "pertanyaan": "Satuan penyimpanan data yang biasanya digunakan untuk kapasitas harddisk modern atau mainframe adalah...",
-    "pilihan": ["Megabyte", "Gigabyte", "Terabyte", "Kilobyte"],
-    "jawaban": 2
+    "pertanyaan": "Struktur teks cerita fantasi yang benar, ialah …",
+    "pilihan": [
+      "Identifikasi – Orientasi – Resolusi",
+      "Orientasi - Resolusi – Klimaks",
+      "Komplikasi – Klimaks – Resolusi",
+      "Orientasi – Komplikasi – Resolusi"
+    ],
+    "jawaban": 3
   },
   {
     "id": 8,
-    "pertanyaan": "Apa yang dimaksud dengan analisis data menurut materi tersebut?",
-    "pilihan": ["Proses mengetik data", "Pengolahan data untuk mengambil keputusan", "Cara menghapus data", "Penyimpanan data ke cloud"],
-    "jawaban": 1
+    "pertanyaan": "Perhatikan prosedur berikut!<br>(1) Cuci strawberry atau buah lain hingga bersih, kemudian buang tangkainya<br>(2) Potong buah berbentuk dadu sebesar ujung kelingking<br>(3) Campur semua bahan dan hancurkan buah dengan blender<br>(4) Masukkan adonan sorbet ke dalam wadah tertutup<br>(5) Simpan dalam freezer atau lemari pembeku minimal satu jam<br>(6) Setelah dingin dan beku, sajikan dengan taburan buah cincang, kismis atau taburan lain sesuai selera<br>Jenis teks prosedur tersebut adalah….",
+    "pilihan": [
+      "Melakukan",
+      "Menggunakan",
+      "Membuat",
+      "Memandu"
+    ],
+    "jawaban": 2
   },
   {
     "id": 9,
-    "pertanyaan": "Proses pemilahan data berdasarkan persamaan atau perbedaan yang dikandungnya disebut...",
-    "pilihan": ["Deskripsi", "Klasifikasi", "Transformasi", "Koleksi"],
-    "jawaban": 1
+    "pertanyaan": "Perhatikan gambar berikut!<br><img src='https://i.ibb.co.com/zH4McJSN/bindo9.jpg'><br>Pada gambar di atas menginformasikan tentang….",
+    "pilihan": [
+      "Jarak ideal makan",
+      "Jangan makan lebih dari jam 22.00",
+      "Tip waktu makan ideal",
+      "Makan 30 menit setelah bangun tidur"
+    ],
+    "jawaban": 2
   },
   {
     "id": 10,
-    "pertanyaan": "Untuk membuka Excel melalui fitur 'Run', perintah yang harus diketikkan adalah...",
-    "pilihan": ["MS-Excel", "Excel", "Office", "Sheet"],
-    "jawaban": 1
+    "pertanyaan": "Perhatikan kalimat berikut!<br>1. Makanlah makanan utama sebanyak tiga kali sehari!<br>2. Hindari makanan cepat saji!<br>3. Tenang, jangan menyerah dahulu!<br>4. Duduklah dengan tegak di kursi!<br>kalimat larangan yang benar adalah….",
+    "pilihan": [
+      "1 dan 3",
+      "1 dan 2",
+      "2 dan 3",
+      "3 dan 4"
+    ],
+    "jawaban": 2
   },
   {
     "id": 11,
-    "pertanyaan": "Bagian Excel yang menampilkan nama file yang sedang dikerjakan adalah...",
-    "pilihan": ["Status Bar", "Formula Bar", "Title Bar", "Menu Bar"],
-    "jawaban": 2
+    "pertanyaan": "Bacalah teks di bawah ini!<br>\"Padi merupakan salah satu tanaman pangan utama di Indonesia. Tanaman ini tumbuh subur di daerah yang memiliki iklim tropis dengan curah hujan yang cukup. Padi menjadi bahan baku beras, yang merupakan makanan pokok sebagian besar masyarakat Indonesia.\"<br>Ciri-ciri teks laporan hasil observasi yang terdapat dalam kutipan di atas adalah …",
+    "pilihan": [
+      "Mengandung cerita pengalaman pribadi",
+      "Menyajikan informasi apa adanya berdasarkan fakta",
+      "Mengandung dialog antar tokoh",
+      "Menggunakan bahasa kiasan untuk menarik perhatian"
+    ],
+    "jawaban": 1
   },
   {
     "id": 12,
-    "pertanyaan": "Ikon yang digunakan untuk memperkecil jendela hingga hanya muncul di taskbar adalah...",
-    "pilihan": ["Maximize", "Restore Down", "Minimize", "Close"],
-    "jawaban": 2
+    "pertanyaan": "Struktur teks laporan hasil observasi pada kutipan soal no 11 terdapat pada bagian …",
+    "pilihan": [
+      "Identifikasi",
+      "Klasifikasi",
+      "Deskripsi bagian",
+      "Penutup"
+    ],
+    "jawaban": 0
   },
   {
     "id": 13,
-    "pertanyaan": "Quick Access Toolbar secara default berisi ikon-ikon berikut, kecuali...",
-    "pilihan": ["Save", "Undo", "Redo", "Delete"],
+    "pertanyaan": "Berikut yang bukan termasuk ciri-ciri poster adalah ...",
+    "pilihan": [
+      "memuat gambar yang menarik",
+      "informasinya jelas dan padat",
+      "dapat dilihat dari jarak jauh",
+      "menggunakan bahan mahal"
+    ],
     "jawaban": 3
   },
   {
     "id": 14,
-    "pertanyaan": "Tempat untuk melihat alamat sel yang sedang aktif (misal: A1) disebut...",
-    "pilihan": ["Name Box", "Formula Bar", "Taskpane", "Status Bar"],
-    "jawaban": 0
+    "pertanyaan": "Struktur artikel ilmiah populer yang benar adalah...",
+    "pilihan": [
+      "Pendahuluan – Metode – Hasil",
+      "Abstrak – Kajian Teori – Kesimpulan",
+      "Rumusan Masalah – Pembahasan – Penutup",
+      "Pembuka – Isi – Penutup"
+    ],
+    "jawaban": 3
   },
   {
     "id": 15,
-    "pertanyaan": "Tab Menu dalam Excel 2010 terdiri atas...",
-    "pilihan": ["Home, Insert, Page Layout", "File, Edit, View", "Start, Run, Settings", "Save, Open, Print"],
-    "jawaban": 0
+    "pertanyaan": "Perhatikan gambar dibawah ini !<br><img src='https://i.ibb.co.com/wNXJ5Rd3/bindo15.jpg'><br>Berdasarkan gambar diatas susunan kalimat iklan yang tepat adalah ...",
+    "pilihan": [
+      "mau minuman sehat? Tentu saja Yakult !",
+      "Yakult minuman tiap hari",
+      "Jangan lupa minum yakult.",
+      "Yakutl adalah minuman sehat"
+    ],
+    "jawaban": 1
   },
   {
     "id": 16,
-    "pertanyaan": "Bagian yang berisi kumpulan ikon yang memiliki fungsi saling berhubungan disebut...",
-    "pilihan": ["Grup", "Menu", "Section", "Baris"],
+    "pertanyaan": "Kerendahan Hati (Taufik Ismail)<br>...<br>Tidaklah semua menjadi kapten<br>Tentu harus ada awak kapalnya….<br>Bukan besar kecilnya tugas yang menjadikan tinggi<br>Rendahnya nilai dirimu<br>Jadilah saja dirimu….<br>Sebaik-baiknya dari dirimu sendiri<br>Puisi tersebut dituliskan dengan tujuan….",
+    "pilihan": [
+      "Untuk mengajak seseorang agar selalu bersikap rendah hati dan tidak sombong.",
+      "Untuk mengajak seseorang agar selalu bersikap rendah hati dan sombong",
+      "Untuk mengajak seseorang agar selalu bersikap rendah diri dan tidak sombong.",
+      "Untuk mengajak seseorang agar selalu bersikap rendah diri dan sombong"
+    ],
     "jawaban": 0
   },
   {
     "id": 17,
-    "pertanyaan": "Fitur Font, Border, dan Fill dapat diakses langsung melalui tab...",
-    "pilihan": ["Insert", "Page Layout", "Data", "Home"],
-    "jawaban": 3
-  },
-  {
-    "id": 18,
-    "pertanyaan": "Fitur yang digunakan untuk memberikan warna pada latar belakang cell adalah...",
-    "pilihan": ["Font Color", "Border", "Fill", "Protection"],
+    "pertanyaan": "Bacalah penggalan puisi berikut!<br>Ini dari kami bertiga<br>Pita hitam pada karangan bunga<br>Sebab kami ikut berduka<br>Bagi kakak yang ditembak mati<br>Siang tadi<br>Suasana yang terkandung dalam puisi tersebut adalah ....",
+    "pilihan": [
+      "Marah",
+      "Bingung",
+      "Sedih",
+      "Gembira"
+    ],
     "jawaban": 2
   },
   {
+    "id": 18,
+    "pertanyaan": "Buku yang memuat kumpulan puisi, baik dari seorang penyair atau beberapa penyair, pernyataan tersebut merupakan pengertian dari....",
+    "pilihan": [
+      "Memahami puisi",
+      "Antologi puisi",
+      "Apresiasi Puisi",
+      "Penilaian puisi"
+    ],
+    "jawaban": 1
+  },
+  {
     "id": 19,
-    "pertanyaan": "Apa fungsi utama dari fitur 'Protection' pada cell?",
-    "pilihan": ["Mewarnai cell", "Mengunci atau menyembunyikan cell", "Menghapus cell", "Menggabungkan cell"],
+    "pertanyaan": "Kata dalam menulis sebuah puisi disebut dengan istilah ....",
+    "pilihan": [
+      "Tipografi",
+      "Diksi",
+      "Imaji",
+      "Majas"
+    ],
     "jawaban": 1
   },
   {
     "id": 20,
-    "pertanyaan": "Pertemuan antara kolom (column) dan baris (row) disebut...",
-    "pilihan": ["Range", "Grid", "Cell", "Sheet"],
-    "jawaban": 2
+    "pertanyaan": "Bacalah kutipan pidato berikut!<br>...Oleh sebab itu, hentikan merokok sebelum candu rokok melekat pada diri Anda.<br>Kalimat di atas yang menunjukkan ajakan adalah ...",
+    "pilihan": [
+      "Betapa sulitnya seorang pecandu rokok untuk menghentikan kebiasaan merokoknya.",
+      "Hentikan merokok, sebelum candu rokok melekat pada diri Anda.",
+      "Berapapun mahalnya harga rokok tidak dapat menghentikan mereka untuk merokok.",
+      "Di Cina perokok menghabiskan uang untuk membeli rokok lebih banyak daripada yang dipakai untuk membeli gandum."
+    ],
+    "jawaban": 1
   },
   {
     "id": 21,
-    "pertanyaan": "Tempat untuk menuliskan dan mengedit rumus di Excel disebut...",
-    "pilihan": ["Formula Bar", "Name Box", "Title Bar", "Scroll Bar"],
+    "pertanyaan": "Pendapat secara lisan adalah pengertian dari teks . . .",
+    "pilihan": [
+      "Pidato persuasif",
+      "Cerpen",
+      "Tanggapan",
+      "Eksplanasi"
+    ],
     "jawaban": 0
   },
   {
     "id": 22,
-    "pertanyaan": "Berapakah jumlah total baris dalam Microsoft Excel 2010?",
-    "pilihan": ["16.384", "1.000.000", "1.048.576", "65.536"],
-    "jawaban": 2
+    "pertanyaan": "Dengan ini sambutan yang bisa kami sampaikan. Mohon maaf jika ada kesalahan baik yang telah kami sengaja. Kami sampaikan selamat jalan kepada Bapak Doni Sibarani. Semoga kita semua selalu dalam lindungan Tuhan. Amiin . . .<br>Kutipan teks diatas merupakan bagian dari . . .",
+    "pilihan": [
+      "Isi",
+      "Penutup",
+      "Pendahuluan",
+      "Salam pembuka"
+    ],
+    "jawaban": 1
   },
   {
     "id": 23,
-    "pertanyaan": "Kolom dalam Excel disimbolkan dengan...",
-    "pilihan": ["Angka", "Huruf", "Simbol", "Warna"],
-    "jawaban": 1
+    "pertanyaan": "Pameran buku ini merupakan agenda tahunan OSIS dalam rangka memotivasi para siswa agar gemar membaca. [...] Apabila dalam penyelenggaraan kegiatan ini banyak kekurangan, panitia memohon maaf.<br>Kalimat yang tepat untuk melengkapi isi teks pidato tersebut adalah",
+    "pilihan": [
+      "Akhirnya kami atas nama panitia mengucapkan selamat mengunjungi pameran buku ini.",
+      "Puji syukur senantiasa kita panjatkan ke hadirat Tuhan yang telah memberikan kesehatan sehingga bisa menyelenggarakan kegiatan ini.",
+      "Demikian sambutan dari saya selaku Ketua Panitia semoga pameran buku ini bermanfaat",
+      "Pameran buku ini merupakan agenda tahunan OSIS dalam rangka memotivasi para siswa agar gemar membaca."
+    ],
+    "jawaban": 2
   },
   {
     "id": 24,
-    "pertanyaan": "Berapakah jumlah total kolom pada Microsoft Excel 2010?",
-    "pilihan": ["1.048.576", "16.384", "256", "1.024"],
-    "jawaban": 1
+    "pertanyaan": "Apakah makna kias dari “kering kerontang” yang terdapat bait puisi di atas?",
+    "pilihan": [
+      "Penyesalan",
+      "Kesunyian",
+      "keputusasaan",
+      "penderitaan"
+    ],
+    "jawaban": 3
   },
   {
     "id": 25,
-    "pertanyaan": "Batas terakhir kolom pada Excel 2010 disimbolkan dengan huruf...",
-    "pilihan": ["XFD", "ZZZ", "ABC", "XXX"],
+    "pertanyaan": "Selain ucapan rasa syukur, ucapan 'marilah kita panjatkan puji syukur kehadirat Tuhan yang Maha Esa karena hanya Tuhan yang telah memberi rahmad dan hidayah-Nya' merupakan . . .",
+    "pilihan": [
+      "Puji – pujian untuk Tuhan",
+      "Tujuan pidato",
+      "Undangan kepada setiap orang",
+      "Terima kasih kepada tuan rumah"
+    ],
     "jawaban": 0
   },
   {
     "id": 26,
-    "pertanyaan": "Lembar kerja elektronik di Excel disebut dengan istilah...",
-    "pilihan": ["Workbook", "Worksheet", "Wordpad", "Workgroup"],
+    "pertanyaan": "Dalam teks deskripsi, penggunaan majas seperti metafora dan personifikasi berfungsi untuk…",
+    "pilihan": [
+      "Memperjelas langkah-langkah prosedural",
+      "Memberikan gambaran imajinatif yang lebih hidup terhadap objek",
+      "Menyampaikan argumen penuli secara persuasive",
+      "Menyusun alur cerita yang menarik"
+    ],
     "jawaban": 1
   },
   {
     "id": 27,
-    "pertanyaan": "Alat untuk menggulung layar secara vertikal atau horizontal adalah...",
-    "pilihan": ["Zoom Tool", "Scroll Bar", "Taskpane", "Pointer"],
-    "jawaban": 1
+    "pertanyaan": "Isi dalam paragraf deskripsi tentang Grojogan Sewu adalah…",
+    "pilihan": [
+      "Gambaran air terjun Grojogan Sewu",
+      "Gambaran objek wisata Jawa Tengah",
+      "Gambaran wahana di Grojogan Sewu",
+      "Gambaran perjalanan menuju Grojogan Sewu"
+    ],
+    "jawaban": 3
   },
   {
     "id": 28,
-    "pertanyaan": "Nama-nama default untuk sheet di Excel 2010 adalah...",
-    "pilihan": ["Data1, Data2", "Page1, Page2", "Sheet1, Sheet2, Sheet3", "File1, File2"],
-    "jawaban": 2
+    "pertanyaan": "Objek yang digambarkan dalam penggalan teks deskripsi Pantai Senggigi adalah …",
+    "pilihan": [
+      "Ombak pantai",
+      "Pantai Senggigi",
+      "Pantai Parangtritis",
+      "Angin pantai"
+    ],
+    "jawaban": 1
   },
   {
     "id": 29,
-    "pertanyaan": "Gabungan dari beberapa sel, misalnya dari sel A4 sampai B7, disebut...",
-    "pilihan": ["Group", "Union", "Range", "Cluster"],
-    "jawaban": 2
+    "pertanyaan": "Berikut yang termasuk kata khusus adalah…",
+    "pilihan": [
+      "Warna",
+      "Bentuk",
+      "Gaya",
+      "Putih"
+    ],
+    "jawaban": 3
   },
   {
     "id": 30,
-    "pertanyaan": "Fungsi dari 'Zoom Tool' adalah untuk...",
-    "pilihan": ["Mencetak", "Menghapus sel", "Memperbesar/memperkecil tampilan", "Mencari data"],
+    "pertanyaan": "Ibuku adalah orang yang sangat baik.<br>Kalimat perincian yang sesuai dengan kalimat di atas adalah…",
+    "pilihan": [
+      "Beliau rajin bekerja",
+      "Beliau agak galak",
+      "Beliau suka menolong orang",
+      "Beliau kadang malas memasak"
+    ],
     "jawaban": 2
   },
   {
     "id": 31,
-    "pertanyaan": "Penunjuk sel yang sedang dipilih atau aktif disebut...",
-    "pilihan": ["Pointer", "Cursor", "Marker", "Selector"],
-    "jawaban": 0
+    "pertanyaan": "“Cara Membuat Teh Manis Hangat:<br>Pertama, siapkan gelas, teh celup, gula, dan air panas...\"<br>Bagian yang menunjukkan tujuan teks tersebut adalah …",
+    "pilihan": [
+      "Siapkan gelas dan teh celup",
+      "Tambahkan gula secukupnya",
+      "Cara Membuat Teh Manis Hangat",
+      "Aduk hingga merata"
+    ],
+    "jawaban": 2
   },
   {
     "id": 32,
-    "pertanyaan": "Satu file Excel yang terdiri atas beberapa worksheet disebut...",
-    "pilihan": ["Worksheet", "Workbook", "Workgroup", "Workarea"],
-    "jawaban": 1
+    "pertanyaan": "Kalimat berikut yang merupakan kalimat imperatif adalah …",
+    "pilihan": [
+      "Air direbus hingga mendidih",
+      "Air itu sudah mendidih",
+      "Rebus air hingga mendidih",
+      "Air sedang direbus"
+    ],
+    "jawaban": 2
   },
   {
     "id": 33,
-    "pertanyaan": "Fitur untuk membekukan baris atau kolom agar tidak ikut bergeser saat scrolling adalah...",
-    "pilihan": ["Lock Cells", "Freeze Panes", "Hold Row", "Static View"],
+    "pertanyaan": "Urutan langkah yang tepat dalam membuat mie instan adalah …",
+    "pilihan": [
+      "Masukkan mie – rebus air – tiriskan",
+      "Rebus air – masukkan mie – tiriskan",
+      "Tiriskan mie – rebus air – masukkan mie",
+      "Masukkan mie – tiriskan – rebus air"
+    ],
     "jawaban": 1
   },
   {
     "id": 34,
-    "pertanyaan": "Di manakah letak menu Freeze Panes?",
-    "pilihan": ["Tab Home", "Tab Insert", "Tab View", "Tab Data"],
-    "jawaban": 2
-  },
-  {
-    "id": 35,
-    "pertanyaan": "Ikon yang berfungsi memperkecil jendela menjadi setengah layar (ukuran sebelumnya) adalah...",
-    "pilihan": ["Minimize", "Restore Down", "Maximize", "Close"],
+    "pertanyaan": "Apa yang dimaksud dengan teks rekonstruksi fakta?",
+    "pilihan": [
+      "Teks yang berisi pengalaman pribadi tanpa bukti",
+      "Teks yang membangun ulang kejadian faktual secara kronologis",
+      "Teks berita harian tanpa urutan waktu",
+      "Teks deskripsi tentang alam"
+    ],
     "jawaban": 1
   },
   {
+    "id": 35,
+    "pertanyaan": "Bagian struktur teks rekonstruksi yang berisi pengenalan peristiwa disebut...",
+    "pilihan": [
+      "Rekonstruksi peristiwa",
+      "Reorientasi",
+      "Orientasi",
+      "Evaluasi"
+    ],
+    "jawaban": 2
+  },
+  {
     "id": 36,
-    "pertanyaan": "ASCII merupakan singkatan dari American Standard Code for...",
-    "pilihan": ["Information Interchange", "Internet Information", "Instruction Interchange", "Integration Info"],
-    "jawaban": 0
+    "pertanyaan": "Kalimat \"Kebakaran kemungkinan disebabkan korsleting listrik\" dalam teks rekon adalah...",
+    "pilihan": [
+      "Fakta",
+      "Opini",
+      "Data",
+      "Asumsi"
+    ],
+    "jawaban": 1
   },
   {
     "id": 37,
-    "pertanyaan": "Untuk berpindah antar file atau lembar kerja yang aktif, kita bisa menggunakan...",
-    "pilihan": ["Taskpane", "Title Bar", "Formula Bar", "Name Box"],
-    "jawaban": 0
+    "pertanyaan": "Kalimat berikut yang termasuk penanda kebahasaan teks prosedur adalah…",
+    "pilihan": [
+      "Sebaiknya kita rajin membaca buku.",
+      "Gunakan sendok untuk mengaduk adonan.",
+      "Kemarin saya pergi ke rumah nenek.",
+      "Menurut saya, olahraga sangat bermanfaat."
+    ],
+    "jawaban": 1
   },
   {
     "id": 38,
-    "pertanyaan": "Satuan 1 Petabyte (PB) setara dengan...",
-    "pilihan": ["1.024 GB", "1.024 TB", "1.024 MB", "1.024 KB"],
+    "pertanyaan": "Perhatikan ciri-ciri berikut!<br>1. Menggunakan konjungsi kronologis<br>2. Menyampaikan pengalaman pribadi<br>3. Memuat tujuan yang ingin dicapai<br>4. Menggunakan kata sifat untuk menggambarkan benda<br>Yang merupakan ciri teks prosedur ditunjukkan oleh nomor…",
+    "pilihan": [
+      "1 dan 2",
+      "1 dan 3",
+      "2 dan 4",
+      "3 dan 4"
+    ],
     "jawaban": 1
   },
   {
     "id": 39,
-    "pertanyaan": "Preview Mode digunakan untuk...",
-    "pilihan": ["Mencetak data", "Mengatur tampilan area kerja", "Menyimpan file", "Menghapus kolom"],
-    "jawaban": 1
+    "pertanyaan": "“Tuangkan adonan ke dalam loyang yang sudah diolesi mentega. Panggang selama 30 menit.<br>Bagian tersebut dapat diidentifikasi sebagai…",
+    "pilihan": [
+      "Tujuan teks prosedur",
+      "Bahan yang diperlukan",
+      "Langkah pelaksanaan",
+      "Penutup teks"
+    ],
+    "jawaban": 2
   },
   {
     "id": 40,
-    "pertanyaan": "Jika kamu menekan tombol END diikuti tanda panah bawah, kamu akan melihat...",
-    "pilihan": ["Kolom terakhir", "Baris terakhir", "Sel pertama", "Sheet baru"],
+    "pertanyaan": "Fungsi konjungsi “jika” pada langkah ke-2 cara menyalakan komputer adalah…",
+    "pilihan": [
+      "Menghubungkan dua tindakan yang berlangsung bersamaan.",
+      "Menunjukkan urutan peristiwa terjadi.",
+      "Menyatakan tujuan dari tindakan yang dilakukan.",
+      "Menunjukkan syarat yang harus dipenuhi sebelum melakukan tindakan."
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 41,
+    "pertanyaan": "Jika kata “klik” ingin diganti agar sesuai dengan kaidah kebahasaan bahasa Indonesia, kosakata yang paling tepat adalah…",
+    "pilihan": [
+      "Ketuk",
+      "Sentuh",
+      "Tekan",
+      "Pencet"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 42,
+    "pertanyaan": "Struktur utama teks eksplanasi yang benar adalah …",
+    "pilihan": [
+      "Orientasi – komplikasi – resolusi",
+      "Pernyataan umum – deretan penjelas – interpretasi",
+      "Pendahuluan – isi – penutup",
+      "Tesis – argumen – penegasan ulang"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 43,
+    "pertanyaan": "“Gempa bumi terjadi karena pergeseran lempeng bumi yang saling bertabrakan.” Kutipan tersebut merupakan bagian …",
+    "pilihan": [
+      "Interpretasi",
+      "Pernyataan umum",
+      "Penutup",
+      "Argumentasi"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 44,
+    "pertanyaan": "Ciri kebahasaan teks eksplanasi adalah menggunakan …",
+    "pilihan": [
+      "Kalimat perintah",
+      "Kata kiasan",
+      "Konjungsi kausalitas",
+      "Argumentasi"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 45,
+    "pertanyaan": "“Banjir terjadi akibat curah hujan tinggi dan buruknya sistem drainase.”<br>Kalimat tersebut dalam pidato termasuk bagian …",
+    "pilihan": [
+      "Salam pembuka",
+      "Penjelasan (eksplanasi)",
+      "Ajakan",
+      "Penutup"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 46,
+    "pertanyaan": "Perhatikan ciri berikut!<br>1. Singkat<br>2. Informatif<br>3. Visual menarik<br>4. Bahasa baku dan sangat lengkap<br>Ciri poster eksplanasi yang tepat adalah …",
+    "pilihan": [
+      "1, 2, dan 3",
+      "1, 2, dan 4",
+      "2 dan 4",
+      "3 dan 4"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 47,
+    "pertanyaan": "Bagian teks laporan hasil percobaan yang berisi paparan mengenai alasan atau latar belakang dilakukannya sebuah pengujian disebut...",
+    "pilihan": [
+      "Langkah-langkah",
+      "Hasil pengamatan",
+      "Tujuan",
+      "Simpulan"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 48,
+    "pertanyaan": "\"Masukkan satu sendok teh garam ke dalam gelas berisi air, kemudian aduk secara perlahan hingga larut.\"<br>Kutipan di atas merupakan bagian dari struktur...",
+    "pilihan": [
+      "Alat dan bahan",
+      "Langkah-langkah",
+      "Kajian teori",
+      "Hasil"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 49,
+    "pertanyaan": "Manakah di bawah ini yang termasuk kata kerja imperatif?",
+    "pilihan": [
+      "Mengamati",
+      "Larutkan",
+      "Berwarna",
+      "Percobaan"
+    ],
     "jawaban": 1
   }
 ]
