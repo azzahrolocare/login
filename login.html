@@ -210,6 +210,13 @@
   window.onpopstate = function () {
     window.history.go(1);
   };
+        
+        window.addEventListener('click', () => {
+    // Sekali klik di mana saja pada layar login akan memicu Fullscreen
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(e => console.log(e));
+    }
+}, { once: true }); // Hanya berjalan satu kali klik pertama
 </script>
 </body>
 </html>
