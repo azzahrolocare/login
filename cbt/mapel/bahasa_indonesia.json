@@ -1,541 +1,302 @@
 [
   {
     "id": 1,
-    "pertanyaan": "Perhatikan ciri-ciri teks di bawah ini!<br>(1) Menggambarkan atau melukiskan suatu benda, tempat, atau suasana tertentu<br>(2) Tidak menimbulkan salah pengertian<br>(3) Bertujuan agar pembaca seolah-olah melihat, mendengar, atau merasakan sendiri objek yang dideskripsikan<br>(4) Menarik untuk dibaca<br>(5) Menjelaskan ciri-ciri objek seperti warna, ukuran, bentuk, dan keadaan suatu objek secara terperinci<br>Berdasarkan perincian di atas, yang termasuk ciri-ciri teks deskripsi adalah ….",
-    "pilihan": [
-      "(1), (2), dan (3)",
-      "(2), (3), dan (4)",
-      "(1), (3), dan (5)",
-      "(2) dan (4)"
-    ],
+    "pertanyaan": "Perhatikan ciri-ciri teks di bawah ini!<br>(1) Menggambarkan atau melukiskan suatu benda, tempat, atau suasana tertentu<br>(2) Tidak menimbulkan salah pengertian<br>(3) Bertujuan agar pembaca seolah-olah melihat, mendengar, atau merasakan sendiri objek yang dideskripsikan<br>(4) Menarik untuk dibaca<br>(5) Menjelaskan ciri-ciri objek secara terperinci<br>Berdasarkan perincian di atas, yang termasuk ciri-ciri teks deskripsi adalah ….",
+    "pilihan": ["(1), (2), dan (3)", "(2), (3), dan (4)", "(1), (3), dan (5)", "(2) dan (4)"],
     "jawaban": 2
   },
   {
     "id": 2,
     "pertanyaan": "Teks deskripsi memiliki struktur. Berikut struktur teks deskripsi yang tepat adalah ….",
-    "pilihan": [
-      "Identifikasi, deskripsi bagian, simpulan",
-      "Ide pokok, deskripsi bagian, simpulan",
-      "Deskripsi utama, deskripsi bagian, deskripsi spasial",
-      "Pernyataan utama, identifikasi, penutup"
-    ],
+    "pilihan": ["Identifikasi, deskripsi bagian, simpulan", "Ide pokok, deskripsi bagian, simpulan", "Deskripsi utama, deskripsi bagian, deskripsi spasial", "Pernyataan utama, identifikasi, penutup"],
     "jawaban": 0
   },
   {
     "id": 3,
     "pertanyaan": "Perhatikan gambar berikut!<br><img src='https://i.ibb.co.com/zV6Yrqsz/bindo3.png'><br>Bagian surat diatas dinamakan....",
-    "pilihan": [
-      "Kop surat",
-      "Perihal",
-      "Lampiran",
-      "Salam pembuka"
-    ],
+    "pilihan": ["Kop surat", "Perihal", "Lampiran", "Salam pembuka"],
     "jawaban": 0
   },
   {
     "id": 4,
     "pertanyaan": "Ciri bahasa yang paling menonjol pada surat dinas adalah ...",
-    "pilihan": [
-      "Baku, formal, dan efektif",
-      "Puitis dan Panjang",
-      "Menggunakan bahasa gaul",
-      "Santai dan akrab"
-    ],
+    "pilihan": ["Baku, formal, dan efektif", "Puitis dan Panjang", "Menggunakan bahasa gaul", "Santai dan akrab"],
     "jawaban": 0
   },
   {
     "id": 5,
     "pertanyaan": "Cermati puisi rakyat di bawah ini!<br>Jikalau engkau tidak berilmu<br>Maka hidupmu sesat selalu<br>Struktur yang tepat dari puisi rakyat di atas adalah ….",
-    "pilihan": [
-      "Rima akhirnya berpola a-b, terdiri atas sampiran dan isi",
-      "Rima akhirnya berpola a-b, keseluruhannya berupa isi",
-      "Rima akhirnya berpola a-a, terdiri atas syarat dan jawaban",
-      "Rima akhirnya berpola a-b, keseluruhannya brupa jawaban"
-    ],
+    "pilihan": ["Rima akhirnya berpola a-b, terdiri atas sampiran dan isi", "Rima akhirnya berpola a-b, keseluruhannya berupa isi", "Rima akhirnya berpola a-a, terdiri atas syarat dan jawaban", "Rima akhirnya berpola a-b, keseluruhannya brupa jawaban"],
     "jawaban": 2
   },
   {
     "id": 6,
     "pertanyaan": "Bacalah penggalan pantun berikut dengan seksama!<br>Pulang sekolah lalu makan<br>Nasi habis, perut kenyang<br>Lapang hati, ringan tangan<br>…….<br>Kalimat atau larik yang tepat untuk melengkapi pantun tersebut adalah …",
-    "pilihan": [
-      "Itu tandanya tidak menantang",
-      "Jangan selalu memberi barang",
-      "Tidak ada yang akan hilang",
-      "Pasti engkau di sayang orang"
-    ],
+    "pilihan": ["Itu tandanya tidak menantang", "Jangan selalu memberi barang", "Tidak ada yang akan hilang", "Pasti engkau di sayang orang"],
     "jawaban": 3
   },
   {
     "id": 7,
     "pertanyaan": "Struktur teks cerita fantasi yang benar, ialah …",
-    "pilihan": [
-      "Identifikasi – Orientasi – Resolusi",
-      "Orientasi - Resolusi – Klimaks",
-      "Komplikasi – Klimaks – Resolusi",
-      "Orientasi – Komplikasi – Resolusi"
-    ],
+    "pilihan": ["Identifikasi – Orientasi – Resolusi", "Orientasi - Resolusi – Klimaks", "Komplikasi – Klimaks – Resolusi", "Orientasi – Komplikasi – Resolusi"],
     "jawaban": 3
   },
   {
     "id": 8,
-    "pertanyaan": "Perhatikan prosedur berikut!<br>(1) Cuci strawberry atau buah lain hingga bersih, kemudian buang tangkainya<br>(2) Potong buah berbentuk dadu sebesar ujung kelingking<br>(3) Campur semua bahan dan hancurkan buah dengan blender<br>(4) Masukkan adonan sorbet ke dalam wadah tertutup<br>(5) Simpan dalam freezer atau lemari pembeku minimal satu jam<br>(6) Setelah dingin dan beku, sajikan dengan taburan buah cincang, kismis atau taburan lain sesuai selera<br>Jenis teks prosedur tersebut adalah….",
-    "pilihan": [
-      "Melakukan",
-      "Menggunakan",
-      "Membuat",
-      "Memandu"
-    ],
+    "pertanyaan": "Perhatikan prosedur (membuat sorbet strawberry). Jenis teks prosedur tersebut adalah….",
+    "pilihan": ["Melakukan", "Menggunakan", "Membuat", "Memandu"],
     "jawaban": 2
   },
   {
     "id": 9,
     "pertanyaan": "Perhatikan gambar berikut!<br><img src='https://i.ibb.co.com/zH4McJSN/bindo9.jpg'><br>Pada gambar di atas menginformasikan tentang….",
-    "pilihan": [
-      "Jarak ideal makan",
-      "Jangan makan lebih dari jam 22.00",
-      "Tip waktu makan ideal",
-      "Makan 30 menit setelah bangun tidur"
-    ],
+    "pilihan": ["Jarak ideal makan", "Jangan makan lebih dari jam 22.00", "Tip waktu makan ideal", "Makan 30 menit setelah bangun tidur"],
     "jawaban": 2
   },
   {
     "id": 10,
-    "pertanyaan": "Perhatikan kalimat berikut!<br>1. Makanlah makanan utama sebanyak tiga kali sehari!<br>2. Hindari makanan cepat saji!<br>3. Tenang, jangan menyerah dahulu!<br>4. Duduklah dengan tegak di kursi!<br>kalimat larangan yang benar adalah….",
-    "pilihan": [
-      "1 dan 3",
-      "1 dan 2",
-      "2 dan 3",
-      "3 dan 4"
-    ],
+    "pertanyaan": "Perhatikan kalimat-kalimat (perintah dan larangan). Kalimat larangan yang benar adalah….",
+    "pilihan": ["1 dan 3", "1 dan 2", "2 dan 3", "3 dan 4"],
     "jawaban": 2
   },
   {
     "id": 11,
-    "pertanyaan": "Bacalah teks di bawah ini!<br>\"Padi merupakan salah satu tanaman pangan utama di Indonesia. Tanaman ini tumbuh subur di daerah yang memiliki iklim tropis dengan curah hujan yang cukup. Padi menjadi bahan baku beras, yang merupakan makanan pokok sebagian besar masyarakat Indonesia.\"<br>Ciri-ciri teks laporan hasil observasi yang terdapat dalam kutipan di atas adalah …",
-    "pilihan": [
-      "Mengandung cerita pengalaman pribadi",
-      "Menyajikan informasi apa adanya berdasarkan fakta",
-      "Mengandung dialog antar tokoh",
-      "Menggunakan bahasa kiasan untuk menarik perhatian"
-    ],
+    "pertanyaan": "Bacalah teks tentang Padi. Ciri-ciri teks laporan hasil observasi yang terdapat dalam kutipan tersebut adalah …",
+    "pilihan": ["Mengandung cerita pengalaman pribadi", "Menyajikan informasi apa adanya berdasarkan fakta", "Mengandung dialog antar tokoh", "Menggunakan bahasa kiasan"],
     "jawaban": 1
   },
   {
     "id": 12,
-    "pertanyaan": "Struktur teks laporan hasil observasi pada kutipan soal no 11 terdapat pada bagian …",
-    "pilihan": [
-      "Identifikasi",
-      "Klasifikasi",
-      "Deskripsi bagian",
-      "Penutup"
-    ],
+    "pertanyaan": "Struktur teks laporan hasil observasi pada kutipan tentang Padi terdapat pada bagian …",
+    "pilihan": ["Identifikasi", "Klasifikasi", "Deskripsi bagian", "Penutup"],
     "jawaban": 0
   },
   {
     "id": 13,
     "pertanyaan": "Berikut yang bukan termasuk ciri-ciri poster adalah ...",
-    "pilihan": [
-      "memuat gambar yang menarik",
-      "informasinya jelas dan padat",
-      "dapat dilihat dari jarak jauh",
-      "menggunakan bahan mahal"
-    ],
+    "pilihan": ["memuat gambar yang menarik", "dapat dilihat dari jarak jauh", "informasinya jelas dan padat", "menggunakan bahan mahal"],
     "jawaban": 3
   },
   {
     "id": 14,
     "pertanyaan": "Struktur artikel ilmiah populer yang benar adalah...",
-    "pilihan": [
-      "Pendahuluan – Metode – Hasil",
-      "Abstrak – Kajian Teori – Kesimpulan",
-      "Rumusan Masalah – Pembahasan – Penutup",
-      "Pembuka – Isi – Penutup"
-    ],
+    "pilihan": ["Pendahuluan – Metode – Hasil", "Abstrak – Kajian Teori – Kesimpulan", "Rumusan Masalah – Pembahasan – Penutup", "Pembuka – Isi – Penutup"],
     "jawaban": 3
   },
   {
     "id": 15,
-    "pertanyaan": "Perhatikan gambar dibawah ini !<br><img src='https://i.ibb.co.com/wNXJ5Rd3/bindo15.jpg'><br>Berdasarkan gambar diatas susunan kalimat iklan yang tepat adalah ...",
-    "pilihan": [
-      "mau minuman sehat? Tentu saja Yakult !",
-      "Yakult minuman tiap hari",
-      "Jangan lupa minum yakult.",
-      "Yakutl adalah minuman sehat"
-    ],
-    "jawaban": 1
+    "pertanyaan": "Perhatikan gambar iklan Yakult.<br><img src='https://i.ibb.co.com/wNXJ5Rd3/bindo15.jpg'>Berdasarkan gambar diatas susunan kalimat iklan yang tepat adalah ...",
+    "pilihan": ["Yakult minuman tiap hari", "mau minuman sehat? Tentu saja Yakult !", "Jangan lupa minum yakult.", "Yakutl adalah minuman sehat"],
+    "jawaban": 0
   },
   {
     "id": 16,
-    "pertanyaan": "Kerendahan Hati (Taufik Ismail)<br>...<br>Tidaklah semua menjadi kapten<br>Tentu harus ada awak kapalnya….<br>Bukan besar kecilnya tugas yang menjadikan tinggi<br>Rendahnya nilai dirimu<br>Jadilah saja dirimu….<br>Sebaik-baiknya dari dirimu sendiri<br>Puisi tersebut dituliskan dengan tujuan….",
-    "pilihan": [
-      "Untuk mengajak seseorang agar selalu bersikap rendah hati dan tidak sombong.",
-      "Untuk mengajak seseorang agar selalu bersikap rendah hati dan sombong",
-      "Untuk mengajak seseorang agar selalu bersikap rendah diri dan tidak sombong.",
-      "Untuk mengajak seseorang agar selalu bersikap rendah diri dan sombong"
-    ],
+    "pertanyaan": "Puisi 'Kerendahan Hati' (Taufik Ismail) dituliskan dengan tujuan….",
+    "pilihan": ["Untuk mengajak seseorang agar selalu bersikap rendah hati dan tidak sombong.", "Untuk mengajak seseorang agar selalu bersikap rendah hati dan sombong", "Untuk mengajak seseorang agar selalu bersikap rendah diri dan tidak sombong.", "Untuk mengajak seseorang agar selalu bersikap rendah diri dan sombong"],
     "jawaban": 0
   },
   {
     "id": 17,
-    "pertanyaan": "Bacalah penggalan puisi berikut!<br>Ini dari kami bertiga<br>Pita hitam pada karangan bunga<br>Sebab kami ikut berduka<br>Bagi kakak yang ditembak mati<br>Siang tadi<br>Suasana yang terkandung dalam puisi tersebut adalah ....",
-    "pilihan": [
-      "Marah",
-      "Bingung",
-      "Sedih",
-      "Gembira"
-    ],
+    "pertanyaan": "Suasana yang terkandung dalam puisi 'Pita hitam pada karangan bunga' adalah ....",
+    "pilihan": ["Marah", "Bingung", "Sedih", "Gembira"],
     "jawaban": 2
   },
   {
     "id": 18,
-    "pertanyaan": "Buku yang memuat kumpulan puisi, baik dari seorang penyair atau beberapa penyair, pernyataan tersebut merupakan pengertian dari....",
-    "pilihan": [
-      "Memahami puisi",
-      "Antologi puisi",
-      "Apresiasi Puisi",
-      "Penilaian puisi"
-    ],
+    "pertanyaan": "Buku yang memuat kumpulan puisi, baik dari seorang penyair atau beberapa penyair merupakan pengertian dari....",
+    "pilihan": ["Memahami puisi", "Antologi puisi", "Apresiasi Puisi", "Penilaian puisi"],
     "jawaban": 1
   },
   {
     "id": 19,
     "pertanyaan": "Kata dalam menulis sebuah puisi disebut dengan istilah ....",
-    "pilihan": [
-      "Tipografi",
-      "Diksi",
-      "Imaji",
-      "Majas"
-    ],
-    "jawaban": 1
+    "pilihan": ["Tipografi", "Diksi", "Imaji", "Majas"],
+    "jawaban": 2
   },
   {
     "id": 20,
-    "pertanyaan": "Bacalah kutipan pidato berikut!<br>...Oleh sebab itu, hentikan merokok sebelum candu rokok melekat pada diri Anda.<br>Kalimat di atas yang menunjukkan ajakan adalah ...",
-    "pilihan": [
-      "Betapa sulitnya seorang pecandu rokok untuk menghentikan kebiasaan merokoknya.",
-      "Hentikan merokok, sebelum candu rokok melekat pada diri Anda.",
-      "Berapapun mahalnya harga rokok tidak dapat menghentikan mereka untuk merokok.",
-      "Di Cina perokok menghabiskan uang untuk membeli rokok lebih banyak daripada yang dipakai untuk membeli gandum."
-    ],
+    "pertanyaan": "Kalimat yang menunjukkan ajakan dalam teks pidato bahaya rokok adalah ...",
+    "pilihan": ["Betapa sulitnya seorang pecandu rokok", "Hentikan merokok, sebelum candu rokok melekat pada diri Anda.", "Berapapun mahalnya harga rokok", "Di Cina perokok menghabiskan uang"],
     "jawaban": 1
   },
   {
     "id": 21,
     "pertanyaan": "Pendapat secara lisan adalah pengertian dari teks . . .",
-    "pilihan": [
-      "Pidato persuasif",
-      "Cerpen",
-      "Tanggapan",
-      "Eksplanasi"
-    ],
-    "jawaban": 0
-  },
-  {
-    "id": 22,
-    "pertanyaan": "Dengan ini sambutan yang bisa kami sampaikan. Mohon maaf jika ada kesalahan baik yang telah kami sengaja. Kami sampaikan selamat jalan kepada Bapak Doni Sibarani. Semoga kita semua selalu dalam lindungan Tuhan. Amiin . . .<br>Kutipan teks diatas merupakan bagian dari . . .",
-    "pilihan": [
-      "Isi",
-      "Penutup",
-      "Pendahuluan",
-      "Salam pembuka"
-    ],
+    "pilihan": ["Pidato persuasif", "Cerpen", "Tanggapan", "Eksplanasi"],
     "jawaban": 1
   },
   {
+    "id": 22,
+    "pertanyaan": "Kutipan teks penutup pidato 'Mohon maaf jika ada kesalahan... selamat jalan Bapak Doni' merupakan bagian dari . . .",
+    "pilihan": ["Penutup", "Isi", "Pendahuluan", "Salam pembuka"],
+    "jawaban": 0
+  },
+  {
     "id": 23,
-    "pertanyaan": "Pameran buku ini merupakan agenda tahunan OSIS dalam rangka memotivasi para siswa agar gemar membaca. [...] Apabila dalam penyelenggaraan kegiatan ini banyak kekurangan, panitia memohon maaf.<br>Kalimat yang tepat untuk melengkapi isi teks pidato tersebut adalah",
-    "pilihan": [
-      "Akhirnya kami atas nama panitia mengucapkan selamat mengunjungi pameran buku ini.",
-      "Puji syukur senantiasa kita panjatkan ke hadirat Tuhan yang telah memberikan kesehatan sehingga bisa menyelenggarakan kegiatan ini.",
-      "Demikian sambutan dari saya selaku Ketua Panitia semoga pameran buku ini bermanfaat",
-      "Pameran buku ini merupakan agenda tahunan OSIS dalam rangka memotivasi para siswa agar gemar membaca."
-    ],
-    "jawaban": 2
+    "pertanyaan": "Kalimat yang tepat untuk melengkapi isi teks pidato (pameran buku) tersebut adalah",
+    "pilihan": ["Akhirnya kami atas nama panitia mengucapkan selamat mengunjungi pameran", "Puji syukur senantiasa kita panjatkan", "Demikian sambutan dari saya selaku Ketua Panitia", "Pameran buku ini merupakan agenda tahunan OSIS"],
+    "jawaban": 0
   },
   {
     "id": 24,
-    "pertanyaan": "Apakah makna kias dari “kering kerontang” yang terdapat bait puisi di atas?",
-    "pilihan": [
-      "Penyesalan",
-      "Kesunyian",
-      "keputusasaan",
-      "penderitaan"
-    ],
-    "jawaban": 3
+    "pertanyaan": "Apakah makna kias dari “kering kerontang” yang terdapat bait puisi tersebut?",
+    "pilihan": ["Penyesalan", "Kesunyian", "keputusasaan", "penderitaan"],
+    "jawaban": 1
   },
   {
     "id": 25,
-    "pertanyaan": "Selain ucapan rasa syukur, ucapan 'marilah kita panjatkan puji syukur kehadirat Tuhan yang Maha Esa karena hanya Tuhan yang telah memberi rahmad dan hidayah-Nya' merupakan . . .",
-    "pilihan": [
-      "Puji – pujian untuk Tuhan",
-      "Tujuan pidato",
-      "Undangan kepada setiap orang",
-      "Terima kasih kepada tuan rumah"
-    ],
+    "pertanyaan": "Selain ucapan rasa syukur, ucapan 'marilah kita panjatkan puji syukur' merupakan . . .",
+    "pilihan": ["Puji – pujian untuk Tuhan", "Tujuan pidato", "Undangan kepada setiap orang", "Terima kasih kepada tuan rumah"],
     "jawaban": 0
   },
   {
     "id": 26,
     "pertanyaan": "Dalam teks deskripsi, penggunaan majas seperti metafora dan personifikasi berfungsi untuk…",
-    "pilihan": [
-      "Memperjelas langkah-langkah prosedural",
-      "Memberikan gambaran imajinatif yang lebih hidup terhadap objek",
-      "Menyampaikan argumen penuli secara persuasive",
-      "Menyusun alur cerita yang menarik"
-    ],
+    "pilihan": ["Memperjelas langkah-langkah prosedural", "Memberikan gambaran imajinatif yang lebih hidup", "Menyampaikan argumen penulis", "Menyusun alur cerita yang menarik"],
     "jawaban": 1
   },
   {
     "id": 27,
-    "pertanyaan": "Isi dalam paragraf deskripsi tentang Grojogan Sewu adalah…",
-    "pilihan": [
-      "Gambaran air terjun Grojogan Sewu",
-      "Gambaran objek wisata Jawa Tengah",
-      "Gambaran wahana di Grojogan Sewu",
-      "Gambaran perjalanan menuju Grojogan Sewu"
-    ],
+    "pertanyaan": "Isi dalam paragraf deskripsi tentang 'Grojogan Sewu' adalah…",
+    "pilihan": ["Gambaran air terjun", "Gambaran objek wisata", "Gambaran wahana", "Gambaran perjalanan menuju Grojogan Sewu"],
     "jawaban": 3
   },
   {
     "id": 28,
-    "pertanyaan": "Objek yang digambarkan dalam penggalan teks deskripsi Pantai Senggigi adalah …",
-    "pilihan": [
-      "Ombak pantai",
-      "Pantai Senggigi",
-      "Pantai Parangtritis",
-      "Angin pantai"
-    ],
+    "pertanyaan": "Objek yang digambarkan dalam penggalan teks deskripsi 'Pantai Senggigi' adalah …",
+    "pilihan": ["Ombak pantai", "Pantai Senggigi", "Pantai Parangtritis", "Angin pantai"],
     "jawaban": 1
   },
   {
     "id": 29,
     "pertanyaan": "Berikut yang termasuk kata khusus adalah…",
-    "pilihan": [
-      "Warna",
-      "Bentuk",
-      "Gaya",
-      "Putih"
-    ],
+    "pilihan": ["Warna", "Bentuk", "Gaya", "Putih"],
     "jawaban": 3
   },
   {
     "id": 30,
-    "pertanyaan": "Ibuku adalah orang yang sangat baik.<br>Kalimat perincian yang sesuai dengan kalimat di atas adalah…",
-    "pilihan": [
-      "Beliau rajin bekerja",
-      "Beliau agak galak",
-      "Beliau suka menolong orang",
-      "Beliau kadang malas memasak"
-    ],
+    "pertanyaan": "Ibuku adalah orang yang sangat baik. Kalimat perincian yang sesuai adalah…",
+    "pilihan": ["Beliau rajin bekerja", "Beliau agak galak", "Beliau suka menolong orang", "Beliau kadang malas memasak"],
     "jawaban": 2
   },
   {
     "id": 31,
-    "pertanyaan": "“Cara Membuat Teh Manis Hangat:<br>Pertama, siapkan gelas, teh celup, gula, dan air panas...\"<br>Bagian yang menunjukkan tujuan teks tersebut adalah …",
-    "pilihan": [
-      "Siapkan gelas dan teh celup",
-      "Tambahkan gula secukupnya",
-      "Cara Membuat Teh Manis Hangat",
-      "Aduk hingga merata"
-    ],
-    "jawaban": 2
+    "pertanyaan": "Bagian yang menunjukkan tujuan teks 'Cara Membuat Teh Manis Hangat' adalah …",
+    "pilihan": ["Siapkan gelas", "Cara Membuat Teh Manis Hangat", "Tambahkan gula", "Aduk hingga merata"],
+    "jawaban": 1
   },
   {
     "id": 32,
     "pertanyaan": "Kalimat berikut yang merupakan kalimat imperatif adalah …",
-    "pilihan": [
-      "Air direbus hingga mendidih",
-      "Air itu sudah mendidih",
-      "Rebus air hingga mendidih",
-      "Air sedang direbus"
-    ],
+    "pilihan": ["Air direbus hingga mendidih", "Air itu sudah mendidih", "Rebus air hingga mendidih", "Air sedang direbus"],
     "jawaban": 2
   },
   {
     "id": 33,
     "pertanyaan": "Urutan langkah yang tepat dalam membuat mie instan adalah …",
-    "pilihan": [
-      "Masukkan mie – rebus air – tiriskan",
-      "Rebus air – masukkan mie – tiriskan",
-      "Tiriskan mie – rebus air – masukkan mie",
-      "Masukkan mie – tiriskan – rebus air"
-    ],
+    "pilihan": ["Masukkan mie – rebus air – tiriskan", "Rebus air – masukkan mie – tiriskan", "Tiriskan mie – rebus air", "Masukkan mie – tiriskan"],
     "jawaban": 1
   },
   {
     "id": 34,
     "pertanyaan": "Apa yang dimaksud dengan teks rekonstruksi fakta?",
-    "pilihan": [
-      "Teks yang berisi pengalaman pribadi tanpa bukti",
-      "Teks yang membangun ulang kejadian faktual secara kronologis",
-      "Teks berita harian tanpa urutan waktu",
-      "Teks deskripsi tentang alam"
-    ],
+    "pilihan": ["Teks pengalaman pribadi", "Teks yang membangun ulang kejadian faktual secara kronologis", "Teks berita harian", "Teks deskripsi alam"],
     "jawaban": 1
   },
   {
     "id": 35,
     "pertanyaan": "Bagian struktur teks rekonstruksi yang berisi pengenalan peristiwa disebut...",
-    "pilihan": [
-      "Rekonstruksi peristiwa",
-      "Reorientasi",
-      "Orientasi",
-      "Evaluasi"
-    ],
+    "pilihan": ["Rekonstruksi peristiwa", "Reorientasi", "Orientasi", "Evaluasi"],
     "jawaban": 2
   },
   {
     "id": 36,
     "pertanyaan": "Kalimat \"Kebakaran kemungkinan disebabkan korsleting listrik\" dalam teks rekon adalah...",
-    "pilihan": [
-      "Fakta",
-      "Opini",
-      "Data",
-      "Asumsi"
-    ],
-    "jawaban": 1
+    "pilihan": ["Fakta", "Opini", "Data", "Asumsi"],
+    "jawaban": 3
   },
   {
     "id": 37,
     "pertanyaan": "Kalimat berikut yang termasuk penanda kebahasaan teks prosedur adalah…",
-    "pilihan": [
-      "Sebaiknya kita rajin membaca buku.",
-      "Gunakan sendok untuk mengaduk adonan.",
-      "Kemarin saya pergi ke rumah nenek.",
-      "Menurut saya, olahraga sangat bermanfaat."
-    ],
+    "pilihan": ["Sebaiknya kita rajin membaca", "Gunakan sendok untuk mengaduk adonan.", "Kemarin saya pergi", "Menurut saya olahraga bermanfaat"],
     "jawaban": 1
   },
   {
     "id": 38,
-    "pertanyaan": "Perhatikan ciri-ciri berikut!<br>1. Menggunakan konjungsi kronologis<br>2. Menyampaikan pengalaman pribadi<br>3. Memuat tujuan yang ingin dicapai<br>4. Menggunakan kata sifat untuk menggambarkan benda<br>Yang merupakan ciri teks prosedur ditunjukkan oleh nomor…",
-    "pilihan": [
-      "1 dan 2",
-      "1 dan 3",
-      "2 dan 4",
-      "3 dan 4"
-    ],
+    "pertanyaan": "Ciri teks prosedur (konjungsi kronologis, memuat tujuan) ditunjukkan oleh nomor…",
+    "pilihan": ["1 dan 2", "1 dan 3", "2 dan 4", "3 dan 4"],
     "jawaban": 1
   },
   {
     "id": 39,
-    "pertanyaan": "“Tuangkan adonan ke dalam loyang yang sudah diolesi mentega. Panggang selama 30 menit.<br>Bagian tersebut dapat diidentifikasi sebagai…",
-    "pilihan": [
-      "Tujuan teks prosedur",
-      "Bahan yang diperlukan",
-      "Langkah pelaksanaan",
-      "Penutup teks"
-    ],
+    "pertanyaan": "“Tuangkan adonan ke dalam loyang... Panggang selama 30 menit. Bagian tersebut adalah…",
+    "pilihan": ["Tujuan", "Bahan", "Langkah pelaksanaan", "Penutup"],
     "jawaban": 2
   },
   {
     "id": 40,
-    "pertanyaan": "Fungsi konjungsi “jika” pada langkah ke-2 cara menyalakan komputer adalah…",
-    "pilihan": [
-      "Menghubungkan dua tindakan yang berlangsung bersamaan.",
-      "Menunjukkan urutan peristiwa terjadi.",
-      "Menyatakan tujuan dari tindakan yang dilakukan.",
-      "Menunjukkan syarat yang harus dipenuhi sebelum melakukan tindakan."
-    ],
+    "pertanyaan": "Fungsi konjungsi “jika” pada langkah menyalakan komputer adalah…",
+    "pilihan": ["Hubungan bersamaan", "Urutan peristiwa", "Menyatakan tujuan", "Menunjukkan syarat yang harus dipenuhi"],
     "jawaban": 3
   },
   {
     "id": 41,
-    "pertanyaan": "Jika kata “klik” ingin diganti agar sesuai dengan kaidah kebahasaan bahasa Indonesia, kosakata yang paling tepat adalah…",
-    "pilihan": [
-      "Ketuk",
-      "Sentuh",
-      "Tekan",
-      "Pencet"
-    ],
+    "pertanyaan": "Kosakata yang paling tepat pengganti 'klik' agar sesuai kaidah adalah…",
+    "pilihan": ["Ketuk", "Sentuh", "Tekan", "Pencet"],
     "jawaban": 2
   },
   {
     "id": 42,
     "pertanyaan": "Struktur utama teks eksplanasi yang benar adalah …",
-    "pilihan": [
-      "Orientasi – komplikasi – resolusi",
-      "Pernyataan umum – deretan penjelas – interpretasi",
-      "Pendahuluan – isi – penutup",
-      "Tesis – argumen – penegasan ulang"
-    ],
+    "pilihan": ["Orientasi – komplikasi", "Pernyataan umum – deretan penjelas – interpretasi", "Pendahuluan – isi", "Tesis – argumen"],
     "jawaban": 1
   },
   {
     "id": 43,
-    "pertanyaan": "“Gempa bumi terjadi karena pergeseran lempeng bumi yang saling bertabrakan.” Kutipan tersebut merupakan bagian …",
-    "pilihan": [
-      "Interpretasi",
-      "Pernyataan umum",
-      "Penutup",
-      "Argumentasi"
-    ],
+    "pertanyaan": "“Gempa bumi terjadi karena pergeseran lempeng...” Kutipan tersebut merupakan bagian …",
+    "pilihan": ["Interpretasi", "Pernyataan umum", "Penutup", "Argumentasi"],
     "jawaban": 1
   },
   {
     "id": 44,
     "pertanyaan": "Ciri kebahasaan teks eksplanasi adalah menggunakan …",
-    "pilihan": [
-      "Kalimat perintah",
-      "Kata kiasan",
-      "Konjungsi kausalitas",
-      "Argumentasi"
-    ],
+    "pilihan": ["Kalimat perintah", "Kata kiasan", "Konjungsi kausalitas", "Argumentasi"],
     "jawaban": 2
   },
   {
     "id": 45,
-    "pertanyaan": "“Banjir terjadi akibat curah hujan tinggi dan buruknya sistem drainase.”<br>Kalimat tersebut dalam pidato termasuk bagian …",
-    "pilihan": [
-      "Salam pembuka",
-      "Penjelasan (eksplanasi)",
-      "Ajakan",
-      "Penutup"
-    ],
+    "pertanyaan": "“Banjir terjadi akibat curah hujan tinggi...” Kalimat tersebut dalam pidato termasuk bagian …",
+    "pilihan": ["Salam pembuka", "Penjelasan (eksplanasi)", "Ajakan", "Penutup"],
     "jawaban": 1
   },
   {
     "id": 46,
-    "pertanyaan": "Perhatikan ciri berikut!<br>1. Singkat<br>2. Informatif<br>3. Visual menarik<br>4. Bahasa baku dan sangat lengkap<br>Ciri poster eksplanasi yang tepat adalah …",
-    "pilihan": [
-      "1, 2, dan 3",
-      "1, 2, dan 4",
-      "2 dan 4",
-      "3 dan 4"
-    ],
+    "pertanyaan": "Ciri poster eksplanasi yang tepat (Singkat, Informatif, Visual menarik) adalah …",
+    "pilihan": ["1, 2, dan 3", "1, 2, dan 4", "2 dan 4", "3 dan 4"],
     "jawaban": 0
   },
   {
     "id": 47,
-    "pertanyaan": "Bagian teks laporan hasil percobaan yang berisi paparan mengenai alasan atau latar belakang dilakukannya sebuah pengujian disebut...",
-    "pilihan": [
-      "Langkah-langkah",
-      "Hasil pengamatan",
-      "Tujuan",
-      "Simpulan"
-    ],
+    "pertanyaan": "Bagian teks laporan hasil percobaan yang berisi alasan atau latar belakang disebut...",
+    "pilihan": ["Langkah-langkah", "Hasil pengamatan", "Tujuan", "Simpulan"],
     "jawaban": 2
   },
   {
     "id": 48,
-    "pertanyaan": "\"Masukkan satu sendok teh garam ke dalam gelas berisi air, kemudian aduk secara perlahan hingga larut.\"<br>Kutipan di atas merupakan bagian dari struktur...",
-    "pilihan": [
-      "Alat dan bahan",
-      "Langkah-langkah",
-      "Kajian teori",
-      "Hasil"
-    ],
+    "pertanyaan": "\"Masukkan satu sendok teh garam... aduk perlahan\". Kutipan tersebut bagian dari struktur...",
+    "pilihan": ["Alat dan bahan", "Langkah-langkah", "Kajian teori", "Hasil"],
     "jawaban": 1
   },
   {
     "id": 49,
-    "pertanyaan": "Manakah di bawah ini yang termasuk kata kerja imperatif?",
-    "pilihan": [
-      "Mengamati",
-      "Larutkan",
-      "Berwarna",
-      "Percobaan"
-    ],
+    "pertanyaan": "Ciri kebahasaan menonjol teks laporan hasil percobaan adalah kata kerja imperatif. Manakah di bawah ini yang termasuk kata kerja imperatif?",
+    "pilihan": ["Mengamati", "Larutkan", "Berwarna", "Percobaan"],
+    "jawaban": 1
+  },
+  {
+    "id": 50,
+    "pertanyaan": "Manakah di bawah ini yang termasuk kata kerja imperatif? (soal terakhir)",
+    "pilihan": ["Mengamati", "Larutkan", "Berwarna", "Percobaan"],
     "jawaban": 1
   }
 ]
