@@ -1,0 +1,555 @@
+[
+  {
+    "id": 1,
+    "pertanyaan": "1. Andi selalu berusaha menjaga perilakunya di sekolah. la tidak berkata kasar, tidak menyontek, dan menjauhi perkelahian karena ia rutin melaksanakan shalat lima waktu dengan khusyuk. Sikap Andi tersebut menunjukkan bahwa shalat dapat ....",
+    "pilihan": [
+      "Menambah kekayaan seseorang",
+      "Meningkatkan kedudukan sosial",
+      "Mencegah perbuatan keji dan mungkar",
+      "Membuat seseorang lebih terkenal"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 2,
+    "pertanyaan": "2. Seseorang rajin melaksanakan shalat, tetapi masih sering berbohong dan berbuat curang. Hal ini menunjukkan bahwa",
+    "pilihan": [
+      "Shalat tidak memiliki manfaat dalam kehidupan",
+      "Shalat hanya sebagai kewajiban tanpa makna",
+      "Shalat belum dilaksanakan dengan baik dan benar",
+      "Perilaku buruk tidak ada kaitannya dengan shalat"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 3,
+    "pertanyaan": "3. Ketika mendengar ayat sajdah dibacakan dalam Al-Qur'an, seorang siswa langsung melakukan sujud tilawah dengan penuh kesadaran dan keikhlasan. Perilaku tersebut menunjukkan",
+    "pilihan": [
+      "Kebiasaan mengikuti teman",
+      "Rasa takut kepada manusia",
+      "Ketaatan kepada Allah SWT",
+      "Keinginan untuk dipuji"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 4,
+    "pertanyaan": "4. Perhatikan pernyataan berikut:<br>(1) Sujud dilakukan sebagai bentuk penghambaan kepada Allah<br>(2) Sujud menunjukkan kerendahan diri manusia di hadapan Allah<br>(3) Sujud hanya dilakukan saat shalat wajib saja<br>(4) Sujud merupakan bentuk ketaatan dan kepatuhan kepada Allah<br>Pernyataan yang benar tentang makna sujud adalah",
+    "pilihan": [
+      "(1), (2), dan (3)",
+      "(1), (2), dan (4)",
+      "(2), (3), dan (4)",
+      "(1) dan (3)"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 5,
+    "pertanyaan": "5. Pengertian Al-Qur'an yang tepat adalah ...",
+    "pilihan": [
+      "Kitab suci umat Islam yang diturunkan kepada Nabi Muhammad saw. sebagai petunjuk hidup manusia",
+      "Wahyu Allah Swt. yang diturunkan kepada seluruh nabi dan rasul sebagai pedoman hidup",
+      "Kumpulan hadis Nabi Muhammad saw. yang menjadi sumber hukum bagi umat Islam",
+      "Kitab umat Islam yang berisi sejarah para nabi dan kisah umat terdahulu."
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 6,
+    "pertanyaan": "6. Al-Qur'an memerintahkan umat Islam untuk melaksanakan salat, tetapi tidak menjelaskan secara rinci tata caranya. Untuk mengetahui jumlah rakaat dan bacaan salat, umat Islam merujuk kepada Hadis Nabi Muhammad saw. Berdasarkan peristiwa tersebut, fungsi Hadis terhadap Al-Qur'an adalah",
+    "pilihan": [
+      "menjelaskan tata cara ibadah yang belum dirinci dalam ayat Al-Qur'an",
+      "mengganti hukum ibadah yang telah ditetapkan dalam ayat Al-Qur'an",
+      "mengurangi kewajiban ibadah yang terdapat dalam ayat Al-Qur'an",
+      "membatalkan perintah ibadah yang ada dalam ayat Al-Qur'an."
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 7,
+    "pertanyaan": "7. Perbedaan makna antara As-Sami' dan Al-Bashir adalah",
+    "pilihan": [
+      "As-Sami' berarti Maha Mendengar, sedangkan Al-Bashir berarti Maha Melihat",
+      "As-Sami' berarti Maha Melihat, sedangkan Al-Bashir berarti Maha Mengetahui",
+      "As-Sami' berarti Maha Mengetahui, sedangkan Al-Bashir berarti Maha Mendengar",
+      "As-Sami' berarti Maha Pengasih, sedangkan Al-Bashir berarti Maha Penyayang."
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 8,
+    "pertanyaan": "8. Fahri menghindari berkata kasar meskipun tidak ada guru di kelas. la yakin bahwa setiap perkataan yang diucapkannya didengar oleh Allah Swt. Selain itu, ia juga menjaga sikapnya karena percaya bahwa Allah Swt. selalu melihat perbuatannya. Perilaku Fahri mencerminkan pengamalan Asmaul Husna ...",
+    "pilihan": [
+      "As-Sami' dan Al-Bashir karena Allah Maha Mendengar dan Maha Melihat",
+      "Al-'Alim dan Al-Khabir karena Allah Maha Mengetahui segala sesuatu",
+      "Al-Malik dan Al-Quddus karena Allah Maha Merajai dan Maha Suci",
+      "Ar-Razzaq dan Al-Fattah karena Allah Maha Pemberi rezeki."
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 9,
+    "pertanyaan": "9. Pendiri Daulah Bani Umayyah yang memerintah setelah masa Khulafaur Rasyidin adalah",
+    "pilihan": [
+      "Abu Bakar Ash-Shiddiq",
+      "Umar bin Khattab",
+      "Muawiyah bin Abi Sufyan",
+      "Ali bin Abi Thalib"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 10,
+    "pertanyaan": "10. Salah satu perubahan sistem pemerintahan pada masa Bani Umayyah adalah ....",
+    "pilihan": [
+      "Pemilihan khalifah melalui musyawarah",
+      "Pemerintahan berbentuk kerajaan (turun-temurun)",
+      "Dipimpin oleh empat sahabat Nabi",
+      "Pusat pemerintahan berada di Madinah"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 11,
+    "pertanyaan": "11. Perhatikan fenomena berikut: Matahari terbit dari timur dan terbenam di barat secara teratur setiap hari. Peristiwa tersebut menunjukkan bahwa",
+    "pilihan": [
+      "Alam semesta terjadi dengan sendirinya",
+      "Matahari bergerak tanpa aturan",
+      "Allah Maha Kuasa dan menciptakan alam dengan teratur",
+      "Manusia mengatur peredaran matahari"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 12,
+    "pertanyaan": "12. Alam semesta diciptakan Allah dengan penuh keseimbangan dan keteraturan. Sikap yang tepat sebagai bentuk rasa syukur atas ciptaan Allah adalah",
+    "pilihan": [
+      "Merusak lingkungan karena sudah tersedia banyak sumber daya",
+      "Menjaga dan melestarikan lingkungan alam",
+      "Menggunakan sumber daya alam secara berlebihan",
+      "Membiarkan kerusakan alam terjadi"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 13,
+    "pertanyaan": "13. Rafi tetap mengerjakan ujian dengan jujur meskipun tidak ada guru di kelas. la yakin bahwa setiap perbuatannya selalu diawasi dan dicatat. Sikap Rafi tersebut merupakan implementasi iman kepada malaikat, khususnya malaikat ....",
+    "pilihan": [
+      "Malaikat Jibril",
+      "Malaikat Mikail",
+      "Malaikat Raqib dan Malaikat Atid",
+      "Malaikat Israfil",
+      "Malaikat Izrail"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 14,
+    "pertanyaan": "14. Perhatikan pernyataan berikut:<br>(1) Terjadinya hujan yang menyuburkan tanaman.<br>(2) Penyampaian wahyu kepada para nabi.<br>(3) Pencabutan nyawa setiap makhluk hidup.<br>(4) Peniupan sangkakala pada hari kiamat.<br>Jika terjadi peristiwa kematian seseorang secara tiba-tiba, maka malaikat yang bertugas sesuai peristiwa tersebut adalah",
+    "pilihan": [
+      "Malaikat Jibril",
+      "Malaikat Mikail",
+      "Malaikat Israfil",
+      "Malaikat Izrail",
+      "Malaikat Raqib"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 15,
+    "pertanyaan": "15. Di grup kelas, beredar tangkapan layar (screenshot) dari akun media sosial yang menyebutkan bahwa salah satu guru melakukan tindakan tidak adil terhadap siswa. Tanpa mencari kebenaran informasi tersebut, beberapa siswa langsung membagikannya ke grup lain sehingga berita itu semakin menyebar. Tindakan yang paling tepat sesuai prinsip tabayyun adalah",
+    "pilihan": [
+      "Ikut menyebarkan informasi agar semua orang waspada",
+      "Mengomentari unggahan tersebut dengan nada keras agar menjadi viral",
+      "Menghapus pesan tersebut tanpa mencari tahu kebenarannya",
+      "Mencari informasi dari sumber terpercaya dan mengonfirmasi kepada pihak terkait sebelum menyebarkannya",
+      "Membiarkan saja karena bukan urusan pribadi"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 16,
+    "pertanyaan": "16. Sebuah video pendek di media sosial memperlihatkan potongan ceramah seorang tokoh agama yang tampak kontroversial. Video tersebut langsung menuai komentar negatif dan hujatan dari warganet. Setelah ditelusuri, ternyata video itu telah dipotong sehingga maknanya berubah. Sikap yang mencerminkan penerapan tabayyun adalah ....",
+    "pilihan": [
+      "Langsung mempercayai isi video karena sudah banyak yang membagikan",
+      "Menyebarkan ulang video tersebut agar semakin banyak yang mengetahui",
+      "Menunggu klarifikasi resmi dan mencari versi lengkap video sebelum menilai",
+      "Ikut menuliskan komentar negatif agar dianggap peduli"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 17,
+    "pertanyaan": "17. Lam jalālah dibaca dengan tafkhīm apabila huruf sebelumnya memiliki harakat...",
+    "pilihan": [
+      "Kasrah",
+      "fathah",
+      "tanwin",
+      "Sukun"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 18,
+    "pertanyaan": "18. Huruf ra dibaca tarqīq apabila...",
+    "pilihan": [
+      "Berharakat fatah",
+      "Berharakat damah",
+      "Berharakat kasrah",
+      "Sukun setelah fatah"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 19,
+    "pertanyaan": "19. Ayat dalam Q.S. Ibrahim ayat 32 menjelaskan tentang...",
+    "pilihan": [
+      "Hukuman bagi orang yang merusak alam",
+      "Nikmat Allah berupa air hujan, buah-buahan, dan kapal",
+      "Larangan membuang sampah sembarangan",
+      "Pentingnya menghormati sesama makhluk hidup"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 20,
+    "pertanyaan": "20. Tindakan berikut yang menunjukkan rasa syukur terhadap nikmat Allah Swt. adalah...",
+    "pilihan": [
+      "Menebang pohon secara sembarangan",
+      "Memisahkan sampah organik dan anorganik",
+      "Membakar sampah plastik",
+      "Menggunakan plastik sekali pakai"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 21,
+    "pertanyaan": "21. Salah satu peran pelajar muslim dalam melestarikan alam adalah...",
+    "pilihan": [
+      "Membiarkan sampah menumpuk",
+      "Mengurangi penggunaan plastik sekali pakai",
+      "Menggunakan air secara berlebihan",
+      "Menggunakan kendaraan berbahan bakar minyak secara berlebihan"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 22,
+    "pertanyaan": "22. Pernyataan yang menunjukkan pengertian iman kepada kitab secara tafsili adalah...",
+    "pilihan": [
+      "Meyakini bahwa Allah Swt telah menurunkan kitab-kitab kepada para RasulNya tanpa harus mengetahui nama kitab dan rasul penerimanya.",
+      "Mengimani penjelasan al-Qur'an dan hadis yang menyebutkan kitab-kitab Allah secara terperinci seperti nama dan nama rasul penerima",
+      "Beriman kepada semua kitab yang diturunkan oleh Allah SWT baik yang diturunkan kepada Nabi Muhammad SAW maupun para Nabi terdahulu",
+      "Membenarkan kitab-kitab Allah di dalam hati, mengikrarkan dengan lisan, dan mengamalkannya dalam perbuatan sehari-hari"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 23,
+    "pertanyaan": "23. Perhatikan pernyataan berikut!<br>(1) Diturunkan di Bukit Sinai<br>(2) Memuat akhlak dan budi pekerti<br>(3) Diturunkan secara berangsur-angsur<br>(4) Perintah untuk menyucikan hari Sabtu<br>(5) Mengandung perintah mengesakan Allah<br>Pernyataan yang berhubungan dengan kitab suci Al-Qur'an terdapat pada nomor...",
+    "pilihan": [
+      "(1), (2), dan (3)",
+      "(1), (3), dan (4)",
+      "(2), (3), dan (4)",
+      "(2), (3), dan (5)"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 24,
+    "pertanyaan": "24. Perhatikan narasi berikut!<br>Kitab ini diturunkan di daerah Yerusalem, sekitar sepuluh abad sebelum masehi. Bahasa yang digunakan adalah bahasa Qibti. Kitab ini berisikan zikir dan penghormatan kepada Allah Swt. dan nasehat-nasehat tentang kebaikan bagi manusia. Kitab yang dimaksud pada narasi tersebut diturunkan kepada Nabi",
+    "pilihan": [
+      "Musa A.S.",
+      "Isa A.S",
+      "Dawud A.S.",
+      "Ibrahim A.S."
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 25,
+    "pertanyaan": "25. Sesuatu yang dititipkan kepada orang lain, keamanan dan ketenteraman, dan dapat dipercaya merupakan arti dari",
+    "pilihan": [
+      "Amanah",
+      "Jujur",
+      "Disiplin",
+      "Istiqomah"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 26,
+    "pertanyaan": "26. Pemenuhan hak-hak oleh manusia, baik terhadap Allah Swt, orang lain maupun dirinya sendiri dan bertanggung jawab terhadap kepercayaan yang diterimanya untuk dilaksanakan dengan sebaik-baiknya dijelaskan dalam Al Quran surat ...",
+    "pilihan": [
+      "An-nisa'/4:58",
+      "At-Taubah/9:119",
+      "An-Nass/1-3",
+      "Al-Baqarah/2:2-4"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 27,
+    "pertanyaan": "27. Istilah \"Istiska\" dalam bahasa Arab berarti:",
+    "pilihan": [
+      "Memohon hujan",
+      "Memohon ampun",
+      "Menyembah Allah Swt.",
+      "Mendoakan jenazah"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 28,
+    "pertanyaan": "28. Salah satu sunah sebelum melaksanakan salat Istiska adalah....",
+    "pilihan": [
+      "Membaca doa qunut",
+      "Memperbanyak istigfar",
+      "Melaksanakan khutbah terlebih dahulu",
+      "Membaca surah al-Fatihah dengan suara keras"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 29,
+    "pertanyaan": "29. Salat jenazah dilakukan dengan jumlah takbir sebanyak.",
+    "pilihan": [
+      "Dua kali",
+      "Tiga kali",
+      "Empat kali",
+      "Lima kali"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 30,
+    "pertanyaan": "30. Hukum melaksanakan salat jenazah adalah..",
+    "pilihan": [
+      "Sunnah muakkad",
+      "Fardu 'ain",
+      "Fardu kifayah",
+      "Wajib mutlak"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 31,
+    "pertanyaan": "31. Surah Al-Mujadalah ayat 11 menjelaskan tentang keutamaan bagi orang yang...",
+    "pilihan": [
+      "Banyak beribadah",
+      "Menjaga harta",
+      "Mengumpulkan kekayaan",
+      "Menuntut ilmu"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 32,
+    "pertanyaan": "32. Potongan ayat \"yarfa'illāhu lladzīna āmanū minkum\" bermakna.",
+    "pilihan": [
+      "Allah meninggikan derajat orang berilmu",
+      "Allah menurunkan rahmat kepada orang kafir",
+      "Allah menyukai orang yang lalai",
+      "Allah meninggikan derajat orang beriman"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 33,
+    "pertanyaan": "33. Salah satu adab menuntut ilmu adalah...",
+    "pilihan": [
+      "Menyalahkan guru",
+      "Sombong dengan ilmunya",
+      "Menghargai pendapat orang lain",
+      "Mengabaikan tugas"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 34,
+    "pertanyaan": "34. Perilaku menuntut ilmu sesuai ajaran Islam adalah...",
+    "pilihan": [
+      "Belajar dengan niat mencari ridha Allah",
+      "Rajin belajar demi pujian",
+      "Belajar hanya untuk nilai",
+      "Belajar agar dianggap pintar"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 35,
+    "pertanyaan": "35. Hari akhir disebut juga dengan...",
+    "pilihan": [
+      "Yaumul Ma'ad",
+      "Yaumul Qiyamah",
+      "Yaumul Fitnah",
+      "Yaumul Fath"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 36,
+    "pertanyaan": "36. Salah satu tanda kecil (sughra) kiamat adalah...",
+    "pilihan": [
+      "Matahari terbit dari barat",
+      "Munculnya Dajjal",
+      "Banyaknya kerusakan moral",
+      "Hancurnya bumi"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 37,
+    "pertanyaan": "37. Orang yang beriman kepada hari akhir akan bersikap...",
+    "pilihan": [
+      "Sombong dan acuh",
+      "Malas berbuat baik",
+      "Tidak peduli amal",
+      "Mawas diri dan berhati-hati"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 38,
+    "pertanyaan": "38. Etika pergaulan yang baik dalam Islam adalah...",
+    "pilihan": [
+      "Menghina teman",
+      "Menjaga lisan dan sopan dalam bicara",
+      "Menyebarkan rahasia orang",
+      "Membicarakan aib orang lain"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 39,
+    "pertanyaan": "39. Salah satu larangan dalam pergaulan adalah...",
+    "pilihan": [
+      "Menyebarkan fitnah",
+      "Menasehati teman",
+      "Menghargai guru",
+      "Bersilaturahmi"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 40,
+    "pertanyaan": "40. Contoh komunikasi Islami di sekolah adalah...",
+    "pilihan": [
+      "Berbicara kasar kepada teman",
+      "Mengabaikan perintah guru",
+      "Mengucap salam dan sopan berbicara",
+      "Menertawakan teman yang salah"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 41,
+    "pertanyaan": "41. Makna dari menjaga lisan adalah...",
+    "pilihan": [
+      "Berbicara sebanyak-banyaknya",
+      "Menghindari ucapan yang menyakitkan",
+      "Mengulang kata tanpa makna",
+      "Membicarakan diri sendiri"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 42,
+    "pertanyaan": "42. Akikah adalah...",
+    "pilihan": [
+      "Penyembelihan hewan untuk korban perang",
+      "Penyembelihan hewan setiap bulan Dzulhijjah",
+      "Penyembelihan hewan karena nazar",
+      "Penyembelihan hewan sebagai rasa syukur atas kelahiran anak"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 43,
+    "pertanyaan": "43. Hukum berkurban bagi yang mampu adalah...",
+    "pilihan": [
+      "Mubah",
+      "Makruh",
+      "Sunnah muakkad",
+      "Wajib mutlak"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 44,
+    "pertanyaan": "44. Tujuan berkurban adalah...",
+    "pilihan": [
+      "Mendekatkan diri kepada Allah dan membantu sesama",
+      "Menyombongkan diri",
+      "Pamer kekayaan",
+      "Menjadi terkenal di masyarakat"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 45,
+    "pertanyaan": "45. Akikah dilaksanakan pada hari ke...",
+    "pilihan": [
+      "3",
+      "7",
+      "10",
+      "14"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 46,
+    "pertanyaan": "46. Hewan akikah untuk anak laki-laki adalah...",
+    "pilihan": [
+      "Satu ekor kambing",
+      "Dua ekor kambing",
+      "Tiga ekor kambing",
+      "Empat ekor kambing"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 47,
+    "pertanyaan": "47. Daulah Usmani berdiri pada tahun...",
+    "pilihan": [
+      "622 M",
+      "1258 M",
+      "1299 M",
+      "1453 M"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 48,
+    "pertanyaan": "48. Pendiri Daulah Usmani adalah...",
+    "pilihan": [
+      "Sultan Muhammad Al-Fatih",
+      "Utsman bin Affan",
+      "Utsman bin Sa'id",
+      "Utsman bin Ertugrul"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 49,
+    "pertanyaan": "49. Masa kejayaan Daulah Usmani terjadi pada masa Sultan...",
+    "pilihan": [
+      "Mehmed I",
+      "Murad II",
+      "Sulaiman Al-Qanuni",
+      "Abdul Hamid II"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 50,
+    "pertanyaan": "50. Salah satu kemajuan Daulah Usmani adalah di bidang...",
+    "pilihan": [
+      "Perdagangan dan teknologi",
+      "Politik dan seni",
+      "Ilmu pengetahuan dan arsitektur",
+      "Hiburan dan budaya barat"
+    ],
+    "jawaban": 2
+  }
+]
