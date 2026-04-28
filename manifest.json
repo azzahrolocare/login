@@ -1,31 +1,23 @@
 {
-  "name": "CBT SMP Islam Az-Zahro",
-  "short_name": "CBT Azzahro",
-  "display": "fullscreen", 
+  "name": "CBT SMP Azzahro",
+  "short_name": "CBTAzzahro",
+  "description": "Aplikasi Ujian Online SMP Azzahro",
+  "start_url": "login.html",
+  "display": "standalone",
   "background_color": "#0CA458",
   "theme_color": "#0CA458",
   "orientation": "portrait",
-  "start_url": "./login.html"
-  "description": "Aplikasi Ujian Digital CBT SMP Islam Az-Zahro",
-  "scope": "./",
   "icons": [
     {
-      "src": "icon-apk-presensi-azzahro.png",
-      "type": "image/png",
+      "src": "https://github.com/masrahmat-id/absensi-barcode-online-smp-smk-azzahro/raw/main/logo-smp-azzahro.png",
       "sizes": "192x192",
-      "purpose": "any"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
-      "src": "icon-apk-presensi-azzahro.png",
-      "type": "image/png",
+      "src": "https://github.com/masrahmat-id/absensi-barcode-online-smp-smk-azzahro/raw/main/logo-smp-azzahro.png",
       "sizes": "512x512",
-      "purpose": "any"
-    },
-    {
-      "src": "icon-apk-presensi-azzahro.png",
-      "type": "image/png",
-      "sizes": "512x512",
-      "purpose": "maskable"
+      "type": "image/png"
     }
   ]
 }
