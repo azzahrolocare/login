@@ -1,0 +1,552 @@
+[
+  {
+    "id": 1,
+    "pertanyaan": "Perhatikan daftar nama ilmiah berikut!<br>(1) felis Catus (2) Oryza sativa (3) Zea Mays (4) Panthera leo<br>Penulisan nama ilmiah yang tepat menurut aturan Binomial Nomenclature saat diketik menggunakan komputer adalah nomor...",
+    "pilihan": [
+      "(1) dan (2)",
+      "(2) dan (3)",
+      "(2) dan (4)",
+      "(3) dan (4)"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 2,
+    "pertanyaan": "Manakah pernyataan yang menunjukkan analisis sifat kimia dan perubahan kimia berdasarkan teks di atas?",
+    "pilihan": [
+      "Besi berkarat adalah sifat fisika, sedangkan gas elpiji terbakar adalah perubahan kimia.",
+      "Pengecatan besi adalah perubahan kimia karena mengubah warna besi.",
+      "Perkaratan besi adalah perubahan kimia, sedangkan sifat mudah terbakar pada gas elpiji adalah sifat kimia.",
+      "Air laut yang mengandung garam adalah perubahan kimia karena rasanya asin."
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 3,
+    "pertanyaan": "Bacalah teks berikut!<br>Di sebuah kebun mangga, terdapat berbagai interaksi makhluk hidup. Pada batang pohon mangga tumbuh benalu yang mengambil air dan nutrisi dari pohon tersebut. Di sisi lain, lebah sering datang ke bunga mangga untuk mengambil nektar sambil membantu proses penyerbukan. Di sekitar kebun, burung jalak hinggap di punggung sapi untuk memakan kutu yang menempel.<br>Jika seluruh benalu di kebun mangga dibiarkan tumbuh tanpa dikendalikan, dampak yang paling mungkin terjadi adalah …",
+    "pilihan": [
+      "pohon mangga tumbuh semakin subur",
+      "produksi buah mangga menurun",
+      "populasi lebah meningkat drastis",
+      "sapi kehilangan sumber makanan"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 4,
+    "pertanyaan": "Perhatikan jarring-jaring makanan berikut! <img src='https://i.ibb.co.com/bRF45Bnp/ipa4.png' class='img-post'> <br> Organisme yang berperan sebagai konsumen I adalah",
+    "pilihan": [
+      "ulat, katak, ayam",
+      "rumput dan pohon",
+      "ulang dan elang",
+      "tikus, belalang, ulat"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 5,
+    "pertanyaan": "Sebuah sekolah ingin mengurangi dampak perubahan iklim. Berikut usulan program:<br>(1) Mengurangi penggunaan listrik saat siang hari<br>(2) Menanam pohon di lingkungan sekolah<br>(3) Menggunakan pendingin ruangan sepanjang hari<br>(4) Membuat kebun sekolah<br>Program yang paling efektif dalam jangka panjang untuk membantu mencegah perubahan iklim adalah …",
+    "pilihan": [
+      "1 dan 2",
+      "2 dan 4",
+      "3 dan 4",
+      "1 dan 3"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 6,
+    "pertanyaan": "Ali mengukur massa sebuah buku dan hasilnya adalah 500 gram. Berapa massa buku tersebut dalam kilogram?",
+    "pilihan": [
+      "0,5 kg",
+      "5 kg",
+      "50 kg",
+      "500 kg"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 7,
+    "pertanyaan": "Berikut ini adalah alat yang digunakan untuk mengukur panjang benda dalam satuan meter, kecuali…",
+    "pilihan": [
+      "Meteran",
+      "Penggaris",
+      "Jangka sorong",
+      "Termometer"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 8,
+    "pertanyaan": "Sebuah balok logam bermassa 200 gram dengan suhu 90°C dimasukkan ke dalam wadah berisi 100 gram air yang bersuhu 20°C. Jika kalor jenis logam adalah 0,9 J/g°C dan kalor jenis air adalah 4,2 J/g°C, Besar suhu akhir campuran tersebut setelah mencapai kesetimbangan termal yang tepat adalah .... (Asumsikan tidak ada kalor yang hilang ke lingkungan).",
+    "pilihan": [
+      "32,5°C",
+      "41,0°C",
+      "48,5°C",
+      "55,0°C"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 9,
+    "pertanyaan": "Perhatikan gambar di bawah ini dengan seksama. <img src='https://i.ibb.co.com/vxPF2kDg/ipa9.png' class='img-post'> <br> Ibu sedang memasak menggunakan panci logam. Bagian badan panci terbuat dari aluminium, namun pegangannya dilapisi dengan plastik atau kayu tebal. Alasan yang sesuai mengenai desain ini sangat penting untuk keselamatan adalah ....",
+    "pilihan": [
+      "Plastik/kayu adalah isolator yang menghambat perpindahan panas secara radiasi dari api ke tangan.",
+      "Plastik/kayu memiliki massa jenis yang lebih besar sehingga tidak mudah panas saat disentuh.",
+      "Plastik/kayu merupakan konduktor buruk yang memperlambat laju rambatan kalor secara konduksi dari badan panci ke tangan.",
+      "Plastik/kayu menyerap panas dari tangan agar suhu tangan tetap stabil saat memegang panci."
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 10,
+    "pertanyaan": "Seorang siswa berjalan ke timur sejauh 10 meter, kemudian berbalik arah ke barat sejauh 4 meter. Berdasarkan kasus tersebut, pernyataan yang benar mengenai gerak siswa tersebut adalah...",
+    "pilihan": [
+      "Jarak yang ditempuh 14 m, perpindahan 14 m",
+      "Jarak yang ditempuh 14 m, perpindahan 6 m",
+      "Jarak yang ditempuh 6 m, perpindahan 14 m",
+      "Jarak yang ditempuh 6 m, perpindahan 6 m"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 11,
+    "pertanyaan": "Perhatikan fenomena berikut :<br>(1) Penumpang terdorong ke depan saat bus di rem mendadak<br>(2) Koin di atas kertas di meja tidak bergerak saat kertas ditarik cepat<br>(3) Roket meluncur ke atas<br>(4) Saat mendayung perahu, dayung digerakkan ke belakang<br>Fenomena yang menunjukkan penerapan Hukum 1 Newton adalah..",
+    "pilihan": [
+      "1 dan 2",
+      "1 dan 3",
+      "2 dan 4",
+      "3 dan 4"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 12,
+    "pertanyaan": "Perhatikan pernyataan berikut :<br>(1) Planet yang lebih dekat ke matahari pasti memiliki suhu tinggi.<br>(2) Planet dengan atmosfer tebal dapat memiliki suhu lebih tinggi meskipun lebih jauh dari matahari<br>Jika dibandingkan antara Venus dan Merkurius, evaluasilah kedua pernyataan tersebut.",
+    "pilihan": [
+      "Pernyataan 1 benar, pernyataan 2 salah",
+      "Pernyataan 1 salah, pernyataan 2 benar",
+      "Kedua pernyataan benar",
+      "Kedua pernyataan salah"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 13,
+    "pertanyaan": "Saturnus dikenal dengan sitem cincinnya yang sangat megah. Berdasarkan analisis para ilmuwan, materi utama penyusun cincin tersebut adalah... <img src='https://i.ibb.co.com/G3vxqb3p/ipa13.png' class='img-post'> <br>",
+    "pilihan": [
+      "Lava cair yang membeku dari aktivitas vulkanik",
+      "Gas hidrogen yang membeku",
+      "Logam padat seperti besi dan nikel",
+      "Bongkahan es dan debu angkasa"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 14,
+    "pertanyaan": "Seorang siswa menemukan organisme dengan ciri-ciri: tidak memiliki klorofil, berkembang biak dengan spora, dinding sel tersusun atas kitin, dan hidup di tempat lembap. Namun siswa tersebut mengelompokkannya ke dalam tumbuhan. Keputusan siswa tersebut kurang tepat karena organisme tersebut seharusnya termasuk kingdom ....",
+    "pilihan": [
+      "Plantae",
+      "Fungi",
+      "Monera",
+      "Protista"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 15,
+    "pertanyaan": "Perhatikan ciri-ciri berikut:<br>(1) Tubuh beruas-ruas<br>(2) Memiliki rangka dalam<br>(3) Kaki berjumlah enam<br>(4) Mengalami metamorfosis<br>Jika seekor hewan memiliki ciri nomor 1, 3, dan 4, maka hewan tersebut termasuk kelompok ....",
+    "pilihan": [
+      "Insecta",
+      "Arachnida",
+      "Pisces",
+      "Reptilia"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 16,
+    "pertanyaan": "Perhatikan macam-macam organel sel berikut.<br>1) Nukleus<br>2) Sitoplasma<br>3) Plastida<br>4) Sentriol<br>5) Mitokondria<br>6) Dinding sel<br>Organel-organel sel yang dimiliki oleh sel hewan ditunjukkan oleh nomor....",
+    "pilihan": [
+      "1, 3, dan 5",
+      "3, 4, dan 6",
+      "1, 2, dan 4",
+      "4, 5, dan 6"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 17,
+    "pertanyaan": "Perhatikan gambar organel sel berikut. <img src='https://i.ibb.co.com/YFQk2PLG/ipa17.png' class='img-post'> <br> Suatu organel sel memiliki ciri-ciri diantaranya berfungsi menghasilkan energi melalui proses respirasi, dimiliki oleh sel hewan maupun sel tumbuhan, dan biasanya banyak terdapat pada sel otot. Berdasarkan pernyataan tersebut, organel sel yang dimaksud ditunjukkan oleh nomor....",
+    "pilihan": [
+      "5",
+      "1",
+      "4",
+      "2"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 18,
+    "pertanyaan": "Perhatikan gambar sel tumbuhan di bawah ini <img src='https://i.ibb.co.com/PGKffV2S/ipa18.png' class='img-post'> <br> Bagian sel tumbuhan di atas yang berfungsi untuk menyimpan cadangan makanan ditunjukkan oleh nomer....",
+    "pilihan": [
+      "2",
+      "7",
+      "4",
+      "1"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 19,
+    "pertanyaan": "Rina sering merasa cepat lelah dan pucat. Setelah diperiksa di puskesmas, dokter mengatakan bahwa kadar hemoglobin dalam darahnya rendah sehingga pengangkutan oksigen ke seluruh tubuh terganggu. Berdasarkan kasus tersebut, gangguan terjadi pada tingkat organisasi kehidupan berupa ....",
+    "pilihan": [
+      "Sel, karena eritrosit tidak dapat membelah",
+      "Jaringan, karena jaringan epitel rusak",
+      "Organ, karena jantung tidak memompa darah",
+      "Sistem organ, karena sistem peredaran darah terganggu"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 20,
+    "pertanyaan": "Seorang pasien mengalami batuk berkepanjangan dan sesak napas. Hasil rontgen menunjukkan adanya kerusakan pada alveolus sehingga proses pertukaran oksigen dan karbon dioksida tidak berlangsung optimal. Struktur yang mengalami gangguan tersebut merupakan bagian dari ....",
+    "pilihan": [
+      "Jaringan epitel penyusun lambung",
+      "Organ paru-paru dalam sistem pernapasan",
+      "Sistem peredaran darah",
+      "Organ jantung dalam sistem ekskresi"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 21,
+    "pertanyaan": "Andi mengalami cedera saat bermain sepak bola. Tulang keringnya retak sehingga ia tidak dapat berjalan dengan baik. Tulang merupakan bagian dari jaringan penyusun sistem gerak. Urutan organisasi kehidupan yang benar dari kasus tersebut adalah ....",
+    "pilihan": [
+      "Sel – Organ – Jaringan – Sistem organ",
+      "Jaringan – Sel – Organ – Sistem organ",
+      "Sel – Jaringan – Organ – Sistem organ",
+      "Organ – Sel – Jaringan – Sistem organ"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 22,
+    "pertanyaan": "Seorang remaja sering mengonsumsi makanan cepat saji tinggi lemak. Lama-kelamaan ia mengalami penyumbatan pembuluh darah akibat penumpukan kolesterol. Gangguan tersebut dapat menyebabkan penyakit ....",
+    "pilihan": [
+      "Asma",
+      "Osteoporosis",
+      "Aterosklerosis",
+      "Bronkitis"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 23,
+    "pertanyaan": "Pak Budi didiagnosis menderita gagal ginjal sehingga harus menjalani cuci darah secara rutin. Ginjal berfungsi menyaring zat sisa metabolisme dalam darah. Jika fungsi ginjal terganggu, maka yang paling mungkin terjadi adalah ....",
+    "pilihan": [
+      "Penurunan produksi enzim pencernaan",
+      "Penumpukan zat sisa metabolisme dalam tubuh",
+      "Gangguan pembentukan sel darah merah di paru-paru",
+      "Penurunan kemampuan otot untuk bergerak"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 24,
+    "pertanyaan": "Seseorang mengalami luka bakar cukup parah sehingga sebagian besar kulitnya rusak. Kulit merupakan organ yang berfungsi melindungi tubuh dan membantu mengatur suhu. Apabila kulit mengalami kerusakan parah, maka dampak yang mungkin terjadi adalah ....",
+    "pilihan": [
+      "Gangguan sistem saraf pusat",
+      "Gangguan pengaturan suhu dan infeksi",
+      "Gangguan sistem reproduksi",
+      "Gangguan pembentukan tulang"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 25,
+    "pertanyaan": "Pada penderita diabetes melitus, pankreas tidak mampu menghasilkan insulin secara cukup. Akibatnya kadar gula dalam darah meningkat. Gangguan tersebut menunjukkan bahwa pankreas berperan dalam sistem ....",
+    "pilihan": [
+      "Pencernaan dan endokrin",
+      "Pernapasan dan ekskresi",
+      "Peredaran darah dan gerak",
+      "Saraf dan reproduksi"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 26,
+    "pertanyaan": "Seorang anak sedang bermain ayunan di taman. Ayunan tersebut diikat dengan tali kuat pada sebuah batang besi. Ketika anak ditarik ke belakang lalu dilepaskan, ayunan bergerak maju mundur. Pada saat berada di posisi tertinggi, kecepatan anak hampir nol tetapi ketinggiannya maksimum. Sebaliknya, saat melewati titik terendah, kecepatan anak maksimum tetapi ketinggiannya minimum. Fenomena ini menunjukkan adanya perubahan bentuk energi dari energi potensial gravitasi menjadi energi kinetik dan sebaliknya. Berdasarkan bacaan tersebut, mengapa kecepatan anak pada ayunan paling besar ketika berada di posisi terendah?",
+    "pilihan": [
+      "Karena energi kinetik berubah menjadi energi panas",
+      "Karena energi potensial pada titik tersebut maksimum",
+      "Karena energi potensial berkurang dan berubah menjadi energi kinetik",
+      "Karena energi mekanik hilang seluruhnya"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 27,
+    "pertanyaan": "Sebuah benda bermassa 2 kg diletakkan di ketinggian 5 m dari permukaan tanah. Jika percepatan gravitasi (g) = 10 m/s², maka energi potensial benda tersebut adalah ....",
+    "pilihan": [
+      "50 J",
+      "100 J",
+      "150 J",
+      "200 J"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 28,
+    "pertanyaan": "Sebuah gelombang merambat dengan frekuensi 10 Hz dan panjang gelombang 2 meter. Cepat rambat gelombang tersebut adalah ....",
+    "pilihan": [
+      "5 m/s",
+      "12 m/s",
+      "20 m/s",
+      "0,2 m/s"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 29,
+    "pertanyaan": "Perbedaan utama antara getaran dan gelombang adalah bahwa gelombang ....",
+    "pilihan": [
+      "Hanya terjadi pada benda yang bergerak bolak-balik",
+      "Merupakan gerakan bolak-balik di sekitar titik keseimbangan",
+      "Memindahkan energi atau gangguan tanpa memindahkan materi secara keseluruhan",
+      "Tidak memiliki amplitudo dan frekuensi"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 30,
+    "pertanyaan": "Berikut ini yang tidak termasuk bahan pewarna alami adalah ....",
+    "pilihan": [
+      "Kunyit",
+      "Kakao",
+      "Daun suji",
+      "Tartazine"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 31,
+    "pertanyaan": "Seorang siswa sedang melakukan percobaan untuk membuktikan adanya listrik statis pada sisir plastic dan batang kaca. Sisir plastic digosokkan kerambut dan batang kaca digosokkan ke kain sutra. Proses pemuatan listrik yang terjadi adalah … <br> <table><tr><td>Nama Benda</td><td>Kehilangan Elektron</td><td>Menerima Elektron</td></tr><tr><td>Sisir plastik</td><td></td><td>v</td></tr><tr><td>Rambut</td><td>v</td><td></td></tr><tr><td>Batang kaca</td><td>v</td><td></td></tr><tr><td>Kain sutra</td><td></td><td>v</td></tr></table>",
+    "pilihan": [
+      "Tabel 1 (Sisir: Kehilangan, Rambut: Menerima, Batang: Menerima, Sutra: Kehilangan)",
+      "Tabel 2 (Sisir: Menerima, Rambut: Menerima, Batang: Kehilangan, Sutra: Kehilangan)",
+      "Tabel 3 (Sisir: Menerima, Rambut: Kehilangan, Batang: Kehilangan, Sutra: Menerima)",
+      "Tabel 4 (Sisir: Kehilangan, Rambut: Kehilangan, Batang: Menerima, Sutra: Menerima)"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 32,
+    "pertanyaan": "Pada gambar di atas terdapat empat buah benda yang bermuatan. A menolak B, B menarik C, dan C menolak D. jika benda A bermuatan positif (+) maka benda D bermuatan …",
+    "pilihan": [
+      "Negative",
+      "Positif",
+      "Netral",
+      "Negative atau positif"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 33,
+    "pertanyaan": "Perhatikan gambar garis gaya litsrik berikut : <br> (1) + ke - (2) - ke - (3) + ke + (4) + ke - <br> Pola garis gaya listrik pada muatan listrik yang benar ditunjukan oleh gambar …",
+    "pilihan": [
+      "(1) dan (2)",
+      "(1) dan (3)",
+      "(2) dan (3)",
+      "(2) dan (4)"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 34,
+    "pertanyaan": "Perhatikan gambar benda A dan B dengan muatan positif. Pernyataan yang benar adalah …",
+    "pilihan": [
+      "Arah electron dari A ke B, arah arus listrik dari B ke A",
+      "Arah arus listrik dari A ke B, arah electron dari B ke A",
+      "Arah arus listrik dan arah electron dari B ke A",
+      "Arah arus listrik dan arah electron dari A ke B"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 35,
+    "pertanyaan": "Perhatikan gambar berikut <img src='https://i.ibb.co.com/4wHwGkNP/ipa35.jpg' class='img-post'> <br> Jika diketahui R1 = 20 ohm, R2 = 10 ohm dan R3 = 30 ohm, maka besar hambatan pengganti pada rangkaian di atas adalah …. Ohm",
+    "pilihan": [
+      "30",
+      "40",
+      "50",
+      "60"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 36,
+    "pertanyaan": "Perhatikan pernyataan berikut:<br>(1) Menghasilkan gaya tarik-menarik.<br>(2) Medan magnet mengarah keluar dari kutub utara.<br>(3) Garis gaya magnet berpotongan di dekat kutub.<br>(4) Kutub sejenis akan tolak-menolak.<br>Dari pernyataan di atas, sifat-sifat garis gaya magnet yang benar ditunjukkan oleh nomor...",
+    "pilihan": [
+      "(1) dan (3)",
+      "(2) dan (4)",
+      "(1) dan (4)",
+      "(2) dan (3)"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 37,
+    "pertanyaan": "Sebuah paku baja dililiti kawat berarus listrik I. Agar sifat magnet yang dihasilkan paku tersebut menjadi lebih kuat, yang dapat dilakukan adalah...",
+    "pilihan": [
+      "Mengganti paku baja dengan bahan non-magnetik.",
+      "Mengurangi jumlah lilitan kawat.",
+      "Memperbesar kuat arus listrik (I) yang mengalir.",
+      "Mengganti arus DC dengan arus AC."
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 38,
+    "pertanyaan": "Siswa A dan siswa B terlibat dalam sebuah perdebatan tentang hubungan antara kromosom dan DNA. Setelah meminta pendapat guru ternyata pendapat yang benar adalah pendapat siswa A. Pendapat tersebut adalah…",
+    "pilihan": [
+      "DNA berada didalam kromosom diluar inti sel",
+      "DNA terletak diluar kromosom tetapi berada dalam inti sel",
+      "DNA dan kromosom tidak memiliki hubungan apapun",
+      "DNA berada didalam kromosom"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 39,
+    "pertanyaan": "Alasan anak seringkali memiliki kemiripan sifat dengan kedua orang tuanya tetapi juga menunjukkan variasi sifat yang tidak persis sama dengan salah satu dari mereka adalah…",
+    "pilihan": [
+      "Terjadi mutase genetic saat pembuahan",
+      "Adanya perbedaan jumlah kromosom antara ayah dan ibu",
+      "Anak mewarisi kombinasi alel yang berbeda dari kedua induk",
+      "Ekspresi gen hanya dipengaruhi oleh salah satu alel yang dominan"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 40,
+    "pertanyaan": "Jika kacang hijau berwarna bulat kuning ( BBKK ) disilangkan dengan kacang berbiji keriput warna hijau ( bbkk ) menghasilkan F1 ( BbKk ) dan sesama F1 disilangkan maka perbandingan fenotipnya adalah…",
+    "pilihan": [
+      "9 : 3 : 9 : 1",
+      "9 : 3 : 3 : 1",
+      "3 : 9 : 3 : 1",
+      "3 : 3 : 9 : 1"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 41,
+    "pertanyaan": "Kacang kapri biji bulat kuning (BBKK) disilangkan dengan kacang kapri biji kisut hijau (bbkk). Dihasilkan 240 keturunan pada F2. Jumlah keturunan yang memiliki fenotipe kisut kuning adalah …",
+    "pilihan": [
+      "25",
+      "45",
+      "55",
+      "65"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 42,
+    "pertanyaan": "Bioteknologi konvensional dicirikan dengan penggunaan mikroorganisme secara langsung dan alat yang sederhana. Berikut ini yang merupakan produk bioteknologi konvensional adalah...",
+    "pilihan": [
+      "Insulin sintetik",
+      "Kultur jaringan",
+      "Tempe dan yoghurt",
+      "Tanaman transgenik"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 43,
+    "pertanyaan": "Dalam pembuatan tapai singkong, ragi yang ditambahkan mengubah karbohidrat menjadi gula dan alkohol. Mikroorganisme yang berperan dalam proses fermentasi tapai adalah...",
+    "pilihan": [
+      "Rhizopus oryzae",
+      "Saccharomyces cerevisiae",
+      "Lactobacillus bulgaricus",
+      "Acetobacter xylinum"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 44,
+    "pertanyaan": "Bakteri Acetobacter xylinum dimanfaatkan dalam bioteknologi konvensional untuk pembuatan...",
+    "pilihan": [
+      "Keju",
+      "Tempe",
+      "Nata de coco",
+      "Kecap"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 45,
+    "pertanyaan": "Pembuatan tempe merupakan contoh bioteknologi konvensional yang memanfaatkan jamur. Jamur yang digunakan dalam pembuatan tempe adalah...",
+    "pilihan": [
+      "Rhizopus oligosporus",
+      "Aspergillus wentii",
+      "Neurospora crassa",
+      "Saccharomyces sp"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 46,
+    "pertanyaan": "Perhatikan produk makanan berikut!(1) Tempe (2) Yoghurt (3) Keju (4) Kecap. Produk yang memanfaatkan prinsip fermentasi oleh bakteri adalah...",
+    "pilihan": [
+      "(1) dan (2)",
+      "(2) dan (3)",
+      "(1) dan (4)",
+      "(3) dan (4)"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 47,
+    "pertanyaan": "Peristiwa berikut yang tidak berhubungan dengan tekanan adalah ….",
+    "pilihan": [
+      "paku runcing mudah ditancapkan di papan",
+      "gerobak kecil mudah didorong",
+      "pisau tajam mudah untuk memotong",
+      "menjinjing beban dengan tali kecil terasa sakit di tangan"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 48,
+    "pertanyaan": "Perhatikan gambar di bawah ini! <img src='https://i.ibb.co.com/xqyNFq1Y/ipa48.png' class='img-post'> <br> Berdasarkan gambar di atas, Pernyataan di bawah ini yang benar adalah… .",
+    "pilihan": [
+      "tekanan yang diberikan akan lebih besar, sehingga memudahkan mengangkat beban yang berat",
+      "gaya yang diberikan lebih kecil untuk mengangkat beban yang berat",
+      "gaya yang diberikn akan lebih besar untuk mengangkat beban yang berat",
+      "tekanan yang diberikan akan besar sehingga gaya yang diberikannya juga akan semakin besar"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 49,
+    "pertanyaan": "Seorang penyelam menyelam di laut pada kedalaman 10 meter. Penyelam tersebut kemudian menyelam lebih dalam menjadi 20 meter. Jika massa jenis air laut dianggap sama, pernyataan yang benar mengenai tekanan hidrostatis yang dirasakan penyelam adalah...",
+    "pilihan": [
+      "Tekanan menjadi 2 kali lipat dari tekanan awal.",
+      "Tekanan menjadi 4 kali lipat dari tekanan awal.",
+      "Tekanan berkurang menjadi setengahnya.",
+      "Tekanan tidak berubah karena massa jenis sama."
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 50,
+    "pertanyaan": "Sebuah balon yang berisi udara meletus ketika dibawa mendaki gunung yang sangat tinggi. Penyebab utama balon meletus adalah...",
+    "pilihan": [
+      "Suhu udara di puncak gunung sangat panas sehingga balon memuai.",
+      "Tekanan udara di luar balon lebih rendah daripada tekanan udara di dalam balon.",
+      "Tekanan udara di luar balon lebih tinggi daripada tekanan udara di dalam balon.",
+      "Volume udara di dalam balon berkurang drastis."
+    ],
+    "jawaban": 1
+  }
+]
