@@ -18,25 +18,46 @@
             user-select: none;
         }
 
-        /* --- HALAMAN VALIDASI DATA (MUNCUL PERTAMA) --- */
+        .img-post { max-width: 100%; height: auto; display: block; }
+
+        /* --- HALAMAN VALIDASI DATA (STYLING SEPERTI LOGIN) --- */
         #halaman-validasi {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: #0CA458;
+            background-color: #f0f2f5;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             z-index: 5000;
         }
+
+        .top-banner-validasi {
+            background: #0CA458;
+            height: 250px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
         .validasi-box {
+            position: relative;
+            z-index: 2;
+            margin-top: 130px; 
             background: white;
-            padding: 30px;
-            border-radius: 20px;
+            padding: 35px 30px;
+            border-radius: 15px;
             width: 90%;
             max-width: 400px;
             text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
         }
+
         .data-display {
             text-align: left;
             background: #f8f9fa;
@@ -48,7 +69,7 @@
         .data-label { font-size: 11px; color: #888; font-weight: bold; text-transform: uppercase; }
         .data-value { font-size: 18px; color: #0CA458; font-weight: 800; margin-bottom: 10px; }
         
-        /* --- SEMUA CSS ORIGINAL ANDA TETAP DI SINI --- */
+        /* --- CSS LAINNYA TETAP --- */
         .header-ujian { background: #0CA458; color: white; padding: 0 15px; position: fixed; top: 0; width: 100%; height: 70px; display: none; justify-content: space-between; align-items: center; z-index: 100; box-sizing: border-box; box-shadow: 0 3px 12px rgba(0,0,0,0.2); }
         .identity-area { display: flex; align-items: center; gap: 10px; }
         .avatar-circle { width: 40px; height: 40px; background: #ffffff33; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; border: 1px solid #ffffff66; }
@@ -92,10 +113,20 @@
 <body>
 
 <div id="halaman-validasi">
+    <!-- Banner Hijau Atas ala Login -->
+    <div class="top-banner-validasi">
+        <div style="text-align: center; margin-bottom: 50px;">
+            <span class="material-icons-round" style="font-size: 60px;">fact_check</span>
+            <h1 style="margin: 0; font-size: 26px; letter-spacing: 2px; font-weight: 900;">KONFIRMASI</h1>
+            <p style="margin: 0; font-size: 14px; opacity: 0.8;">CBT Azzahro Application</p>
+        </div>
+    </div>
+
+    <!-- Kotak Putih Validasi -->
     <div class="validasi-box">
-        <span class="material-icons-round" style="font-size: 60px; color: #0CA458;">fact_check</span>
-        <h2 style="margin: 10px 0; color: #0CA458;">KONFIRMASI DATA</h2>
-        <p style="font-size: 13px; color: #666;">Silakan periksa data Anda sebelum memulai pengerjaan soal.</p>
+        <h2 style="margin-top: 0; color: #0CA458; font-size: 22px; font-weight: 800;">DATA PESERTA</h2>
+        <p style="color: #666; font-size: 13px; margin-bottom: 20px;">Silakan periksa data Anda sebelum mulai.</p>
+        
         <div class="data-display">
             <div class="data-label">Nama Peserta</div>
             <div id="val-nama" class="data-value">-</div>
@@ -104,11 +135,18 @@
             <div class="data-label">Mata Pelajaran</div>
             <div id="val-mapel" class="data-value">INFORMATIKA</div>
         </div>
+        
         <button class="btn-start" onclick="mulaiUjianSekarang()"> MULAI MENGERJAKAN</button>
-        <p onclick="history.back()" style="margin-top:15px; color:#d32f2f; font-size:12px; cursor:pointer; font-weight:bold;">Terdapat kesalahan? Kembali</p>
+        
+        <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid #eee;">
+            <p onclick="history.back()" style="color:#d32f2f; font-size:12px; cursor:pointer; font-weight:bold; margin:0;">
+                Terdapat kesalahan? <span style="text-decoration:underline;">Kembali</span>
+            </p>
+        </div>
     </div>
 </div>
 
+<!-- SISA KODE HTML BERIKUTNYA (MODAL, HEADER, CONTAINER) TETAP SAMA -->
 <div id="modalPeringatan" class="modal-overlay">
     <div class="modal-box" style="border-top: 6px solid #d32f2f;">
         <div style="color:#d32f2f;"><span class="material-icons-round" style="font-size:60px;">report_problem</span></div>
@@ -182,8 +220,8 @@
             <p style="color:#666; font-size:14px; margin-top:20px;">"Ujian telah selesai! Terima kasih telah mengikuti ujian online."</p>
         </div>
         <button class="btn btn-finish" style="padding:8px; max-width:320px; margin-top:15px;" onclick="kembaliKeLogin()">
-    <span class="material-icons-round">logout</span> KEMBALI KE HALAMAN LOGIN
-</button>
+            <span class="material-icons-round">logout</span> KEMBALI KE HALAMAN LOGIN
+        </button>
     </div>
 </div>
 
@@ -197,62 +235,49 @@
 
     const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyY528MhAel09tDGjpEeXaGNkzf0BCOc8rUJhoW7-F0c8wQ4alSA1L5KZxLy7uT_OQ6/exec';
 
-    // FUNGSI INISIALISASI (DIPANGGIL SAAT BUKA HALAMAN)
     window.onload = function() {
         const userData = JSON.parse(sessionStorage.getItem('userCBT'));
         if (!userData) {
             alert("Silakan login terlebih dahulu!");
-            window.location.href = 'index.html';
+            window.location.href = 'login.html';
             return;
         }
-        // Tampilkan di halaman validasi
         document.getElementById('val-nama').innerText = userData.nama.toUpperCase();
         document.getElementById('val-kelas').innerText = "KELAS " + userData.kelas;
-        // PENGGANTIAN NAMA MAPEL DINAMIS
         if(userData.mapel) {
             document.getElementById('val-mapel').innerText = userData.mapel;
             document.getElementById('display-mapel').innerText = userData.mapel;
         }
-
-        // Siapkan data header (tapi masih disembunyikan)
         document.getElementById('user-name').innerText = userData.nama.toUpperCase();
         document.getElementById('display-kelas').innerText = "KELAS " + userData.kelas;
         document.getElementById('user-initial').innerText = userData.nama[0].toUpperCase();
     };
 
-    
-    // FUNGSI MULAI (DENGAN PEMICU FULL SCREEN)
-function mulaiUjianSekarang() {
-    // Bagian pemicu Full Screen
-    let elem = document.documentElement;
-    if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-    } else if (elem.webkitRequestFullscreen) { // Untuk Safari
-        elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) { // Untuk Internet Explorer/Edge lama
-        elem.msRequestFullscreen();
+    function mulaiUjianSekarang() {
+        let elem = document.documentElement;
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.webkitRequestFullscreen) {
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) {
+            elem.msRequestFullscreen();
+        }
+
+        document.getElementById('halaman-validasi').style.display = 'none';
+        document.querySelector('.header-ujian').style.display = 'flex';
+        document.querySelector('.container').style.display = 'block';
+        muatSoal();
     }
 
-    // FUNGSI MULAI (SETELAH KLIK TOMBOL DI HALAMAN VALIDASI)
-    // Bagian transisi tampilan halaman
-    document.getElementById('halaman-validasi').style.display = 'none';
-    document.querySelector('.header-ujian').style.display = 'flex';
-    document.querySelector('.container').style.display = 'block';
-    muatSoal();
-}
-
-   // Opsional: Peringatan jika keluar dari Full Screen
-document.addEventListener('fullscreenchange', () => {
-    if (!document.fullscreenElement) {
-        alert("Peringatan: Jangan keluar dari mode layar penuh selama ujian berlangsung!");
-        // Anda bisa menambahkan logika pengurangan poin atau kunci ujian di sini
-    }
-});
+    document.addEventListener('fullscreenchange', () => {
+        if (!document.fullscreenElement) {
+            alert("Peringatan: Jangan keluar dari mode layar penuh selama ujian berlangsung!");
+        }
+    });
     
     async function muatSoal() { 
         try { 
             const userData = JSON.parse(sessionStorage.getItem('userCBT'));
-            // MENGAMBIL FILE BERDASARKAN SELEKSI DI LOGIN
             const res = await fetch(userData.fileSoal || 'https://azzahrolocare.github.io/login/cbt/mapel/soal.json'); 
             dataSoal = await res.json(); 
             renderUjian(); 
@@ -371,7 +396,6 @@ document.addEventListener('fullscreenchange', () => {
         });
 
         try {
-            // MENGGUNAKAN MAPEL DINAMIS UNTUK URL PENGIRIMAN
             const finalURL = `${SCRIPT_URL}?nama=${encodeURIComponent(userData.nama)}&kelas=${userData.kelas}&mapel=${encodeURIComponent(userData.mapel)}&benar=${benar}&salah=${dataSoal.length - benar}&jawabanUser=${encodeURIComponent(detailJawaban.join(", "))}`;
             await fetch(finalURL, { mode: 'no-cors' });
 
@@ -402,13 +426,10 @@ document.addEventListener('fullscreenchange', () => {
     document.addEventListener('contextmenu', e => e.preventDefault());
 
     function kembaliKeLogin() {
-    // Menghapus draf jawaban agar bersih untuk peserta berikutnya
-    localStorage.removeItem('drafJawaban');
-    // Menghapus sesi user saat ini
-    sessionStorage.removeItem('userCBT');
-    // Arahkan ke file login Anda (ganti 'index.html' dengan nama file login Anda)
-    window.location.href = 'index.html'; 
-}
+        localStorage.removeItem('drafJawaban');
+        sessionStorage.removeItem('userCBT');
+        window.location.href = 'login.html'; 
+    }
 </script>
 </body>
 </html>
