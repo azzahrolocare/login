@@ -1,0 +1,552 @@
+[
+  {
+    "id": 1,
+    "pertanyaan": "الجوف merupakan salah satu tempat keluarnya huruf-huruf hijaiyah, yang artinya ….",
+    "pilihan": [
+      "kerongkongan",
+      "dua bibir",
+      "pangkal hidung",
+      "rongga"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 2,
+    "pertanyaan": "Makhroj (tempat keluarnya) huruf ح dan ع berada di ….",
+    "pilihan": [
+      "tengah tekak",
+      "tenggorokan",
+      "ujung rongga (ke arah pangkal dada)",
+      "pangkal rongga selepas daripada mulut"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 3,
+    "pertanyaan": "Lam yang masuk pada kata benda (isim) dan didahului oleh hamzah washol disebut ....",
+    "pilihan": [
+      "lam taaruf",
+      "lam tarof",
+      "lam tarif",
+      "lam taraf"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 4,
+    "pertanyaan": "Alif-lam qomariyah dan alif-lam syamsiyah terdapat pada hukum .",
+    "pilihan": [
+      "lam jalalah",
+      "lam nahyi",
+      "lam amar",
+      "lam tarif"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 5,
+    "pertanyaan": "Alif-lam yang harus dibaca dengan jelas dan terang dinamakan .",
+    "pilihan": [
+      "alif-lam qomariyah",
+      "alif-lam fajriyah",
+      "alif-lam syamsiyah",
+      "alif-lam nahariyah"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 6,
+    "pertanyaan": "Alif-lam syamsiyah disebut juga dengan ....",
+    "pilihan": [
+      "izhar syamsiyah",
+      "iqlab syamsiyah",
+      "ikhfa syamsiyah",
+      "idghom syamsiyah"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 7,
+    "pertanyaan": "Nun sukun atau tanwin bertemu dengan salah satu huruf hamzah, ha, kho, ain, ghoin, ha, cara bacanya dinamakan .",
+    "pilihan": [
+      "idghom bighunnah",
+      "ikhfa haqiqi",
+      "izhar halqi",
+      "idghom mimi/mitslain"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 8,
+    "pertanyaan": "Berikut ini merupakan bacaan yang tidak boleh mengandung unsur dengung adalah .",
+    "pilihan": [
+      "idghom bighunnah",
+      "ikhfa haqiqi",
+      "izhar halqi",
+      "idghom mimi/mitslain"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 9,
+    "pertanyaan": "Berikut ini merupakan bacaan yang mengandung unsur dengung, kecuali .",
+    "pilihan": [
+      "idghom bighunnah",
+      "ikhfa haqiqi",
+      "izhar syafawi",
+      "idghom mutamatsilain"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 10,
+    "pertanyaan": "Secara tulisan dalam Al quran ditulis dengan panjang tetapi membacanya harus dibaca pendek disebut bacaan .",
+    "pilihan": [
+      "Qalqalah",
+      "Mad",
+      "Tafkhim",
+      "Qasiroh"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 11,
+    "pertanyaan": "Kata qolqolah dari segi bahasa berarti .",
+    "pilihan": [
+      "memanjang",
+      "tebal",
+      "memantul",
+      "tipis"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 12,
+    "pertanyaan": "Hukum bacaan qolqolah terbagi menjadi .",
+    "pilihan": [
+      "dua",
+      "lima",
+      "empat",
+      "enam"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 13,
+    "pertanyaan": "Huruf qolqolah berjumlah .",
+    "pilihan": [
+      "3",
+      "4",
+      "6",
+      "5"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 14,
+    "pertanyaan": "Ali membaca Al-Quran dengan cara memantulkan huruf\\yang berharokat sukun. Dalam membaca Al-Quran tersebut Ali sedang mempraktikkan hukum bacaan .",
+    "pilihan": [
+      "tafkim",
+      "mad",
+      "lam dan ro",
+      "qolqolah"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 15,
+    "pertanyaan": "Membunyikan huruf-huruf tertentu dalam satu kata dengan suara memantul karena berharokat sukun atau disebabkan waqof yang disebut .",
+    "pilihan": [
+      "tafkhim",
+      "mad",
+      "lam dan ro",
+      "qolqolah"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 16,
+    "pertanyaan": "Bilamana sebelum lam jalalah didahului oleh huruf hidup yang berharokat kasroh maka cara membacanya ialah .",
+    "pilihan": [
+      "lam jalalah-nya ditipiskan",
+      "lam jalalah-nya ditebalkan",
+      "lam jalalah-nya dipantulkan",
+      "lam jalalah-nya dipanjangkan"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 17,
+    "pertanyaan": "Jika sebelum lam jalalah didahului oleh huruf hidup yang berharokat fathah maka cara membacanya harus .",
+    "pilihan": [
+      "ditebalkan",
+      "ditipiskan",
+      "dipanjangkan",
+      "dipendekkan"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 18,
+    "pertanyaan": "Sedangkan cara membaca lam jalalah jika sebelumnya didahului oleh huruf hidup yang berharokat dhommah adalah .",
+    "pilihan": [
+      "lam jalalah-nya ditebalkan",
+      "lam jalalah-nya ditipiskan",
+      "lam jalalah-nya dipantulkan",
+      "lam jalalah-nya dipanjangkan"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 19,
+    "pertanyaan": "Ro sukun yang terletak setelah huruf hidup berharokat fathah maka harus dibaca .",
+    "pilihan": [
+      "tebal",
+      "pendek",
+      "tipis",
+      "Panjang"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 20,
+    "pertanyaan": "Yang dimaksud dengan bacaan tarqiq ialah .",
+    "pilihan": [
+      "tebal",
+      "tipis",
+      "pendek",
+      "panjang"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 21,
+    "pertanyaan": "Di dalam Al-quran bacaan saktah hanya ada di.. surat",
+    "pilihan": [
+      "6",
+      "5",
+      "4",
+      "3"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 22,
+    "pertanyaan": "Cara membaca shifir mustadir yang benar adalah.",
+    "pilihan": [
+      "Di baca terus baik waqof atau washol",
+      "Di baca pendek ketika waqof ataupun washol",
+      "Di baca dengung baikwaqof atau washol",
+      "Di baca panjang baik waqof ataupun washol"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 23,
+    "pertanyaan": "Lanjutan ayat kedua dari QS. Al Lail adalah .",
+    "pilihan": [
+      "وَالنَّهَارِ إِذَا",
+      "تَجَلَّى",
+      "جَلَّهَا",
+      "مُرْسهَا"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 24,
+    "pertanyaan": "Tulisan ayat ke-6 di dalam QS. Al Lail yang benar adalah … .",
+    "pilihan": [
+      "وَصَدَقَ بِالْحُسْنَى",
+      "إِنَّ سَعْيَكُمْ لَشَتَّى",
+      "وَالنَّهَارِ إِذَا تَجَلَّى",
+      "إِنَّ عَلَيْنَا لَلْهُدَى"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 25,
+    "pertanyaan": "Berikut ini merupakan ayat ke 3 dari surat Al Ghasiyah yaitu ....",
+    "pilihan": [
+      "عَامِلَةٌ نَّاصِبَةٌۙ",
+      "وُجُوْهٌ يَّوْمَىِٕذٍ خَاشِعَةٌۙ",
+      "تَصْلٰى نَارًا حَامِيَةًۙ",
+      "تُسْقٰى مِنْ عَيْنٍ اٰنِيَةٍۗ"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 26,
+    "pertanyaan": "فَسَنُيَسِّرُهُ لِلْعُسْرَى Ayat di samping terdapat dalam … .",
+    "pilihan": [
+      "QS. Al-Syams ayat 4",
+      "QS. Al-lail ayat 10",
+      "QS. Al-Lail ayat 6",
+      "QS. Al-Syams ayat 12"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 27,
+    "pertanyaan": "“Waanta hillum bihaadzal balad” sesuai dengan ayat berikut … .",
+    "pilihan": [
+      "وَلِسَانًاوَشَفَتَيْنِ",
+      "وَاَنْتَ حِلٌّ بِهَذَاالْبَلَدِ",
+      "فَكُّ رَقَبَةٍ",
+      "اَوْمِسْكِيْنًاذَامَتْرَبَةٍ"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 28,
+    "pertanyaan": "Bunyi nash (redaksi) QS. Al Balad ayat ke-12 adalah … .",
+    "pilihan": [
+      "وَلِسَانًاوَشَفَتَيْنِ",
+      "وَاَنْتَ حِلٌّ بِهَذَاالْبَلَدِ",
+      "فَكُّ رَقَبَةٍ",
+      "اَوْمِسْكِيْنًاذَامَتْرَبَةٍ"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 29,
+    "pertanyaan": "Translitkan ayat : فَأَمَّاالْيَتِيْمَ فَلاَ تَقْهَرْ ke dalam tulisan latin yang benar ialah … .",
+    "pilihan": [
+      "Faammal yatiima falaa takhar",
+      "Paammal yatiima pala takhar",
+      "Faammal yatiima falaa taqhar",
+      "Paammal yatiima pala taqhar"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 30,
+    "pertanyaan": "Lanjutan ayat berikut yang benar adalah ………… وَمَاخَلَقَ الذَّكَرَ",
+    "pilihan": [
+      "وَالنَّاسِ",
+      "وَالأُنْثَى",
+      "وَالْفُلْقِ",
+      "وَاْلأُوْلَى"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 31,
+    "pertanyaan": "Translitkan lafadz berikut وَلَسَوْفَ يَرْضَى adalah … .",
+    "pilihan": [
+      "Wala saufa yardo",
+      "Walasaufa yardhaa",
+      "Walasaupa yardho",
+      "Walasakna yardhaa"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 32,
+    "pertanyaan": "Lanjutan dari ayat : …………….فَأَلْهَمَهَا فُجُوْرَهَا",
+    "pilihan": [
+      "عُقْبَاهَا",
+      "فَسَوَّاهَا",
+      "وَدَسَّاهَا",
+      "وَتَقْوَاهَا"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 33,
+    "pertanyaan": "Ayat pertama dari QS. Asy Syams yang benar adalah … .",
+    "pilihan": [
+      "وَالضُّحَى",
+      "وَالشَّمْسِ وَضُحَاهَا",
+      "وَالَّيْلِ إِذَا يَغْشَى",
+      "وَالْقَمَرِ إِذَا تَلاَهَا"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 34,
+    "pertanyaan": "Lanjutan ayat ke-18 di dalam Q.S. Al-Balad berikut ………..اُوْلئِكَ اَصْحَابُ",
+    "pilihan": [
+      "الْمَرْحَمَة",
+      "الْمَيْمَنَة",
+      "الْمُرْسَلِيْنَ",
+      "الْوَاصِلَة"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 35,
+    "pertanyaan": "Qs. Ad Dhuha terdiri dari ………………… Ayat",
+    "pilihan": [
+      "10",
+      "11",
+      "12",
+      "13"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 36,
+    "pertanyaan": "Ayat di bawah ini termasuk QS. Ad Dhuha ayat ke 10",
+    "pilihan": [
+      "مَاوَدَّعَكَ رَبُّكَ وَمَاقَلَى",
+      "وَالَّيْلِ إِذَا سَجَى",
+      "وَاَمَّاالسّآئِلَ فَلاَ تَنْهَرْ",
+      "فَأَمَّاالْيَتِيْمَ فَلاَ تَقْهَرْ"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 37,
+    "pertanyaan": "Ayat ke-8 dari QS. Al Lail adalah … .",
+    "pilihan": [
+      "وَاَمَّا مَنْ بَخِلَ وَاسْتَغْنَى",
+      "وَالشَّمْسِ وَضُحَاهَا",
+      "وَالَّيْلِ إِذَا يَغْشَى",
+      "وَالْقَمَرِ إِذَا تَلاَهَا"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 38,
+    "pertanyaan": "Ayat terakhir dari QS. Asy Syams ialah … .",
+    "pilihan": [
+      "وَلاَيَخَافُ عُقْبَاهَا",
+      "وَالشَّمْسِ وَضُحَاهَا",
+      "وَالَّيْلِ إِذَا يَغْشَى",
+      "وَالْقَمَرِ إِذَا تَلاَهَا"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 39,
+    "pertanyaan": "Qs. Al Balad terdiri dari ……………… Ayat",
+    "pilihan": [
+      "5",
+      "10",
+      "15",
+      "20"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 40,
+    "pertanyaan": "QS. Al Balad ayat ke tiga belas yang benar adalah … .",
+    "pilihan": [
+      "وَلِسَانًاوَشَفَتَيْنِ",
+      "وَاَنْتَ حِلٌّ بِهَذَاالْبَلَدِ",
+      "فَكُّ رَقَبَةٍ",
+      "اَوْمِسْكِيْنًاذَامَتْرَبَةٍ"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 41,
+    "pertanyaan": "Dalam urutannya di dalam al-qur’an surat as-syams adalah yang ke…",
+    "pilihan": [
+      "93",
+      "92",
+      "91",
+      "90"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 42,
+    "pertanyaan": "Surat as syam di turunkan oleh Allah Swt setelah surat…",
+    "pilihan": [
+      "Al - Qodr",
+      "Al - Balad",
+      "Al – Lail",
+      "Al - Qiyamah"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 43,
+    "pertanyaan": "Seni penulisan indah dalam islam disebut tulisan",
+    "pilihan": [
+      "Puisi",
+      "Kaligrafi",
+      "pantun",
+      "Gambar"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 44,
+    "pertanyaan": "Yang tidak termasuk khot tsulus di bawah ini adalah",
+    "pilihan": [
+      "jali",
+      "Aadi",
+      "khot diwani jali",
+      "raihani"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 45,
+    "pertanyaan": "Khot Tawqi' adalah termasuk khot Tsulus, tawqi' artinya.",
+    "pilihan": [
+      "Tanda tangan",
+      "Tanda mata",
+      "tanda baca",
+      "tanda jasa"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 46,
+    "pertanyaan": "Berikut yang bukan ka'idah menulis khot tsulus adalah.",
+    "pilihan": [
+      "Huruf-huuf yang memiliki garis tegak dan condong ke kiri",
+      "Penulisan huruf tersusun bertingkat",
+      "Bentuk tulisan tidak dapat di sesuaikan dengan media tulis",
+      "Memakai harakat dan tanda baca sebagai hiasan"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 47,
+    "pertanyaan": "Ada bermacam-macam gaya penulisan khot, salah satunya di sebut khot tsuluts, kata tsuluts memiliki arti…",
+    "pilihan": [
+      "Setengah",
+      "Seperempat",
+      "Sepertiga",
+      "Menyeluruh"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 48,
+    "pertanyaan": "Khot tsuluts mir’at adalah nama lain dari tsuluts…",
+    "pilihan": [
+      "Musalsal",
+      "Mutanazhir",
+      "Sepertiga",
+      "Muhaqqoq"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 49,
+    "pertanyaan": "Salah satu jenis khot tsuluts yaitu tsuluts mahbuk, mahbuk artinya…",
+    "pilihan": [
+      "Tersusun rapi",
+      "Terlentur",
+      "lembaran kecil",
+      "Geometris"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 50,
+    "pertanyaan": "Khot raihani di ciptakan oleh ibnu bawab, kata raihan artinya…",
+    "pilihan": [
+      "Berduri tajam",
+      "Bersilangan",
+      "Harum semerbak",
+      "Susunan batu"
+    ],
+    "jawaban": 2
+  }
+]
