@@ -2,25 +2,45 @@
   {
     "id": 1,
     "pertanyaan": "Sebelum melakukan senam irama, sebaiknya melakukan …",
-    "pilihan": ["Pemanasan", "Pendinginan", "Lari", "Salto"],
+    "pilihan": [
+      "Pemanasan",
+      "Pendinginan",
+      "Lari",
+      "Salto"
+    ],
     "jawaban": 0
   },
   {
     "id": 2,
     "pertanyaan": "Salah satu ciri senam irama adalah dilakukan dengan menambahkan …",
-    "pilihan": ["Tenaga", "Gerakan", "Nada", "Music"],
+    "pilihan": [
+      "Tenaga",
+      "Gerakan",
+      "Nada",
+      "Music"
+    ],
     "jawaban": 3
   },
   {
     "id": 3,
     "pertanyaan": "Gerakan senam yang dilakukan dengan iringan irama disebut senam …",
-    "pilihan": ["Ritmis /irama", "Alat", "Lantai", "Aerobic"],
+    "pilihan": [
+      "Ritmis /irama",
+      "Alat",
+      "Lantai",
+      "Aerobic"
+    ],
     "jawaban": 0
   },
   {
     "id": 4,
     "pertanyaan": "Berikut yang tidak perlu diperhatikan dalam senanm irama adalah …",
-    "pilihan": ["Gerakan secara alami", "Latihan gerakan yang mudah", "Pemanasan", "Makan yang banyak"],
+    "pilihan": [
+      "Gerakan secara alami",
+      "Latihan gerakan yang mudah",
+      "Pemanasan",
+      "Makan yang banyak"
+    ],
     "jawaban": 3
   },
   {
@@ -37,31 +57,56 @@
   {
     "id": 6,
     "pertanyaan": "Sumber gerakan saat melakukan gerak ayunan dua lengan adalah …",
-    "pilihan": ["Siku lengan", "Bahu lengan", "Pergelangan tangan", "Jari-jari lengan"],
+    "pilihan": [
+      "Siku lengan",
+      "Bahu lengan",
+      "Pergelangan tangan",
+      "Jari-jari lengan"
+    ],
     "jawaban": 1
   },
   {
     "id": 7,
     "pertanyaan": "Berikut yang bukan termasuk gerakan senam irama ialah …",
-    "pilihan": ["Langkah depan", "Langkah silang", "Langkah satu lengan", "Berguling"],
+    "pilihan": [
+      "Langkah depan",
+      "Langkah silang",
+      "Langkah satu lengan",
+      "Berguling"
+    ],
     "jawaban": 3
   },
   {
     "id": 8,
     "pertanyaan": "Sikap awal kedua kaki saat melakukan gerak meroda adalah …",
-    "pilihan": ["Rapat", "Ditekuk", "Dibuka selebar bahu", "Kaki kanan sedikit di depan"],
+    "pilihan": [
+      "Rapat",
+      "Ditekuk",
+      "Dibuka selebar bahu",
+      "Kaki kanan sedikit di depan"
+    ],
     "jawaban": 2
   },
   {
     "id": 9,
     "pertanyaan": "Posisi badan yang benar saat melakukan gerak meroda adalah …",
-    "pilihan": ["Disilangkan", "Dimiringkan", "Ditegakkan", "Dibungkukkan"],
-    "jawaban": 1
+    "pilihan": [
+      "Disilangkan",
+      "Dimiringkan",
+      "Ditegakkan",
+      "Dibungkukkan"
+    ],
+    "jawaban": 2
   },
   {
     "id": 10,
     "pertanyaan": "Gerakan senam lantai yang mengandalkan kekuatan otot lengan adalah …",
-    "pilihan": ["Guling lenting", "Guling depan", "Meroda", "Loncat harimau"],
+    "pilihan": [
+      "Guling lenting",
+      "Guling depan",
+      "Meroda",
+      "Loncat harimau"
+    ],
     "jawaban": 2
   },
   {
@@ -78,25 +123,45 @@
   {
     "id": 12,
     "pertanyaan": "Senam lantai adalah senam yang dilakukan di atas matras menggunakan …",
-    "pilihan": ["Kertas", "Karpet", "Matras", "Kasur"],
+    "pilihan": [
+      "Kertas",
+      "Karpet",
+      "Matras",
+      "Kasur"
+    ],
     "jawaban": 2
   },
   {
     "id": 13,
     "pertanyaan": "Guling depan dilakukan dengan cara menggulingkan … ke depan.",
-    "pilihan": ["Kaki", "Tangan", "Tubuh", "kepala"],
+    "pilihan": [
+      "Kaki",
+      "Tangan",
+      "Tubuh",
+      "kepala"
+    ],
     "jawaban": 2
   },
   {
     "id": 14,
     "pertanyaan": "Sikap lilin dilakukan dengan posisi awal badan …",
-    "pilihan": ["Telentang", "Berdiri", "Jongkok", "Duduk"],
+    "pilihan": [
+      "Telentang",
+      "Berdiri",
+      "Jongkok",
+      "Duduk"
+    ],
     "jawaban": 0
   },
   {
     "id": 15,
     "pertanyaan": "Keterampilan yang terlatih dari Latihan Handstand adalah .,.",
-    "pilihan": ["Kelincahan", "Kelenturan", "Kecepatan", "Keseimbangan"],
+    "pilihan": [
+      "Kelincahan",
+      "Kelenturan",
+      "Kecepatan",
+      "Keseimbangan"
+    ],
     "jawaban": 3
   },
   {
@@ -157,19 +222,34 @@
   {
     "id": 21,
     "pertanyaan": "Push Up merupakan jenis latihan untuk melatih kekuatan …",
-    "pilihan": ["Otot lengan", "Otot kaki", "Otot Leher", "Otot perut"],
+    "pilihan": [
+      "Otot lengan",
+      "Otot kaki",
+      "Otot Leher",
+      "Otot perut"
+    ],
     "jawaban": 0
   },
   {
     "id": 22,
     "pertanyaan": "latihan Sit Up bertujuan untuk melatih otot …",
-    "pilihan": ["Otot lengan", "Otot kaki", "Otot Leher", "Otot perut"],
+    "pilihan": [
+      "Otot lengan",
+      "Otot kaki",
+      "Otot Leher",
+      "Otot perut"
+    ],
     "jawaban": 3
   },
   {
     "id": 23,
     "pertanyaan": "Latihan Back Up bertujuan untuk melatih otot …",
-    "pilihan": ["Otot lengan", "Otot pinggul", "Otot Leher", "Otot perut"],
+    "pilihan": [
+      "Otot lengan",
+      "Otot pinggul",
+      "Otot Leher",
+      "Otot perut"
+    ],
     "jawaban": 1
   },
   {
@@ -197,13 +277,23 @@
   {
     "id": 26,
     "pertanyaan": "Apa yang harus dilakukan pertama kali saat menemukan korban kecelakaan …",
-    "pilihan": ["mencari bantuan", "memeriksa kondisi korban", "Memberikan pertolongan pertama", "Menghubungi polisi"],
+    "pilihan": [
+      "mencari bantuan",
+      "memeriksa kondisi korban",
+      "Memberikan pertolongan pertama",
+      "Menghubungi polisi"
+    ],
     "jawaban": 1
   },
   {
     "id": 27,
     "pertanyaan": "macam-macam gangguan umum yang terjadi pada P3K, kecuali …",
-    "pilihan": ["pingsan", "mati suri", "muntah-muntah", "patah tulang"],
+    "pilihan": [
+      "pingsan",
+      "mati suri",
+      "muntah-muntah",
+      "patah tulang"
+    ],
     "jawaban": 1
   },
   {
@@ -220,25 +310,23 @@
   {
     "id": 29,
     "pertanyaan": "kotak P3K ditandai dengan tanda …",
-    "pilihan": ["minus", "kali", "plus", "bagi"],
+    "pilihan": [
+      "minus",
+      "kali",
+      "plus",
+      "bagi"
+    ],
     "jawaban": 2
   },
   {
     "id": 30,
     "pertanyaan": "cara menghentikan pendarahan dengan mudah menggunakan …",
-    "pilihan": ["tensoplas / plaster", "tanah", "garam", "sirih"],
-    "jawaban": 0
-  },
-  {
-    "id": 31,
-    "pertanyaan": "Pencocokan!",
-    "pilihan": ["Tidak ada pilihan"],
-    "jawaban": 0
-  },
-  {
-    "id": 32,
-    "pertanyaan": "ISILAH TITIK-TITIK DAN JAWABLAH PERTANYAAN DI BAWAH INI DENGAN BENAR!",
-    "pilihan": ["Esai"],
+    "pilihan": [
+      "tensoplas / plaster",
+      "tanah",
+      "garam",
+      "sirih"
+    ],
     "jawaban": 0
   }
 ]
