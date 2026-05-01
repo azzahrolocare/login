@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0CA458">
-    <!-- Khusus untuk iOS agar status bar mengikuti warna tema -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <title>Ujian - CBT SMP Azzahroo</title>
@@ -24,7 +23,7 @@
 
         .img-post { max-width: 100%; height: auto; display: block; }
 
-        /* --- HALAMAN VALIDASI DATA (VERSI MODERN RAMPING) --- */
+        /* --- HALAMAN VALIDASI DATA --- */
         #halaman-validasi {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
@@ -68,13 +67,12 @@
             background: #0CA458; color: white; width: 100%; border: none; 
             padding: 14px; border-radius: 10px; font-weight: 800; cursor: pointer; 
             transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; font-size: 14px;
-            display: flex; align-items: center;    /* Mengetengahkan secara vertikal */
-            justify-content: center; /* Mengetengahkan secara horizontal */
-            gap: 8px;               /* Memberi jarak antara ikon dan teks */
+            display: flex; align-items: center; justify-content: center;
+            gap: 8px;
         }
         .btn-start:hover { background: #098a4a; transform: translateY(-2px); }
 
-        /* --- CSS INTERFACE UJIAN ORIGINAL --- */
+        /* --- CSS INTERFACE UJIAN --- */
         .header-ujian { background: #0CA458; color: white; padding: 0 15px; position: fixed; top: 0; width: 100%; height: 70px; display: none; justify-content: space-between; align-items: center; z-index: 100; box-sizing: border-box; box-shadow: 0 3px 12px rgba(0,0,0,0.2); }
         .identity-area { display: flex; align-items: center; gap: 10px; }
         .avatar-circle { width: 40px; height: 40px; background: #ffffff33; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; border: 1px solid #ffffff66; }
@@ -115,7 +113,7 @@
 </head>
 <body>
 
-<!-- HALAMAN VALIDASI DATA (VERSI BARU) -->
+<!-- HALAMAN VALIDASI DATA -->
 <div id="halaman-validasi">
     <div class="header-validasi-content">
         <span class="material-icons-round" style="font-size: 50px;">fact_check</span>
@@ -125,7 +123,6 @@
 
     <div class="validasi-box">
         <h2 style="margin-top: 0; color: #0CA458; font-size: 18px; font-weight: 800;">DATA PESERTA</h2>
-        
         <div class="data-display">
             <div class="data-label">Nama Peserta</div>
             <div id="val-nama" class="data-value">-</div>
@@ -134,9 +131,7 @@
             <div class="data-label">Mata Pelajaran</div>
             <div id="val-mapel" class="data-value">-</div>
         </div>
-        
         <button class="btn-start" onclick="mulaiUjianSekarang()">MULAI MENGERJAKAN</button>
-        
         <div style="margin-top: 15px; padding-top: 10px; border-top: 1px solid #eee;">
             <p onclick="history.back()" style="color:#d32f2f; font-size:11px; cursor:pointer; font-weight:bold; margin:0;">
                 Data Salah? <span style="text-decoration:underline;">Kembali ke Login</span>
@@ -145,7 +140,7 @@
     </div>
 </div>
 
-<!-- MODAL PERINGATAN -->
+<!-- MODAL PERINGATAN SOAL KOSONG -->
 <div id="modalPeringatan" class="modal-overlay">
     <div class="modal-box" style="border-top: 6px solid #d32f2f;">
         <div style="color:#d32f2f;"><span class="material-icons-round" style="font-size:60px;">report_problem</span></div>
@@ -153,6 +148,16 @@
         <p style="font-size:14px; color:#666;">Silakan lengkapi jawaban untuk nomor soal berikut:</p>
         <div id="daftar-kosong" style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin:20px 0; padding:10px; background:#fafafa; border-radius:10px;"></div>
         <button onclick="tutupPeringatan()" style="width:100%; padding:15px; border-radius:10px; background:#0CA458; color:white; border:none; cursor:pointer; font-weight:bold;">KEMBALI KE SOAL</button>
+    </div>
+</div>
+
+<!-- MODAL PERINGATAN FULLSCREEN (BARU) -->
+<div id="modalPaksaFullscreen" class="modal-overlay">
+    <div class="modal-box" style="border-top: 6px solid #d32f2f;">
+        <div style="color:#d32f2f;"><span class="material-icons-round" style="font-size:60px;">fullscreen_exit</span></div>
+        <h3 style="margin:15px 0 5px; font-size:20px; color:#d32f2f;">Mode Layar Penuh Keluar!</h3>
+        <p style="font-size:14px; color:#666;">Anda dilarang keluar dari mode layar penuh selama ujian berlangsung.</p>
+        <button onclick="kembaliKeFullscreen()" style="width:100%; padding:15px; border-radius:10px; background:#d32f2f; color:white; border:none; cursor:pointer; font-weight:bold; margin-top:10px;">KEMBALI FULLSCREEN</button>
     </div>
 </div>
 
@@ -259,6 +264,15 @@
     };
 
     function mulaiUjianSekarang() {
+        requestFullscreen();
+        document.getElementById('halaman-validasi').style.display = 'none';
+        document.querySelector('.header-ujian').style.display = 'flex';
+        document.querySelector('.container').style.display = 'block';
+        muatSoal();
+    }
+
+    // FUNGSI REQUEST FULLSCREEN
+    function requestFullscreen() {
         let elem = document.documentElement;
         if (elem.requestFullscreen) {
             elem.requestFullscreen();
@@ -267,18 +281,24 @@
         } else if (elem.msRequestFullscreen) {
             elem.msRequestFullscreen();
         }
-
-        document.getElementById('halaman-validasi').style.display = 'none';
-        document.querySelector('.header-ujian').style.display = 'flex';
-        document.querySelector('.container').style.display = 'block';
-        muatSoal();
     }
 
+    // DETEKSI PERUBAHAN LAYAR PENUH
     document.addEventListener('fullscreenchange', () => {
-        if (!document.fullscreenElement) {
-            alert("Peringatan: Jangan keluar dari mode layar penuh selama ujian berlangsung!");
+        // Cek apakah header ujian sedang tampil (artinya ujian sedang berjalan)
+        const sedangUjian = document.querySelector('.header-ujian').style.display === 'flex';
+        const sudahSelesai = document.getElementById('hasil-akhir').style.display === 'flex';
+
+        if (!document.fullscreenElement && sedangUjian && !sudahSelesai) {
+            document.getElementById('modalPaksaFullscreen').style.display = 'flex';
         }
     });
+
+    // KEMBALI KE FULLSCREEN SAAT KLIK OKE
+    function kembaliKeFullscreen() {
+        requestFullscreen();
+        document.getElementById('modalPaksaFullscreen').style.display = 'none';
+    }
     
     async function muatSoal() { 
         try { 
