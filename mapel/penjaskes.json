@@ -96,7 +96,7 @@
       "Ditegakkan",
       "Dibungkukkan"
     ],
-    "jawaban": 2
+    "jawaban": 1
   },
   {
     "id": 10,
@@ -294,7 +294,7 @@
       "muntah-muntah",
       "patah tulang"
     ],
-    "jawaban": 1
+    "jawaban": 2
   },
   {
     "id": 28,
@@ -328,5 +328,19 @@
       "sirih"
     ],
     "jawaban": 0
+  },
+
+  {
+    "id": 31,
+    "pertanyaan": "PENCOCOKAN <img src='https://i.ibb.co.com/3y2pxf0J/pjok31-35.png' class='img-post'> <br>",
+    "pilihan": [" "],
+    "jawaban": 0
+  },
+
+  {
+    "id": 36,
+    "pertanyaan": "ESAI DAN ISIAN: \n36. Senam lantai adalah senam yang dilakukan di atas lantai menggunakan … \n37. Latihan Push Up sangat efektif untuk melatih kekuatan otot … \n38. Sikap pesawat terbang merupakan salah satu bentuk latihan untu melatih … \n39. Jenis latihan yang bertujuan untuk meningkatkan kekuatan otot perut adalah … \n40. Kayang merupakan jenis latian dalam senam lantai yang bertujuan untuk … \n41. Kemampuan tubuh untuk melakukan aktivitas sehari-hari tanpa mengalami kekalahan berlebihan disebut … \n42. P3K singkatan dari … \n43. Kasa steril dan plester dalam kotak P3K di gunakan untuk … \n44. Alat yang digunakan untuk memotong perban atau pakaian korban adalah … \n45. Cairan antiseptic seperti obat merah berfungsi untuk … \n46. Apa yang di maksud dengan kebugaran Jasmani? \n47. Sebutkan 2 jenis latihan aktivitas Kebugaran Jasmani? \n48. Bagaimana cara melakukan sikap Push Up? (beserta langkah-langkahnya) \n49. Sebutkan 2 alat yang ada di kotak P3K? \n50. Apa fungsi gunting dalam P3K?",
+    "pilihan": [],
+    "jawaban": null
   }
 ]
