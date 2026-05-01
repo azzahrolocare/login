@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cbt-azzahro-cache-v1';
+const CACHE_NAME = 'cbt-azzahro-v1.0.1';
 const assetsToCache = [
   './login.html',
   './ujian.html',
