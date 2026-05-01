@@ -20,35 +20,26 @@
 
         .img-post { max-width: 100%; height: auto; display: block; }
 
-        /* --- HALAMAN VALIDASI DATA (STYLING SEPERTI LOGIN) --- */
+        /* --- HALAMAN VALIDASI DATA (LATAR BELAKANG DUA WARNA) --- */
         #halaman-validasi {
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
-            background-color: #f0f2f5;
+            /* Latar belakang: Hijau 45% ke atas, Abu-abu sisanya ke bawah */
+            background: linear-gradient(#0CA458 45%, #f0f2f5 45%);
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             z-index: 5000;
         }
 
-        .top-banner-validasi {
-            background: #0CA458;
-            height: 250px;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .header-validasi-content {
+            text-align: center;
             color: white;
-            position: absolute;
-            top: 0;
-            z-index: 1;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
         }
 
         .validasi-box {
-            position: relative;
-            z-index: 2;
-            margin-top: 130px; 
             background: white;
             padding: 35px 30px;
             border-radius: 15px;
@@ -69,7 +60,7 @@
         .data-label { font-size: 11px; color: #888; font-weight: bold; text-transform: uppercase; }
         .data-value { font-size: 18px; color: #0CA458; font-weight: 800; margin-bottom: 10px; }
         
-        /* --- CSS LAINNYA TETAP --- */
+        /* --- CSS UJIAN TETAP --- */
         .header-ujian { background: #0CA458; color: white; padding: 0 15px; position: fixed; top: 0; width: 100%; height: 70px; display: none; justify-content: space-between; align-items: center; z-index: 100; box-sizing: border-box; box-shadow: 0 3px 12px rgba(0,0,0,0.2); }
         .identity-area { display: flex; align-items: center; gap: 10px; }
         .avatar-circle { width: 40px; height: 40px; background: #ffffff33; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; border: 1px solid #ffffff66; }
@@ -113,13 +104,11 @@
 <body>
 
 <div id="halaman-validasi">
-    <!-- Banner Hijau Atas ala Login -->
-    <div class="top-banner-validasi">
-        <div style="text-align: center; margin-bottom: 50px;">
-            <span class="material-icons-round" style="font-size: 60px;">fact_check</span>
-            <h1 style="margin: 0; font-size: 26px; letter-spacing: 2px; font-weight: 900;">KONFIRMASI</h1>
-            <p style="margin: 0; font-size: 14px; opacity: 0.8;">CBT Azzahro Application</p>
-        </div>
+    <!-- Konten Header di bagian Hijau -->
+    <div class="header-validasi-content">
+        <span class="material-icons-round" style="font-size: 60px;">fact_check</span>
+        <h1 style="margin: 0; font-size: 26px; letter-spacing: 2px; font-weight: 900;">KONFIRMASI</h1>
+        <p style="margin: 0; font-size: 14px; opacity: 0.8;">CBT Azzahro Application</p>
     </div>
 
     <!-- Kotak Putih Validasi -->
@@ -146,7 +135,7 @@
     </div>
 </div>
 
-<!-- SISA KODE HTML BERIKUTNYA (MODAL, HEADER, CONTAINER) TETAP SAMA -->
+<!-- SISA KODE (MODAL, HEADER, CONTAINER, SCRIPT) TETAP SAMA SEPERTI SEBELUMNYA -->
 <div id="modalPeringatan" class="modal-overlay">
     <div class="modal-box" style="border-top: 6px solid #d32f2f;">
         <div style="color:#d32f2f;"><span class="material-icons-round" style="font-size:60px;">report_problem</span></div>
