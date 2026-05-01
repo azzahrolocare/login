@@ -1,0 +1,243 @@
+[
+  {
+    "id": 1,
+    "pertanyaan": "Sebelum melakukan senam irama, sebaiknya melakukan …",
+    "pilihan": ["Pemanasan", "Pendinginan", "Lari", "Salto"],
+    "jawaban": 0
+  },
+  {
+    "id": 2,
+    "pertanyaan": "Salah satu ciri senam irama adalah dilakukan dengan menambahkan …",
+    "pilihan": ["Tenaga", "Gerakan", "Nada", "Music"],
+    "jawaban": 3
+  },
+  {
+    "id": 3,
+    "pertanyaan": "Gerakan senam yang dilakukan dengan iringan irama disebut senam …",
+    "pilihan": ["Ritmis /irama", "Alat", "Lantai", "Aerobic"],
+    "jawaban": 0
+  },
+  {
+    "id": 4,
+    "pertanyaan": "Berikut yang tidak perlu diperhatikan dalam senanm irama adalah …",
+    "pilihan": ["Gerakan secara alami", "Latihan gerakan yang mudah", "Pemanasan", "Makan yang banyak"],
+    "jawaban": 3
+  },
+  {
+    "id": 5,
+    "pertanyaan": "Senam irama merupakan jenis senam yang indah karena …",
+    "pilihan": [
+      "Kontinuitas gerakan-gerakan yang sejenis",
+      "Kombinasi gerakan-gerakan dasar yang selaras dan berirama",
+      "Aktivitas gerakan yang berulang-ulang dan tetap",
+      "Gerakan-gerakan yang dipraktikkan monoton"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 6,
+    "pertanyaan": "Sumber gerakan saat melakukan gerak ayunan dua lengan adalah …",
+    "pilihan": ["Siku lengan", "Bahu lengan", "Pergelangan tangan", "Jari-jari lengan"],
+    "jawaban": 1
+  },
+  {
+    "id": 7,
+    "pertanyaan": "Berikut yang bukan termasuk gerakan senam irama ialah …",
+    "pilihan": ["Langkah depan", "Langkah silang", "Langkah satu lengan", "Berguling"],
+    "jawaban": 3
+  },
+  {
+    "id": 8,
+    "pertanyaan": "Sikap awal kedua kaki saat melakukan gerak meroda adalah …",
+    "pilihan": ["Rapat", "Ditekuk", "Dibuka selebar bahu", "Kaki kanan sedikit di depan"],
+    "jawaban": 2
+  },
+  {
+    "id": 9,
+    "pertanyaan": "Posisi badan yang benar saat melakukan gerak meroda adalah …",
+    "pilihan": ["Disilangkan", "Dimiringkan", "Ditegakkan", "Dibungkukkan"],
+    "jawaban": 1
+  },
+  {
+    "id": 10,
+    "pertanyaan": "Gerakan senam lantai yang mengandalkan kekuatan otot lengan adalah …",
+    "pilihan": ["Guling lenting", "Guling depan", "Meroda", "Loncat harimau"],
+    "jawaban": 2
+  },
+  {
+    "id": 11,
+    "pertanyaan": "Bentuk gerakan meroda yang benar adalah …",
+    "pilihan": [
+      "Berputar menyamping arah gerakan",
+      "Berputar menyilang arah gerakan",
+      "Berputar meliuk arah gerakan",
+      "Berputar menghadap arah gerakan"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 12,
+    "pertanyaan": "Senam lantai adalah senam yang dilakukan di atas matras menggunakan …",
+    "pilihan": ["Kertas", "Karpet", "Matras", "Kasur"],
+    "jawaban": 2
+  },
+  {
+    "id": 13,
+    "pertanyaan": "Guling depan dilakukan dengan cara menggulingkan … ke depan.",
+    "pilihan": ["Kaki", "Tangan", "Tubuh", "kepala"],
+    "jawaban": 2
+  },
+  {
+    "id": 14,
+    "pertanyaan": "Sikap lilin dilakukan dengan posisi awal badan …",
+    "pilihan": ["Telentang", "Berdiri", "Jongkok", "Duduk"],
+    "jawaban": 0
+  },
+  {
+    "id": 15,
+    "pertanyaan": "Keterampilan yang terlatih dari Latihan Handstand adalah .,.",
+    "pilihan": ["Kelincahan", "Kelenturan", "Kecepatan", "Keseimbangan"],
+    "jawaban": 3
+  },
+  {
+    "id": 16,
+    "pertanyaan": "Agar kebugaran jasmani meningkat, hal yang harus dilakukan adalah…",
+    "pilihan": [
+      "Tidur seharian penuh tanpa olahraga",
+      "Latihan fisik teratur minimal 150 menit per minggu",
+      "Mengonsumsi makanan cepat saji setiap hari",
+      "Menghindari semua jenis aktivitas fisik"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 17,
+    "pertanyaan": "Kebugaran jasmani adalah kemampuan tubuh untuk…",
+    "pilihan": [
+      "Melakukan aktivitas fisik secara efisien dan efektif",
+      "Menjadi juara dalam lomba olahraga",
+      "Menghindari segala bentuk penyakit",
+      "Mengatur pola makan sehari-hari"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 18,
+    "pertanyaan": "Salah satu manfaat utama kebugaran jasmani adalah…",
+    "pilihan": [
+      "Menambah kecerdasan verbal",
+      "Meningkatkan kesehatan jantung dan paru-paru",
+      "Menurunkan kemampuan motorik",
+      "Mengurangi waktu istirahat"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 19,
+    "pertanyaan": "Berikut ini yang termasuk komponen kebugaran jasmani adalah…",
+    "pilihan": [
+      "Kekuatan otot, daya tahan, fleksibilitas, dan keseimbangan",
+      "Warna pakaian saat olahraga",
+      "Tinggi badan dan berat badan",
+      "Jenis musik pengiring olahraga"
+    ],
+    "jawaban": 0
+  },
+  {
+    "id": 20,
+    "pertanyaan": "Yang dimaksud dengan kebugaran jasmani adalah...",
+    "pilihan": [
+      "Kemampuan tubuh untuk bergerak cepat",
+      "Kemampuan tubuh melakukan aktivitas tanpa kelelahan berlebih",
+      "Kemampuan otak untuk berpikir logis",
+      "Kemampuan seseorang dalam melakukan olahraga berat"
+    ],
+    "jawaban": 1
+  },
+  {
+    "id": 21,
+    "pertanyaan": "Push Up merupakan jenis latihan untuk melatih kekuatan …",
+    "pilihan": ["Otot lengan", "Otot kaki", "Otot Leher", "Otot perut"],
+    "jawaban": 0
+  },
+  {
+    "id": 22,
+    "pertanyaan": "latihan Sit Up bertujuan untuk melatih otot …",
+    "pilihan": ["Otot lengan", "Otot kaki", "Otot Leher", "Otot perut"],
+    "jawaban": 3
+  },
+  {
+    "id": 23,
+    "pertanyaan": "Latihan Back Up bertujuan untuk melatih otot …",
+    "pilihan": ["Otot lengan", "Otot pinggul", "Otot Leher", "Otot perut"],
+    "jawaban": 1
+  },
+  {
+    "id": 24,
+    "pertanyaan": "Penyebab utama dari terjadinya kecelakaan yang menimpa seseorang dimanapun berada adalah....",
+    "pilihan": [
+      "Tidak fokus saat melakukan kegiatan",
+      "Memiliki riwayat penyakit bawaan",
+      "Kelalaian pribadi",
+      "Kurang terampil melakukan suatu tugas"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 25,
+    "pertanyaan": "Pertolongan sementara yang diberikan kepada seseorang yang menderita sakit atau kecelakaan sebelum mendapat pertolongan dari tenaga medis atau dokter, yang sifatnya memberikan perasaan tenang kepada korban, serta mencegah atau mengurangi rasa sakit adalah pengertian dari....",
+    "pilihan": [
+      "Pertolongan awal pada kecelakaan",
+      "Pertolongan lanjutan pada korban luka",
+      "Pertolongan klinis pertama pada kecelakaan",
+      "Pertolongan pertama pada kecelakaan"
+    ],
+    "jawaban": 3
+  },
+  {
+    "id": 26,
+    "pertanyaan": "Apa yang harus dilakukan pertama kali saat menemukan korban kecelakaan …",
+    "pilihan": ["mencari bantuan", "memeriksa kondisi korban", "Memberikan pertolongan pertama", "Menghubungi polisi"],
+    "jawaban": 1
+  },
+  {
+    "id": 27,
+    "pertanyaan": "macam-macam gangguan umum yang terjadi pada P3K, kecuali …",
+    "pilihan": ["pingsan", "mati suri", "muntah-muntah", "patah tulang"],
+    "jawaban": 1
+  },
+  {
+    "id": 28,
+    "pertanyaan": "Kepanjangan P3K adalah …",
+    "pilihan": [
+      "pertolongan pertama pada korban",
+      "pertolongan pertama pada korban kecelakaan",
+      "pertolongan pertama pada kecelakaan",
+      "pertolongan pada korban kecelakaan"
+    ],
+    "jawaban": 2
+  },
+  {
+    "id": 29,
+    "pertanyaan": "kotak P3K ditandai dengan tanda …",
+    "pilihan": ["minus", "kali", "plus", "bagi"],
+    "jawaban": 2
+  },
+  {
+    "id": 30,
+    "pertanyaan": "cara menghentikan pendarahan dengan mudah menggunakan …",
+    "pilihan": ["tensoplas / plaster", "tanah", "garam", "sirih"],
+    "jawaban": 0
+  },
+  {
+    "id": 31,
+    "pertanyaan": "Pencocokan! <img src='https://i.ibb.co.com/3y2pxf0J/pjok31-35.png' class='img-post'> <br>",
+    "pilihan": [],
+    "jawaban": null
+  },
+    "id": 32,
+    "pertanyaan": "ISILAH TITIK-TITIK DAN JAWABLAH PERTANYAAN DI BAWAH INI DENGAN BENAR!<br><br>1. Senam lantai adalah senam yang dilakukan di atas lantai menggunakan …<br>2. Latihan Push Up sangat efektif untuk melatih kekuatan otot …<br>3. Sikap pesawat terbang merupakan salah satu bentuk latihan untuk melatih …<br>4. Jenis latihan yang bertujuan untuk meningkatkan kekuatan otot perut adalah …<br>5. Kayang merupakan jenis latihan dalam senam lantai yang bertujuan untuk …<br>6. Kemampuan tubuh untuk melakukan aktivitas sehari-hari tanpa mengalami kelelahan berlebihan disebut …<br>7. P3K singkatan dari …<br>8. Kasa steril dan plester dalam kotak P3K digunakan untuk …<br>9. Alat yang digunakan untuk memotong perban atau pakaian korban adalah …<br>10. Cairan antiseptic seperti obat merah berfungsi untuk …<br><br>URAIAN:<br>1. Apa yang dimaksud dengan kebugaran Jasmani?<br>2. Sebutkan 2 jenis latihan aktivitas Kebugaran Jasmani?<br>3. Bagaimana cara melakukan sikap Push Up? (beserta langkah-langkahnya)<br>4. Sebutkan 2 alat yang ada di kotak P3K?<br>5. Apa fungsi gunting dalam P3K?",
+    "pilihan": [],
+    "jawaban": null
+  }
+]
