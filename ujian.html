@@ -493,6 +493,37 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
+
+    // VARIABEL UNTUK ZOOM
+let tingkatZoom = 1; // 1 berarti 100%
+
+document.addEventListener('keydown', function(event) {
+    // Deteksi tombol Volume Up (AudioVolumeUp) dan Volume Down (AudioVolumeDown)
+    // Catatan: Beberapa browser/perangkat menggunakan 'VolumeUp' atau 'VolumeDown'
+    
+    if (event.key === "AudioVolumeUp" || event.key === "VolumeUp") {
+        event.preventDefault(); // Mencegah bar volume muncul (jika didukung browser)
+        zoomAction(0.1); // Perbesar 10%
+    } 
+    else if (event.key === "AudioVolumeDown" || event.key === "VolumeDown") {
+        event.preventDefault(); // Mencegah bar volume muncul (jika didukung browser)
+        zoomAction(-0.1); // Perkecil 10%
+    }
+});
+
+function zoomAction(delta) {
+    tingkatZoom += delta;
+    
+    // Batasi agar tidak terlalu kecil atau terlalu besar (50% - 200%)
+    tingkatZoom = Math.min(Math.max(0.5, tingkatZoom), 2);
+    
+    // Terapkan zoom pada body atau kontainer utama
+    document.body.style.transform = `scale(${tingkatZoom})`;
+    document.body.style.transformOrigin = "top center"; // Agar zoom tetap rapi di tengah atas
+    document.body.style.width = (100 / tingkatZoom) + "%"; // Menyesuaikan lebar agar tidak terpotong
+}
+
+    
 </script>
 </body>
 </html>
