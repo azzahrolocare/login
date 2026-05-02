@@ -83,7 +83,6 @@
         .menu-nomor-content { display: none; position: fixed; top: 75px; right: 15px; background: white; width: 280px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); padding: 20px; z-index: 1000; max-height: 70vh; overflow-y: auto; border: 1px solid #ddd; }
         .menu-nomor-content.show { display: block; animation: fadeIn 0.2s; }
         
-        /* Modifikasi Container untuk Zoom */
         .container { 
             display: none; 
             max-width: 800px; 
@@ -95,8 +94,8 @@
             box-sizing: border-box; 
             width: 95%; 
             min-height: 400px; 
+            transition: transform 0.2s ease-out; /* Untuk efek zoom */
             transform-origin: top center;
-            transition: transform 0.2s ease-out;
         }
 
         #hasil-akhir { display: none; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px 5px; }
@@ -111,27 +110,40 @@
         .kotak-nomor.aktif { border: 3px solid #f9a825; transform: scale(1.1); }
         .kotak-belum { width: 35px; height: 35px; background: #ffebee; color: #c62828; border: 1px solid #ffcdd2; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: bold; }
         
-        /* NAVIGASI BAWAH BARU */
-        .bottom-nav {
+        /* Navigasi Bawah Sticky Baru */
+        .btn-group { 
             position: fixed;
             bottom: 0;
             left: 0;
             width: 100%;
-            background: white;
-            display: none; /* Muncul saat ujian */
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 20px;
-            box-sizing: border-box;
-            box-shadow: 0 -3px 15px rgba(0,0,0,0.1);
-            z-index: 110;
-            gap: 15px;
+            display: flex; 
+            justify-content: center; 
+            padding: 10px;
+            gap: 15px; 
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(5px);
+            border-top: 1px solid #ddd;
+            z-index: 999;
         }
-
-        .btn { padding: 12px 18px; border-radius: 8px; border: none; font-weight: 700; cursor: pointer; font-size: 12px; display: flex; align-items: center; gap: 8px; flex: 1; justify-content: center; }
-        .btn-back { background: #eceff1; color: #455a64; }
+        
+        .btn { 
+            padding: 8px 15px; /* Lebih kecil */
+            border-radius: 20px; 
+            border: none; 
+            font-weight: 700; 
+            cursor: pointer; 
+            font-size: 11px; /* Font kecil */
+            display: flex; 
+            align-items: center; 
+            gap: 5px; 
+            min-width: 100px;
+            justify-content: center; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .btn-back { background: #455a64; color: white; }
         .btn-next { background: #3EC381; color: white; }
         .btn-finish { background: #0CA458; color: white; }
+
         .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display: none; justify-content: center; align-items: center; z-index: 2000; backdrop-filter: blur(4px); }
         .modal-box { background: white; padding: 30px; border-radius: 20px; width: 85%; max-width: 400px; text-align: center; }
         .btn-lock { background: #ccc !important; cursor: not-allowed !important; opacity: 0.7; color: #666 !important; }
@@ -142,6 +154,31 @@
         .soal-card.active { display: block; animation: slideIn 0.3s; }
         @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
         .pilihan-label { display: flex; align-items: center; background: #fff; padding: 14px; margin: 10px 0; border: 1px solid #dee2e6; border-radius: 10px; cursor: pointer; }
+        
+        /* Floating Zoom Buttons (untuk layar sentuh) */
+        .zoom-controls {
+            position: fixed; 
+            bottom: 70px; 
+            right: 20px; 
+            z-index: 9999; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 10px;
+        }
+        .btn-zoom {
+            width: 45px; 
+            height: 45px; 
+            border-radius: 50%; 
+            border: none; 
+            color: white; 
+            font-size: 20px; 
+            font-weight: bold; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 </head>
 <body>
@@ -235,7 +272,7 @@
     <div class="nomor-navigasi" id="navigasiNomor"></div>
 </div>
 
-<div class="container" id="white-paper">
+<div class="container" id="zoom-container">
     <div id="konten-ujian">
         <div id="konten-soal">Memuat soal...</div>
     </div>
@@ -261,17 +298,17 @@
     </div>
 </div>
 
-<!-- NAVIGASI BAWAH (STATIS) -->
-<div class="bottom-nav" id="navigation-bar">
-    <button class="btn btn-back" onclick="navigasi(-1)"><span class="material-icons-round">arrow_back</span> KEMBALI</button>
-    <button class="btn btn-next" id="btnNext" onclick="navigasi(1)">LANJUT <span class="material-icons-round">arrow_forward</span></button>
-    <button class="btn btn-finish" id="btnSubmit" style="display:none;" onclick="cekKelengkapan()">SELESAI <span class="material-icons-round">task_alt</span></button>
+<!-- NAVIGASI BAWAH STICKY -->
+<div class="btn-group" id="navigasi-bawah" style="display:none;">
+    <button class="btn btn-back" onclick="navigasi(-1)"><span class="material-icons-round" style="font-size:16px;">arrow_back</span> KEMBALI</button>
+    <button class="btn btn-next" id="btnNext" onclick="navigasi(1)">LANJUT <span class="material-icons-round" style="font-size:16px;">arrow_forward</span></button>
+    <button class="btn btn-finish" id="btnSubmit" style="display:none;" onclick="cekKelengkapan()">SELESAI <span class="material-icons-round" style="font-size:16px;">task_alt</span></button>
 </div>
 
-<!-- TOMBOL ZOOM FLOATING (VISUAL) -->
-<div style="position: fixed; bottom: 85px; right: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 10px;">
-    <button onclick="zoomAction(0.1)" style="width: 50px; height: 50px; border-radius: 50%; border: none; background: #0CA458; color: white; font-size: 24px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.3); cursor: pointer;">+</button>
-    <button onclick="zoomAction(-0.1)" style="width: 50px; height: 50px; border-radius: 50%; border: none; background: #d32f2f; color: white; font-size: 24px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.3); cursor: pointer;">-</button>
+<!-- KONTROL ZOOM FLOATING -->
+<div class="zoom-controls" id="zoom-ui" style="display:none;">
+    <button class="btn-zoom" onclick="zoomAction(0.1)" style="background: #0CA458;">+</button>
+    <button class="btn-zoom" onclick="zoomAction(-0.1)" style="background: #d32f2f;">-</button>
 </div>
     
 <script>
@@ -310,25 +347,21 @@
         document.getElementById('halaman-validasi').style.display = 'none';
         document.querySelector('.header-ujian').style.display = 'flex';
         document.querySelector('.container').style.display = 'block';
-        document.getElementById('navigation-bar').style.display = 'flex';
+        document.getElementById('navigasi-bawah').style.display = 'flex';
+        document.getElementById('zoom-ui').style.display = 'flex';
         muatSoal();
     }
 
     function requestFullscreen() {
         let elem = document.documentElement;
-        if (elem.requestFullscreen) {
-            elem.requestFullscreen();
-        } else if (elem.webkitRequestFullscreen) {
-            elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) {
-            elem.msRequestFullscreen();
-        }
+        if (elem.requestFullscreen) { elem.requestFullscreen(); } 
+        else if (elem.webkitRequestFullscreen) { elem.webkitRequestFullscreen(); } 
+        else if (elem.msRequestFullscreen) { elem.msRequestFullscreen(); }
     }
 
     document.addEventListener('fullscreenchange', () => {
         const sedangUjian = document.querySelector('.header-ujian').style.display === 'flex';
         const sudahSelesai = document.getElementById('hasil-akhir').style.display === 'flex';
-
         if (!document.fullscreenElement && sedangUjian && !sudahSelesai) {
             document.getElementById('modalPaksaFullscreen').style.display = 'flex';
         }
@@ -366,22 +399,9 @@
         renderNav();
     }
 
-    // FUNGSI ZOOM
-    function zoomAction(delta) {
-        currentZoom += delta;
-        if (currentZoom < 0.5) currentZoom = 0.5;
-        if (currentZoom > 2.0) currentZoom = 2.0;
-        applyZoom();
-    }
-
-    function applyZoom() {
-        const paper = document.getElementById('white-paper');
-        paper.style.transform = `scale(${currentZoom})`;
-    }
-
     function toggleMenuNomor() { document.getElementById('menu-nomor').classList.toggle('show'); }
-    function keNomor(i) { indexSekarang = i; renderUjian(); document.getElementById('menu-nomor').classList.remove('show'); }
-    function navigasi(n) { let target = indexSekarang + n; if(target >= 0 && target < dataSoal.length){ indexSekarang = target; renderUjian(); } }
+    function keNomor(i) { indexSekarang = i; renderUjian(); document.getElementById('menu-nomor').classList.remove('show'); window.scrollTo(0,0); }
+    function navigasi(n) { let target = indexSekarang + n; if(target >= 0 && target < dataSoal.length){ indexSekarang = target; renderUjian(); window.scrollTo(0,0); } }
     
     function pilih(s, p) { 
         jawabanUser[s] = p; 
@@ -399,6 +419,25 @@
         document.getElementById('navigasiNomor').innerHTML = html;
         document.getElementById('btnNext').style.display = indexSekarang === dataSoal.length - 1 ? 'none' : 'flex';
         document.getElementById('btnSubmit').style.display = indexSekarang === dataSoal.length - 1 ? 'flex' : 'none';
+    }
+
+    /* FUNGSI ZOOM */
+    function zoomAction(delta) {
+        currentZoom += delta;
+        if (currentZoom < 0.5) currentZoom = 0.5;
+        if (currentZoom > 2.0) currentZoom = 2.0;
+        applyZoom();
+    }
+
+    function applyZoom() {
+        const container = document.getElementById('zoom-container');
+        container.style.transform = `scale(${currentZoom})`;
+        // Penyesuaian margin agar konten tidak terpotong saat zoom besar
+        if(currentZoom > 1) {
+            container.style.marginBottom = (100 * currentZoom) + "px";
+        } else {
+            container.style.marginBottom = "100px";
+        }
     }
 
     function cekKelengkapan() {
@@ -484,12 +523,15 @@
 
             document.getElementById('modalConfirm').style.display = 'none';
             document.getElementById('konten-ujian').style.display = 'none';
-            document.getElementById('navigation-bar').style.display = 'none';
+            document.getElementById('navigasi-bawah').style.display = 'none';
+            document.getElementById('zoom-ui').style.display = 'none';
             document.getElementById('btn-menu-nomor').style.display = 'none'; 
             document.getElementById('hasil-akhir').style.display = 'flex';
             document.getElementById('benar-tampil').innerText = benar;
             document.getElementById('total-tampil').innerText = dataSoal.length;
             localStorage.removeItem('drafJawaban'); 
+            currentZoom = 1.0;
+            applyZoom();
         } catch (e) {
             alert("Terjadi masalah saat mengirim. Periksa koneksi internet Anda.");
             btn.innerHTML = 'COBA LAGI';
@@ -515,38 +557,24 @@
         window.location.href = 'login.html'; 
     }
 
-    // KEYBOARD LISTENER (ZOOM & NAVIGATION)
+    // FITUR NAVIGASI & ZOOM KEYBOARD
     document.addEventListener('keydown', function(event) {
         const sedangUjian = document.querySelector('.container').style.display === 'block' && 
                             document.getElementById('hasil-akhir').style.display !== 'flex';
 
         if (sedangUjian) {
             switch(event.key) {
+                case "ArrowLeft": navigasi(-1); break;
+                case "ArrowRight": 
+                    if (indexSekarang === dataSoal.length - 1) cekKelengkapan(); else navigasi(1);
+                    break;
+                case "Enter": 
+                    if (indexSekarang === dataSoal.length - 1) cekKelengkapan(); else navigasi(1);
+                    break;
                 case "+":
-                case "=":
-                    zoomAction(0.1);
-                    break;
+                case "=": zoomAction(0.1); break;
                 case "-":
-                case "_":
-                    zoomAction(-0.1);
-                    break;
-                case "ArrowLeft":
-                    navigasi(-1);
-                    break;
-                case "ArrowRight":
-                    if (indexSekarang === dataSoal.length - 1) {
-                        cekKelengkapan();
-                    } else {
-                        navigasi(1);
-                    }
-                    break;
-                case "Enter":
-                    if (indexSekarang === dataSoal.length - 1) {
-                        cekKelengkapan();
-                    } else {
-                        navigasi(1);
-                    }
-                    break;
+                case "_": zoomAction(-0.1); break;
             }
         }
     });
