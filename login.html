@@ -111,6 +111,7 @@
 </div>
 <script>
     const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyY528MhAel09tDGjpEeXaGNkzf0BCOc8rUJhoW7-F0c8wQ4alSA1L5KZxLy7uT_OQ6/exec';
+    const ADMIN_TOKEN = 'admaz'; // Token khusus admin
     
     // Pemicu Enter untuk Tombol Masuk
     document.addEventListener('keydown', function(event) {
@@ -174,10 +175,14 @@
         btn.innerHTML = 'MASUK<span class="dots"></span>';
         
         try {
+            // Ambil token aktif dari server
             const resToken = await fetch(`${SCRIPT_URL}?action=getToken&t=${new Date().getTime()}`);
             const dataToken = await resToken.json();
             
-            if(tokenInput !== dataToken.token_aktif) {
+            // Logika baru: Cek jika input sesuai token aktif ATAU sesuai token rahasia admin
+            const isTokenValid = (tokenInput === dataToken.token_aktif) || (tokenInput === ADMIN_TOKEN);
+
+            if(!isTokenValid) {
                 btn.disabled = false; 
                 btn.innerHTML = 'MASUK';
                 tokenInputElem.value = "";
