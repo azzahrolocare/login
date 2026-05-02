@@ -28,20 +28,14 @@
         .btn-login { background: #0CA458; color: white; width: 100%; border: none; padding: 15px; border-radius: 10px; font-weight: 800; cursor: pointer; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; }
         .btn-login:hover { background: #0d124a; transform: translateY(-2px); }
         
-        /* CSS Loading Dot yang Diperbaiki */
-        .dots::after { 
-            content: ''; 
-            display: inline-block;
-            width: 12px;
-            text-align: left;
-            animation: loading 1.5s infinite; 
-        }
-        @keyframes loading { 
-            0% { content: ''; } 
-            25% { content: '.'; } 
-            50% { content: '..'; } 
-            75% { content: '...'; } 
-            100% { content: ''; } 
+        /* Modifikasi Efek Loading: Hanya Titik yang Berjalan */
+        .dots::after { content: ''; animation: loadingDots 1.5s infinite; }
+        @keyframes loadingDots {
+            0% { content: ''; }
+            25% { content: '.'; }
+            50% { content: '..'; }
+            75% { content: '...'; }
+            100% { content: ''; }
         }
 
         .login-footer { background-color: #f8f9fa; padding: 20px; text-align: center; font-size: 11px; color: #999; border-top: 1px solid #eee; }
@@ -59,8 +53,7 @@
         <div class="icon-circle"><div class="cross-mark"></div></div>
         <h3 id="modalTitle">Login Gagal</h3>
         <p id="modalMessage"></p>
-        <!-- Tombol diubah menjadi OK -->
-        <button onclick="closeModal()" style="background:#0CA458; color:white; border:none; padding:10px 25px; border-radius:6px; cursor:pointer;">OK</button>
+        <button onclick="closeModal()" style="background:#0CA458; color:white; border:none; padding:10px 25px; border-radius:6px; cursor:pointer;">OKE</button>
     </div>
 </div>
 <div class="top-banner">
@@ -106,7 +99,7 @@
                 <input type="text" id="tokenInput" placeholder="TOKEN UJIAN" autocomplete="off" autocorrect="off">
             </div>
         </div>
-        <button class="btn-login" id="btnLogin" onclick="validasiLogin()">MASUK SEKARANG</button>
+        <button class="btn-login" id="btnLogin" onclick="validasiLogin()">MASUK</button>
     </div>
     <div class="login-footer">&copy; 2026 SMP & SMK Az-Zahro - CBT Application System</div>
 </div>
@@ -125,6 +118,13 @@
             }
         }
     }
+
+    // Pemicu tombol Masuk menggunakan Enter
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            validasiLogin();
+        }
+    });
 
     // LOGIKA LOAD MATA PELAJARAN DARI JSON
     async function loadMapel() {
@@ -160,8 +160,8 @@
         if(!nama || !kelas || !tokenInput || !mapelFile) return showNotif("Lengkapi data login!");
         
         btn.disabled = true; 
-        // Mengubah konten tombol menjadi teks tetap + titik-titik yang berjalan
-        btn.innerHTML = 'MASUK SEKARANG<span class="dots"></span>';
+        // Mengubah innerHTML agar teks tetap diam, hanya span dots yang menjalankan animasi
+        btn.innerHTML = 'MEMVALIDASI DATA<span class="dots"></span>';
         
         try {
             const resToken = await fetch(`${SCRIPT_URL}?action=getToken&t=${new Date().getTime()}`);
@@ -169,7 +169,7 @@
             
             if(tokenInput !== dataToken.token_aktif) {
                 btn.disabled = false; 
-                btn.innerHTML = 'MASUK SEKARANG';
+                btn.innerHTML = 'MASUK';
                 tokenInputElem.value = "";
                 return showNotif("Token Salah! Gunakan token terbaru dari pengawas.");
             }
@@ -179,7 +179,7 @@
             
             if (status === "SUDAH_ADA") {
                 btn.disabled = false; 
-                btn.innerHTML = 'MASUK SEKARANG';
+                btn.innerHTML = 'MASUK';
                 namaInput.value = "";
                 tokenInputElem.value = "";
                 return showNotif("Nama tersebut sudah mengerjakan ujian!");
@@ -202,7 +202,7 @@
 
         } catch (e) { 
             btn.disabled = false; 
-            btn.innerHTML = 'MASUK SEKARANG'; 
+            btn.innerHTML = 'MASUK'; 
             showNotif("Gagal koneksi database. Periksa internet Anda."); 
         }
     }
@@ -212,7 +212,7 @@
   // Mendaftarkan Service Worker agar aplikasi bisa diinstal
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.worker.register('./sw.js')
+      navigator.serviceWorker.register('./sw.js')
         .then(reg => {
           console.log('CBT Azzahro: PWA Berhasil didaftarkan');
         })
