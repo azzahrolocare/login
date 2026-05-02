@@ -19,8 +19,6 @@
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
-            transition: transform 0.2s ease-in-out;
-            transform-origin: top center;
         }
 
         .img-post { max-width: 100%; height: auto; display: block; }
@@ -85,11 +83,11 @@
         .menu-nomor-content { display: none; position: fixed; top: 75px; right: 15px; background: white; width: 280px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); padding: 20px; z-index: 1000; max-height: 70vh; overflow-y: auto; border: 1px solid #ddd; }
         .menu-nomor-content.show { display: block; animation: fadeIn 0.2s; }
         
-        /* Container disesuaikan agar navigasi tetap terlihat bagus */
+        /* CONTAINER SOAL (Kertas Putih) */
         .container { 
             display: none; 
             max-width: 800px; 
-            margin: 90px auto 100px; /* Jarak bawah ditambah untuk tombol navigasi */
+            margin: 90px auto 20px; 
             background: white; 
             border-radius: 12px; 
             box-shadow: 0 5px 20px rgba(0,0,0,0.1); 
@@ -97,6 +95,8 @@
             box-sizing: border-box; 
             width: 95%; 
             min-height: 400px; 
+            transform-origin: top center; /* Penting untuk zoom */
+            transition: transform 0.2s ease-out;
         }
 
         #hasil-akhir { display: none; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 20px 5px; }
@@ -110,28 +110,21 @@
         .kotak-nomor.sudah { background: #0CA458 !important; color: white !important; }
         .kotak-nomor.aktif { border: 3px solid #f9a825; transform: scale(1.1); }
         .kotak-belum { width: 35px; height: 35px; background: #ffebee; color: #c62828; border: 1px solid #ffcdd2; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-weight: bold; }
-
-        /* Navigasi Fixed di Bawah */
-        .bottom-nav {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: white;
-            padding: 15px;
-            box-shadow: 0 -3px 15px rgba(0,0,0,0.1);
-            display: none; /* Muncul saat ujian mulai */
-            justify-content: center;
-            z-index: 99;
-            box-sizing: border-box;
+        
+        /* Navigasi di Luar Kertas Soal */
+        .navigation-wrapper {
+            max-width: 800px;
+            margin: 0 auto 50px;
+            width: 95%;
+            display: none; /* muncul bersama container */
         }
-
-        .btn-group { display: flex; justify-content: space-between; gap: 10px; width: 100%; max-width: 800px; }
-        .btn { padding: 12px 18px; border-radius: 8px; border: none; font-weight: 700; cursor: pointer; font-size: 12px; display: flex; align-items: center; gap: 8px; flex: 1; justify-content: center; }
-        .btn-back { background: #eceff1; color: #455a64; }
+        
+        .btn-group { display: flex; justify-content: space-between; margin-top: 15px; gap: 10px; }
+        .btn { padding: 15px 18px; border-radius: 8px; border: none; font-weight: 700; cursor: pointer; font-size: 14px; display: flex; align-items: center; gap: 8px; flex: 1; justify-content: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .btn-back { background: #ffffff; color: #455a64; border: 1px solid #ddd; }
         .btn-next { background: #3EC381; color: white; }
         .btn-finish { background: #0CA458; color: white; }
-        
+
         .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display: none; justify-content: center; align-items: center; z-index: 2000; backdrop-filter: blur(4px); }
         .modal-box { background: white; padding: 30px; border-radius: 20px; width: 85%; max-width: 400px; text-align: center; }
         .btn-lock { background: #ccc !important; cursor: not-allowed !important; opacity: 0.7; color: #666 !important; }
@@ -141,33 +134,36 @@
         .soal-card { display: none; }
         .soal-card.active { display: block; animation: slideIn 0.3s; }
         @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-        .pilihan-label { display: flex; align-items: center; background: #fff; padding: 14px; margin: 10px 0; border: 1px solid #dee2e6; border-radius: 10px; cursor: pointer; transition: 0.2s; }
-        .pilihan-label:hover { background: #f0fdf4; border-color: #0CA458; }
-
+        .pilihan-label { display: flex; align-items: center; background: #fff; padding: 14px; margin: 10px 0; border: 1px solid #dee2e6; border-radius: 10px; cursor: pointer; }
+        
         /* Floating Zoom Controls */
         .zoom-controls {
-            position: fixed;
-            bottom: 85px; /* Di atas navigasi bawah */
-            right: 20px;
-            z-index: 1000;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
+            position: fixed; 
+            bottom: 25px; 
+            right: 20px; 
+            z-index: 9999; 
+            display: flex; 
+            flex-direction: column; 
+            gap: 12px;
         }
         .btn-zoom {
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            border: none;
-            color: white;
-            font-size: 20px;
-            font-weight: bold;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            width: 55px; 
+            height: 55px; 
+            border-radius: 50%; 
+            border: none; 
+            color: white; 
+            font-size: 28px; 
+            font-weight: bold; 
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3); 
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: 0.2s;
         }
+        .btn-zoom:active { transform: scale(0.9); }
+        .bg-plus { background: #0CA458; }
+        .bg-minus { background: #d32f2f; }
     </style>
 </head>
 <body>
@@ -261,18 +257,13 @@
     <div class="nomor-navigasi" id="navigasiNomor"></div>
 </div>
 
-<!-- ZOOM CONTROLS -->
-<div class="zoom-controls" id="zoomArea" style="display: none;">
-    <button onclick="zoomAction(0.1)" class="btn-zoom" style="background: #0CA458;"><span class="material-icons-round">zoom_in</span></button>
-    <button onclick="zoomAction(-0.1)" class="btn-zoom" style="background: #d32f2f;"><span class="material-icons-round">zoom_out</span></button>
-</div>
-
-<div class="container">
-    <div id="konten-ujian">
+<!-- CONTAINER KERTAS SOAL -->
+<div class="container" id="examContainer">
+    <div id="konten-ujian-wrapper">
         <div id="konten-soal">Memuat soal...</div>
     </div>
 
-    <!-- HASIL AKHIR -->
+    <!-- HASIL AKHIR (Tetap di dalam container) -->
     <div id="hasil-akhir">
         <span class="material-icons-round" style="font-size:80px; color:#2e7d32;">check_circle</span>
         <h2 style="margin: 15px 0;">UJIAN SELESAI</h2>
@@ -293,13 +284,25 @@
     </div>
 </div>
 
-<!-- BOTTOM NAVIGATION -->
-<div class="bottom-nav" id="navBawah">
+<!-- NAVIGASI DI LUAR KERTAS SOAL -->
+<div class="navigation-wrapper" id="navWrapper">
     <div class="btn-group">
-        <button class="btn btn-back" onclick="navigasi(-1)"><span class="material-icons-round">arrow_back</span> KEMBALI</button>
-        <button class="btn btn-next" id="btnNext" onclick="navigasi(1)">LANJUT <span class="material-icons-round">arrow_forward</span></button>
-        <button class="btn btn-finish" id="btnSubmit" style="display:none;" onclick="cekKelengkapan()">SELESAI <span class="material-icons-round">task_alt</span></button>
+        <button class="btn btn-back" onclick="navigasi(-1)">
+            <span class="material-icons-round">arrow_back</span> KEMBALI
+        </button>
+        <button class="btn btn-next" id="btnNext" onclick="navigasi(1)">
+            LANJUT <span class="material-icons-round">arrow_forward</span>
+        </button>
+        <button class="btn btn-finish" id="btnSubmit" style="display:none;" onclick="cekKelengkapan()">
+            SELESAI <span class="material-icons-round">task_alt</span>
+        </button>
     </div>
+</div>
+
+<!-- TOMBOL ZOOM (FLOATING) -->
+<div class="zoom-controls">
+    <button onclick="zoomAction(0.1)" class="btn-zoom bg-plus" title="Perbesar">+</button>
+    <button onclick="zoomAction(-0.1)" class="btn-zoom bg-minus" title="Perkecil">-</button>
 </div>
 
 <script>
@@ -333,24 +336,24 @@
         document.getElementById('user-initial').innerText = userData.nama[0].toUpperCase();
     };
 
+    // FUNGSI ZOOM
+    function zoomAction(delta) {
+        currentZoom += delta;
+        // Batas zoom minimal 0.5x dan maksimal 2.0x
+        if (currentZoom < 0.5) currentZoom = 0.5;
+        if (currentZoom > 2.0) currentZoom = 2.0;
+        
+        const container = document.getElementById('examContainer');
+        container.style.transform = `scale(${currentZoom})`;
+    }
+
     function mulaiUjianSekarang() {
         requestFullscreen();
         document.getElementById('halaman-validasi').style.display = 'none';
         document.querySelector('.header-ujian').style.display = 'flex';
-        document.querySelector('.container').style.display = 'block';
-        document.getElementById('navBawah').style.display = 'flex';
-        document.getElementById('zoomArea').style.display = 'flex';
+        document.getElementById('examContainer').style.display = 'block';
+        document.getElementById('navWrapper').style.display = 'block';
         muatSoal();
-    }
-
-    // FUNGSI ZOOM (Mempengaruhi body/layar putih)
-    function zoomAction(delta) {
-        currentZoom += delta;
-        // Batasi zoom minimal 0.5 dan maksimal 2.0
-        if (currentZoom < 0.7) currentZoom = 0.7;
-        if (currentZoom > 1.5) currentZoom = 1.5;
-        document.body.style.transform = `scale(${currentZoom})`;
-        document.body.style.width = (100 / currentZoom) + "%";
     }
 
     function requestFullscreen() {
@@ -406,27 +409,13 @@
     }
 
     function toggleMenuNomor() { document.getElementById('menu-nomor').classList.toggle('show'); }
-    function keNomor(i) { indexSekarang = i; renderUjian(); document.getElementById('menu-nomor').classList.remove('show'); window.scrollTo(0,0); }
-    function navigasi(n) { 
-        let target = indexSekarang + n; 
-        if(target >= 0 && target < dataSoal.length){ 
-            indexSekarang = target; 
-            renderUjian(); 
-            window.scrollTo(0,0);
-        } 
-    }
+    function keNomor(i) { indexSekarang = i; renderUjian(); document.getElementById('menu-nomor').classList.remove('show'); }
+    function navigasi(n) { let target = indexSekarang + n; if(target >= 0 && target < dataSoal.length){ indexSekarang = target; renderUjian(); } }
     
     function pilih(s, p) { 
         jawabanUser[s] = p; 
         localStorage.setItem('drafJawaban', JSON.stringify(jawabanUser)); 
         renderNav(); 
-        
-        // Fitur Auto Move: Pindah otomatis ke soal berikutnya setelah 500ms
-        if (indexSekarang < dataSoal.length - 1) {
-            setTimeout(() => {
-                navigasi(1);
-            }, 400);
-        }
     }
 
     function renderNav() {
@@ -523,17 +512,13 @@
             await fetch(finalURL, { mode: 'no-cors' });
 
             document.getElementById('modalConfirm').style.display = 'none';
-            document.getElementById('konten-ujian').style.display = 'none';
+            document.getElementById('konten-ujian-wrapper').style.display = 'none';
+            document.getElementById('navWrapper').style.display = 'none';
             document.getElementById('btn-menu-nomor').style.display = 'none'; 
-            document.getElementById('navBawah').style.display = 'none';
-            document.getElementById('zoomArea').style.display = 'none';
             document.getElementById('hasil-akhir').style.display = 'flex';
             document.getElementById('benar-tampil').innerText = benar;
             document.getElementById('total-tampil').innerText = dataSoal.length;
             localStorage.removeItem('drafJawaban'); 
-            // Reset Zoom
-            document.body.style.transform = "scale(1)";
-            document.body.style.width = "100%";
         } catch (e) {
             alert("Terjadi masalah saat mengirim. Periksa koneksi internet Anda.");
             btn.innerHTML = 'COBA LAGI';
@@ -560,7 +545,7 @@
     }
 
     document.addEventListener('keydown', function(event) {
-        const sedangUjian = document.querySelector('.container').style.display === 'block' && 
+        const sedangUjian = document.getElementById('examContainer').style.display === 'block' && 
                             document.getElementById('hasil-akhir').style.display !== 'flex';
 
         if (sedangUjian) {
