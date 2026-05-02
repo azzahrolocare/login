@@ -461,6 +461,38 @@
         sessionStorage.removeItem('userCBT');
         window.location.href = 'login.html'; 
     }
+
+    // FITUR NAVIGASI REMOTE IFP
+document.addEventListener('keydown', function(event) {
+    // Pastikan navigasi keyboard hanya jalan jika sedang dalam mode ujian (bukan di hasil akhir/validasi)
+    const sedangUjian = document.querySelector('.container').style.display === 'block' && 
+                        document.getElementById('hasil-akhir').style.display !== 'flex';
+
+    if (sedangUjian) {
+        switch(event.key) {
+            case "ArrowLeft": // Remote tombol Kiri
+                navigasi(-1);
+                break;
+            case "ArrowRight": // Remote tombol Kanan
+                // Jika sudah di nomor terakhir, tombol kanan bisa memicu fungsi cek kelengkapan/Submit
+                if (indexSekarang === dataSoal.length - 1) {
+                    cekKelengkapan();
+                } else {
+                    navigasi(1);
+                }
+                break;
+            case "Enter": // Remote tombol OK/Enter
+                // Opsional: Bisa digunakan untuk mengonfirmasi pilihan atau klik tombol lanjut
+                if (indexSekarang === dataSoal.length - 1) {
+                    cekKelengkapan();
+                } else {
+                    navigasi(1);
+                }
+                break;
+        }
+    }
+});
+
 </script>
 </body>
 </html>
