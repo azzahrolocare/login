@@ -109,6 +109,36 @@
         .soal-card.active { display: block; animation: slideIn 0.3s; }
         @keyframes slideIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
         .pilihan-label { display: flex; align-items: center; background: #fff; padding: 14px; margin: 10px 0; border: 1px solid #dee2e6; border-radius: 10px; cursor: pointer; }
+
+        /* --- CSS BARU UNTUK ZOOM --- */
+        .zoom-controls { 
+            position: fixed; 
+            bottom: 20px; 
+            right: 20px; 
+            z-index: 9999; 
+            display: none; 
+            flex-direction: column; 
+            gap: 10px; 
+        }
+        .btn-zoom { 
+            width: 50px; 
+            height: 50px; 
+            border-radius: 50%; 
+            border: none; 
+            color: white; 
+            font-size: 24px; 
+            font-weight: bold; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
+            cursor: pointer; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            transition: 0.2s;
+        }
+        .btn-zoom:active { transform: scale(0.9); }
+        .zoom-in { background: #0CA458; }
+        .zoom-out { background: #d32f2f; }
+        #konten-soal { transition: transform 0.2s ease-in-out; transform-origin: top center; }
     </style>
 </head>
 <body>
@@ -233,11 +263,16 @@
     </div>
 </div>
 
-<div style="position: fixed; bottom: 20px; right: 20px; z-index: 9999; display: flex; flex-direction: column; gap: 10px;">
-    <button onclick="zoomAction(0.1)" style="width: 50px; height: 50px; border-radius: 50%; border: none; background: #0CA458; color: white; font-size: 24px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.3); cursor: pointer;">+</button>
-    <button onclick="zoomAction(-0.1)" style="width: 50px; height: 50px; border-radius: 50%; border: none; background: #d32f2f; color: white; font-size: 24px; font-weight: bold; box-shadow: 0 4px 10px rgba(0,0,0,0.3); cursor: pointer;">-</button>
+<!-- FLOATING ZOOM CONTROLS -->
+<div id="zoom-controls" class="zoom-controls">
+    <button class="btn-zoom zoom-in" onclick="ubahZoom(0.1)" title="Perbesar">
+        <span class="material-icons-round">add</span>
+    </button>
+    <button class="btn-zoom zoom-out" onclick="ubahZoom(-0.1)" title="Perkecil">
+        <span class="material-icons-round">remove</span>
+    </button>
 </div>
-    
+
 <script>
     let dataSoal = []; 
     let jawabanUser = JSON.parse(localStorage.getItem('drafJawaban')) || {}; 
@@ -245,6 +280,7 @@
     let timeLeft = 60; 
     let timerRunning = false;
     let timerInterval;
+    let zoomLevel = 1; // Level zoom default
 
     const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyY528MhAel09tDGjpEeXaGNkzf0BCOc8rUJhoW7-F0c8wQ4alSA1L5KZxLy7uT_OQ6/exec';
 
@@ -273,7 +309,19 @@
         document.getElementById('halaman-validasi').style.display = 'none';
         document.querySelector('.header-ujian').style.display = 'flex';
         document.querySelector('.container').style.display = 'block';
+        document.getElementById('zoom-controls').style.display = 'flex'; // Tampilkan tombol zoom
         muatSoal();
+    }
+
+    // FUNGSI ZOOM SOAL
+    function ubahZoom(delta) {
+        zoomLevel += delta;
+        // Batas zoom minimal 0.5x dan maksimal 2x
+        if (zoomLevel < 0.5) zoomLevel = 0.5;
+        if (zoomLevel > 2.0) zoomLevel = 2.0;
+        
+        const konten = document.getElementById('konten-soal');
+        konten.style.transform = `scale(${zoomLevel})`;
     }
 
     // FUNGSI REQUEST FULLSCREEN
@@ -290,7 +338,6 @@
 
     // DETEKSI PERUBAHAN LAYAR PENUH
     document.addEventListener('fullscreenchange', () => {
-        // Cek apakah header ujian sedang tampil (artinya ujian sedang berjalan)
         const sedangUjian = document.querySelector('.header-ujian').style.display === 'flex';
         const sudahSelesai = document.getElementById('hasil-akhir').style.display === 'flex';
 
@@ -299,7 +346,6 @@
         }
     });
 
-    // KEMBALI KE FULLSCREEN SAAT KLIK OKE
     function kembaliKeFullscreen() {
         requestFullscreen();
         document.getElementById('modalPaksaFullscreen').style.display = 'none';
@@ -438,6 +484,7 @@
             document.getElementById('modalConfirm').style.display = 'none';
             document.getElementById('konten-ujian').style.display = 'none';
             document.getElementById('btn-menu-nomor').style.display = 'none'; 
+            document.getElementById('zoom-controls').style.display = 'none'; // Sembunyikan zoom saat selesai
             document.getElementById('hasil-akhir').style.display = 'flex';
             document.getElementById('benar-tampil').innerText = benar;
             document.getElementById('total-tampil').innerText = dataSoal.length;
@@ -467,38 +514,40 @@
         window.location.href = 'login.html'; 
     }
 
-    // FITUR NAVIGASI REMOTE IFP
-document.addEventListener('keydown', function(event) {
-    // Pastikan navigasi keyboard hanya jalan jika sedang dalam mode ujian (bukan di hasil akhir/validasi)
-    const sedangUjian = document.querySelector('.container').style.display === 'block' && 
-                        document.getElementById('hasil-akhir').style.display !== 'flex';
+    // FITUR NAVIGASI KEYBOARD
+    document.addEventListener('keydown', function(event) {
+        const sedangUjian = document.querySelector('.container').style.display === 'block' && 
+                            document.getElementById('hasil-akhir').style.display !== 'flex';
 
-    if (sedangUjian) {
-        switch(event.key) {
-            case "ArrowLeft": // Remote tombol Kiri
-                navigasi(-1);
-                break;
-            case "ArrowRight": // Remote tombol Kanan
-                // Jika sudah di nomor terakhir, tombol kanan bisa memicu fungsi cek kelengkapan/Submit
-                if (indexSekarang === dataSoal.length - 1) {
-                    cekKelengkapan();
-                } else {
-                    navigasi(1);
-                }
-                break;
-            case "Enter": // Remote tombol OK/Enter
-                // Opsional: Bisa digunakan untuk mengonfirmasi pilihan atau klik tombol lanjut
-                if (indexSekarang === dataSoal.length - 1) {
-                    cekKelengkapan();
-                } else {
-                    navigasi(1);
-                }
-                break;
+        if (sedangUjian) {
+            switch(event.key) {
+                case "ArrowLeft":
+                    navigasi(-1);
+                    break;
+                case "ArrowRight":
+                    if (indexSekarang === dataSoal.length - 1) {
+                        cekKelengkapan();
+                    } else {
+                        navigasi(1);
+                    }
+                    break;
+                case "Enter":
+                    if (indexSekarang === dataSoal.length - 1) {
+                        cekKelengkapan();
+                    } else {
+                        navigasi(1);
+                    }
+                    break;
+                case "=": // Tombol + (tanpa shift) untuk zoom in
+                case "+":
+                    ubahZoom(0.1);
+                    break;
+                case "-": // Tombol - untuk zoom out
+                    ubahZoom(-0.1);
+                    break;
+            }
         }
-    }
-});
-
-    
+    });
 </script>
 </body>
 </html>
