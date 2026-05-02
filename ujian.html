@@ -233,8 +233,8 @@
     <div class="modal-box" style="border-top: 6px solid #d32f2f;">
         <div style="color:#d32f2f;"><span class="material-icons-round" style="font-size:60px;">fullscreen_exit</span></div>
         <h3 style="margin:15px 0 5px; font-size:20px; color:#d32f2f;">Mode Layar Penuh Keluar!</h3>
-        <p style="font-size:14px; color:#666;">Anda dilarang keluar dari mode layar penuh selama ujian berlangsung.</p>
-        <button onclick="kembaliKeFullscreen()" style="width:100%; padding:15px; border-radius:10px; background:#d32f2f; color:white; border:none; cursor:pointer; font-weight:bold; margin-top:10px;">KEMBALI FULLSCREEN</button>
+        <p style="font-size:14px; color:#666;">Anda dilarang keluar dari mode layar penuh atau menekan tombol kembali selama ujian berlangsung.</p>
+        <button onclick="kembaliKeFullscreen()" style="width:100%; padding:15px; border-radius:10px; background:#d32f2f; color:white; border:none; cursor:pointer; font-weight:bold; margin-top:10px;">KEMBALI FULL SCREEN</button>
     </div>
 </div>
 
@@ -353,7 +353,27 @@
         document.getElementById('user-initial').innerText = userData.nama[0].toUpperCase();
     };
 
+    // Fungsi untuk mencegah navigasi "Back" dari sistem/browser
+    function trapBackButton() {
+        // Tambahkan state palsu ke history stack
+        window.history.pushState(null, null, window.location.href);
+        window.onpopstate = function() {
+            const sedangUjian = document.getElementById('main-wrapper').style.display === 'block';
+            const sudahSelesai = document.getElementById('hasil-akhir').style.display === 'flex';
+
+            if (sedangUjian && !sudahSelesai) {
+                // Dorong kembali state palsu jika user klik tombol kembali
+                window.history.pushState(null, null, window.location.href);
+                // Tampilkan modal fullscreen sebagai peringatan
+                document.getElementById('modalPaksaFullscreen').style.display = 'flex';
+                // Coba kembalikan fullscreen otomatis (beberapa browser membolehkan)
+                requestFullscreen();
+            }
+        };
+    }
+
     function mulaiUjianSekarang() {
+        trapBackButton(); // Aktifkan penjebak tombol back saat ujian mulai
         requestFullscreen();
         document.getElementById('halaman-validasi').style.display = 'none';
         document.querySelector('.header-ujian').style.display = 'flex';
@@ -534,6 +554,8 @@
             document.getElementById('benar-tampil').innerText = benar;
             document.getElementById('total-tampil').innerText = dataSoal.length;
             localStorage.removeItem('drafJawaban'); 
+            // Setelah selesai, reset onpopstate agar user bisa kembali secara normal
+            window.onpopstate = null;
         } catch (e) {
             alert("Terjadi masalah saat mengirim. Periksa koneksi internet Anda.");
             btn.innerHTML = 'COBA LAGI';
