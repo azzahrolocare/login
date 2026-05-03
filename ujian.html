@@ -163,6 +163,18 @@
         .btn-next { background: #3EC381; color: white; }
         .btn-finish { background: #0CA458; color: white; }
 
+        /* Style untuk Ikon dengan Background Lingkaran */
+        .icon-circle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: rgba(0,0,0,0.1);
+        }
+        .btn-next .icon-circle { background: rgba(255,255,255,0.2); }
+
         .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display: none; justify-content: center; align-items: center; z-index: 2000; backdrop-filter: blur(4px); }
         .modal-box { background: white; padding: 30px; border-radius: 20px; width: 85%; max-width: 400px; text-align: center; }
         .btn-lock { background: #ccc !important; cursor: not-allowed !important; opacity: 0.7; color: #666 !important; }
@@ -328,9 +340,15 @@
 <!-- NAVIGASI BAWAH FIXED -->
 <div class="fixed-footer-nav" id="footer-nav">
     <div class="btn-group">
-        <button class="btn btn-back" onclick="navigasi(-1)"><span class="material-icons-round">chevron_left</span> Sebelumnya</button>
-        <button class="btn btn-next" id="btnNext" onclick="navigasi(1)">Selanjutnya <span class="material-icons-round">chevron_right</span></button>
-        <button class="btn btn-finish" id="btnSubmit" style="display:none;" onclick="cekKelengkapan()">SELESAI <span class="material-icons-round">task_alt</span></button>
+        <button class="btn btn-back" onclick="navigasi(-1)">
+            <div class="icon-circle"><span class="material-icons-round">chevron_left</span></div> SEBELUMNYA
+        </button>
+        <button class="btn btn-next" id="btnNext" onclick="navigasi(1)">
+            SELANJUTNYA <div class="icon-circle"><span class="material-icons-round">chevron_right</span></div>
+        </button>
+        <button class="btn btn-finish" id="btnSubmit" style="display:none;" onclick="cekKelengkapan()">
+            SELESAI <span class="material-icons-round">task_alt</span>
+        </button>
     </div>
 </div>
 
