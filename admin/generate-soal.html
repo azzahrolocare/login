@@ -3,91 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CBT Generator Sukses</title>
+    <title>CBT Generator Az-Zahro</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; display: flex; justify-content: center; padding: 20px; }
-        .container { width: 100%; max-width: 800px; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        h2 { color: #1a73e8; text-align: center; }
+        body { font-family: 'Segoe UI', sans-serif; background: #f4f7f6; display: flex; justify-content: center; padding: 20px; }
+        .card { width: 100%; max-width: 800px; background: white; padding: 25px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+        h2 { color: #1a73e8; text-align: center; margin-top: 0; }
         #output { 
-            min-height: 200px; background: #1e1e1e; color: #d4d4d4; 
-            padding: 15px; border-radius: 8px; font-family: monospace; 
-            white-space: pre-wrap; overflow-x: auto; margin-bottom: 15px;
-            border: 1px solid #333;
+            min-height: 200px; background: #282c34; color: #61dafb; 
+            padding: 15px; border-radius: 8px; font-family: 'Courier New', monospace; 
+            white-space: pre-wrap; overflow-x: auto; margin-bottom: 15px; border: 1px solid #444;
         }
-        textarea { width: 100%; height: 150px; border-radius: 8px; border: 1px solid #ccc; padding: 12px; box-sizing: border-box; font-size: 14px; }
+        textarea { width: 100%; height: 150px; border-radius: 8px; border: 1px solid #ccc; padding: 12px; box-sizing: border-box; font-size: 14px; outline: none; }
+        textarea:focus { border-color: #1a73e8; }
         .btn-group { display: flex; gap: 10px; margin-top: 15px; }
-        button { flex: 1; padding: 12px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; transition: 0.3s; }
-        .btn-convert { background: #1a73e8; color: white; }
+        button { flex: 1; padding: 14px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+        .btn-run { background: #1a73e8; color: white; }
         .btn-copy { background: #34a853; color: white; }
-        button:disabled { background: #ccc; }
+        button:disabled { background: #ccc; cursor: not-allowed; }
     </style>
 </head>
 <body>
 
-<div class="container">
+<div class="card">
     <h2>CBT JSON Generator</h2>
-    <div id="output">// Hasil akan muncul di sini...</div>
-    <textarea id="userInput" placeholder="Masukkan soal di sini..."></textarea>
+    <div id="output">// Hasil JSON akan muncul di sini...</div>
+    <textarea id="userInput" placeholder="Tempelkan soal di sini..."></textarea>
     <div class="btn-group">
-        <button id="btnRun" class="btn-convert" onclick="generateJSON()">Konversi Sekarang</button>
-        <button class="btn-copy" onclick="copyToClipboard()">Salin JSON</button>
+        <button id="btnRun" class="btn-run" onclick="startProcess()">Konversi Sekarang</button>
+        <button class="btn-copy" onclick="copyText()">Salin JSON</button>
     </div>
 </div>
 
 <script>
-    async function generateJSON() {
+    async function startProcess() {
         const apiKey = "AIzaSyDRhhyBIZbGIkydx1CUfF8rDV3DDB2CbUs";
         const input = document.getElementById('userInput').value;
         const output = document.getElementById('output');
         const btn = document.getElementById('btnRun');
 
-        if (!input.trim()) return alert("Isi soal dulu!");
+        if (!input.trim()) return alert("Silakan masukkan soal!");
 
         btn.disabled = true;
-        btn.innerText = "Proses...";
-        output.innerText = "Sedang memproses...";
+        btn.innerText = "Mencoba menghubungkan...";
+        output.innerText = "Memproses data...";
 
-        // Kita gunakan model 'gemini-pro' dan versi 'v1' karena paling stabil
-        const url = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${apiKey}`;
+        // Daftar model yang akan dicoba satu per satu jika gagal
+        const modelList = [
+            "gemini-1.5-flash",
+            "gemini-1.5-pro",
+            "gemini-pro"
+        ];
 
-        const prompt = `Ubah teks soal berikut menjadi format JSON array murni. 
-Struktur: [{"id": 1, "pertanyaan": "...", "pilihan": ["A", "B", "C", "D"], "jawaban": index_angka}]. 
-Aturan: Jawaban adalah angka index (0 untuk A, 1 untuk B, dst). Jangan berikan teks penjelasan, hanya JSON.
+        let success = false;
 
-SOAL:
-${input}`;
+        for (let model of modelList) {
+            if (success) break;
+            
+            output.innerText = `Mencoba dengan model: ${model}...`;
+            
+            try {
+                const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${apiKey}`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        contents: [{ parts: [{ text: `Ubah soal ini menjadi JSON Array murni: [{"id": 1, "pertanyaan": "", "pilihan": [], "jawaban": index}]. Jangan beri penjelasan apapun. SOAL:\n${input}` }] }]
+                    })
+                });
 
-        try {
-            const response = await fetch(url, {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    contents: [{ parts: [{ text: prompt }] }]
-                })
-            });
+                const data = await response.json();
 
-            const data = await response.json();
-
-            if (data.candidates && data.candidates[0].content) {
-                let text = data.candidates[0].content.parts[0].text;
-                // Bersihkan tag markdown ```json ... ``` jika ada
-                text = text.replace(/```json/g, "").replace(/```/g, "").trim();
-                output.innerText = text;
-            } else {
-                output.innerText = "Kesalahan API: " + (data.error ? data.error.message : "Cek API Key Anda");
+                if (data.candidates && data.candidates[0].content) {
+                    let result = data.candidates[0].content.parts[0].text;
+                    output.innerText = result.replace(/```json/g, "").replace(/```/g, "").trim();
+                    success = true;
+                }
+            } catch (err) {
+                console.log(`Model ${model} gagal, mencoba model berikutnya...`);
             }
-        } catch (err) {
-            output.innerText = "Gagal koneksi: " + err.message;
-        } finally {
-            btn.disabled = false;
-            btn.innerText = "Konversi Sekarang";
         }
+
+        if (!success) {
+            output.innerText = "Gagal: Semua model menolak permintaan. Pastikan API Key Anda aktif di Google AI Studio.";
+        }
+
+        btn.disabled = false;
+        btn.innerText = "Konversi Sekarang";
     }
 
-    function copyToClipboard() {
+    function copyText() {
         const text = document.getElementById('output').innerText;
         navigator.clipboard.writeText(text);
-        alert("Tersalin!");
+        alert("JSON Berhasil Disalin!");
     }
 </script>
 
