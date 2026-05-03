@@ -1,0 +1,4 @@
+<option value="" disabled selected hidden>PILIH KELAS</option>
+                    <option value="VII">KELAS VII</option>
+                    <option value="VIII">KELAS VIII</option>
+                    <option value="IX">KELAS IX</option>
