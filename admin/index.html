@@ -131,9 +131,28 @@
             font-size: 14px;
             margin-bottom: 10px;
         }
+
+        /* Loader Overlay */
+        #loading-overlay {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(255,255,255,0.8);
+            z-index: 9999;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: #0CA458;
+        }
     </style>
 </head>
 <body>
+
+<div id="loading-overlay">
+    <span class="material-icons-round" style="font-size: 50px; margin-bottom: 10px;">sync</span>
+    Mohon Tunggu...
+</div>
 
 <div class="header-admin">
     <h1 style="margin:0; font-size: 20px;">PANEL ADMIN CBT AZZAHRO</h1>
@@ -150,60 +169,79 @@
         <h3><span class="material-icons-round">timer</span> DURASI UJIAN</h3>
         
         <div class="status-box">
-            <p>Durasi yang aktif saat ini: <span id="current-duration">Memuat...</span></p>
+            <p>Durasi di Google Sheets: <span id="current-duration">Memuat...</span></p>
         </div>
 
         <div class="form-group">
             <label for="inputDurasi">Set Durasi Baru (Dalam Menit)</label>
             <div class="input-wrapper">
                 <input type="number" id="inputDurasi" placeholder="Contoh: 60" min="1">
-                <button class="btn-save" onclick="simpanDurasi()">
+                <button class="btn-save" onclick="simpanDurasi()" id="btnSimpan">
                     <span class="material-icons-round">save</span> SIMPAN
                 </button>
             </div>
         </div>
 
         <p class="info-note">
-            * Perubahan durasi akan langsung diterapkan pada siswa yang baru akan menekan tombol "Mulai Mengerjakan".
+            * Perubahan durasi akan langsung disimpan ke Sheet "AdminControl" pada sel B2.
         </p>
     </div>
 
-    <!-- CARD INFORMASI SISTEM (Optional) -->
+    <!-- CARD INFORMASI SISTEM -->
     <div class="card">
         <h3><span class="material-icons-round">info</span> INFORMASI</h3>
         <p style="font-size: 14px; color: #666; margin: 0;">
-            Pastikan durasi diisi dengan angka bulat. Waktu ini akan otomatis menghitung mundur saat siswa berada di halaman ujian.
+            Pastikan durasi diisi dengan angka bulat. Waktu ini akan otomatis menghitung mundur saat siswa berada di halaman ujian berdasarkan data yang ditarik dari sistem.
         </p>
     </div>
 </div>
 
 <script>
-    // Jalankan saat halaman dimuat
+    // GANTI DENGAN URL WEB APP ANDA YANG SUDAH DI-DEPLOY
+    const urlWebApp = "URL_WEB_APP_ANDA_DISINI";
+
     window.onload = function() {
         muatDurasi();
     };
 
     function muatDurasi() {
-        // Ambil dari localStorage, default 60 menit jika belum ada
-        let savedDurasi = localStorage.getItem('durasiUjian') || 60;
-        document.getElementById('current-duration').innerText = savedDurasi + " Menit";
-        document.getElementById('inputDurasi').value = savedDurasi;
+        fetch(`${urlWebApp}?action=getDurasi`)
+            .then(response => response.text())
+            .then(durasi => {
+                document.getElementById('current-duration').innerText = durasi + " Menit";
+                document.getElementById('inputDurasi').value = durasi;
+            })
+            .catch(error => {
+                console.error("Gagal memuat:", error);
+                document.getElementById('current-duration').innerText = "Gagal terhubung";
+            });
     }
 
     function simpanDurasi() {
-        let menit = document.getElementById('inputDurasi').value;
+        const menit = document.getElementById('inputDurasi').value;
+        const overlay = document.getElementById('loading-overlay');
 
         if (menit && menit > 0) {
-            // Simpan ke localStorage agar bisa diakses oleh ujian.html
-            localStorage.setItem('durasiUjian', menit);
+            overlay.style.display = 'flex'; // Tampilkan loading
             
-            // Update tampilan status
-            document.getElementById('current-duration').innerText = menit + " Menit";
-            
-            // Notifikasi sukses
-            alert("Berhasil! Durasi ujian telah diatur menjadi " + menit + " menit.");
+            fetch(`${urlWebApp}?action=setDurasi&menit=${menit}`)
+                .then(response => response.text())
+                .then(hasil => {
+                    overlay.style.display = 'none'; // Sembunyikan loading
+                    if (hasil === "Durasi diperbarui") {
+                        document.getElementById('current-duration').innerText = menit + " Menit";
+                        alert("Berhasil! " + hasil);
+                    } else {
+                        alert("Terjadi kesalahan: " + hasil);
+                    }
+                })
+                .catch(error => {
+                    overlay.style.display = 'none';
+                    alert("Gagal menyimpan ke Google Sheets. Pastikan URL Web App benar.");
+                    console.error("Error:", error);
+                });
         } else {
-            alert("Mohon masukkan angka menit yang valid (minimal 1 menit).");
+            alert("Mohon masukkan angka menit yang valid.");
         }
     }
 </script>
