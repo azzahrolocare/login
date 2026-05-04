@@ -111,6 +111,7 @@
             overflow: auto;
             display: none;
             scrollbar-width: none; /* Firefox */
+            scroll-behavior: smooth; /* Menambah efek scroll halus */
         }
         .container-wrapper::-webkit-scrollbar { display: none; }
 
@@ -505,6 +506,10 @@
             </div>`;
         });
         document.getElementById('konten-soal').innerHTML = html; 
+        
+        // Reset scroll ke atas setiap ganti nomor
+        document.getElementById('main-wrapper').scrollTop = 0;
+        
         renderNav();
     }
 
@@ -640,7 +645,7 @@
         } catch (e) {
             alert("Terjadi masalah saat mengirim. Periksa koneksi internet Anda.");
             if(btn) {
-                btn.innerHTML = 'COBA LAGI';
+                btn.innerHTML = 'COBA LARGI';
                 btn.disabled = false;
             }
         }
@@ -667,17 +672,14 @@
     document.addEventListener('keydown', function(event) {
         const sedangUjian = document.getElementById('main-wrapper').style.display === 'block' && 
                             document.getElementById('hasil-akhir').style.display !== 'flex';
+        const scrollContainer = document.getElementById('main-wrapper');
 
         if (sedangUjian) {
             switch(event.key) {
                 case "ArrowLeft":
-                case "ArrowUp": // Navigasi ke soal sebelumnya dengan tombol Atas Remote IFP
-                case "PageUp":  // Beberapa remote IFP menggunakan PageUp untuk tombol Atas
                     navigasi(-1);
                     break;
                 case "ArrowRight":
-                case "ArrowDown": // Navigasi ke soal berikutnya dengan tombol Bawah Remote IFP
-                case "PageDown":  // Beberapa remote IFP menggunakan PageDown untuk tombol Bawah
                 case "Enter":
                     if (indexSekarang === dataSoal.length - 1) {
                         cekKelengkapan();
@@ -685,6 +687,16 @@
                         navigasi(1);
                     }
                     break;
+                // PENAMBAHAN FUNGSI REMOT IFP (UP/DOWN) UNTUK SCROLL
+                case "ArrowUp":
+                    event.preventDefault(); // Mencegah pindah fokus elemen
+                    scrollContainer.scrollBy({ top: -100, behavior: 'smooth' });
+                    break;
+                case "ArrowDown":
+                    event.preventDefault(); // Mencegah pindah fokus elemen
+                    scrollContainer.scrollBy({ top: 100, behavior: 'smooth' });
+                    break;
+                // END PENAMBAHAN
                 case "+":
                 case "=":
                     zoomAction(0.1);
