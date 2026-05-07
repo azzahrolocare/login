@@ -87,21 +87,53 @@
         .container-wrapper {
             margin-top: 75px; height: calc(100vh - 145px); 
             overflow-y: auto; display: none; scroll-behavior: smooth;
+            padding: 20px 0;
         }
 
+        /* --- LEMBAR SOAL DENGAN EFEK LOGIN-INNER --- */
         .container { 
-            max-width: 800px; margin: 20px auto; background: var(--dark-bg); 
-            border-radius: 15px; padding: 30px; width: 95%; 
-            border: 1px solid rgba(255,255,255,0.1); transition: transform 0.2s ease;
+            position: relative;
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 40px; 
+            width: 92%; 
+            background: rgba(255, 255, 255, 0.05); /* Transparan Glass */
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border-radius: 20px; 
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 45px rgba(0,0,0,0.2);
+            transition: transform 0.2s ease;
+            overflow: hidden;
+        }
+
+        /* Neon Border Accent pada Container */
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 4px;
+            background: linear-gradient(90deg, transparent, var(--neon-cyan), transparent);
+            animation: moveNeon 3s linear infinite;
+        }
+
+        @keyframes moveNeon {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
         }
 
         .pilihan-label { 
-            display: flex; align-items: center; background: rgba(255,255,255,0.03); 
-            padding: 15px; margin: 12px 0; border: 1px solid rgba(255,255,255,0.1); 
-            border-radius: 10px; cursor: pointer; transition: 0.3s;
+            display: flex; align-items: center; 
+            background: rgba(255, 255, 255, 0.03); 
+            padding: 18px; margin: 15px 0; 
+            border: 1px solid rgba(255, 255, 255, 0.08); 
+            border-radius: 12px; cursor: pointer; transition: 0.3s;
         }
-        .pilihan-label:hover { background: rgba(69, 243, 255, 0.1); border-color: var(--neon-cyan); }
-        .pilihan-label input[type="radio"] { accent-color: var(--neon-cyan); transform: scale(1.3); }
+        .pilihan-label:hover { 
+            background: rgba(69, 243, 255, 0.08); 
+            border-color: var(--neon-cyan);
+            box-shadow: 0 0 15px rgba(69, 243, 255, 0.1);
+        }
+        .pilihan-label input[type="radio"] { accent-color: var(--neon-cyan); transform: scale(1.4); }
 
         /* --- MODAL SYSTEM --- */
         .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); display: none; justify-content: center; align-items: center; z-index: 9000; backdrop-filter: blur(5px); }
@@ -112,16 +144,16 @@
         .menu-nomor-content.show { display: block; animation: fadeIn 0.3s; }
         .nomor-navigasi { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
         .kotak-nomor { width: 42px; height: 42px; border: 1px solid rgba(255,255,255,0.2); text-align: center; line-height: 42px; cursor: pointer; border-radius: 8px; font-weight: 600; background: rgba(255,255,255,0.05); color: white; }
-        .kotak-nomor.sudah { background: var(--neon-cyan) !important; color: #1c1c1c !important; border-color: var(--neon-cyan); }
-        .kotak-nomor.aktif { border: 2px solid var(--neon-pink); transform: scale(1.1); box-shadow: 0 0 10px var(--neon-pink); }
+        .kotak-nomor.sudah { background: var(--neon-cyan) !important; color: #1c1c1c !important; border-color: var(--neon-cyan); box-shadow: 0 0 10px rgba(69, 243, 255, 0.5); }
+        .kotak-nomor.aktif { border: 2px solid var(--neon-pink); transform: scale(1.1); box-shadow: 0 0 15px var(--neon-pink); }
 
         /* --- FOOTER NAV --- */
         .fixed-footer-nav { position: fixed; bottom: 0; left: 0; width: 100%; height: 70px; background: var(--dark-bg); display: none; justify-content: center; align-items: center; border-top: 1px solid rgba(255,255,255,0.1); z-index: 100; }
         .btn-group { display: flex; width: 95%; max-width: 800px; gap: 10px; }
         .btn { flex: 1; padding: 12px; border-radius: 8px; border: none; font-weight: 700; cursor: pointer; font-size: 13px; display: flex; align-items: center; justify-content: center; gap: 8px; transition: 0.2s; }
         .btn-back { background: #333; color: white; }
-        .btn-next { background: var(--neon-cyan); color: #1c1c1c; }
-        .btn-finish { background: var(--neon-pink); color: white; }
+        .btn-next { background: var(--neon-cyan); color: #1c1c1c; box-shadow: 0 4px 10px rgba(69, 243, 255, 0.2); }
+        .btn-finish { background: var(--neon-pink); color: white; box-shadow: 0 4px 10px rgba(255, 39, 112, 0.2); }
 
         /* --- ZOOM SYSTEM --- */
         .zoom-controls { position: fixed; bottom: 85px; right: 20px; z-index: 999; display: flex; flex-direction: column; gap: 10px; }
@@ -173,6 +205,16 @@
     </div>
 </div>
 
+<div id="modalPeringatan" class="modal-overlay">
+    <div class="modal-box">
+        <i class="fa-solid fa-circle-exclamation fa-4x" style="color: var(--neon-pink);"></i>
+        <h3 style="color: var(--neon-pink); margin-top: 15px;">Belum Selesai!</h3>
+        <p>Ada soal yang belum dijawab:</p>
+        <div id="daftar-kosong" style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin:15px 0;"></div>
+        <button onclick="tutupPeringatan()" class="btn-start">PERIKSA KEMBALI</button>
+    </div>
+</div>
+
 <div class="header-ujian">
     <div style="display:flex; align-items:center; gap:10px;">
         <div id="user-initial" style="width:40px; height:40px; background:var(--neon-cyan); color:#1c1c1c; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800;">?</div>
@@ -200,9 +242,9 @@
             <div id="konten-soal">Memuat soal...</div>
         </div>
 
-        <div id="hasil-akhir" style="display:none; text-align:center; padding:40px 0;">
+        <div id="hasil-akhir" style="display:none; text-align:center; padding:20px 0;">
             <i class="fa-solid fa-circle-check fa-5x" style="color:var(--neon-cyan);"></i>
-            <h2 style="margin:20px 0;">UJIAN SELESAI</h2>
+            <h2 style="margin:20px 0; color: white;">UJIAN SELESAI</h2>
             <div style="background:rgba(255,255,255,0.05); padding:25px; border-radius:15px; border:2px dashed var(--neon-cyan);">
                 <p style="font-size:12px; color:#888; margin-bottom:10px;">JUMLAH PEROLEHAN BENAR</p>
                 <div style="display:flex; align-items:baseline; justify-content:center; gap:10px;">
@@ -285,12 +327,10 @@
             const userData = JSON.parse(sessionStorage.getItem('userCBT'));
             let urlSoal = userData.fileSoal;
 
-            // LOGIKA GABUNGAN: Menghindari duplikasi URL
             if (urlSoal && !urlSoal.startsWith('http')) {
                 urlSoal = BASE_URL + 'mapel/' + urlSoal;
             }
 
-            console.log("Memuat soal dari:", urlSoal);
             const res = await fetch(urlSoal); 
             if (!res.ok) throw new Error("Gagal memuat file");
             
@@ -306,12 +346,12 @@
         let html = '';
         dataSoal.forEach((s, i) => {
             html += `<div class="soal-card" style="display:${i === indexSekarang ? 'block' : 'none'}">
-                <p style="font-weight:800; color:var(--neon-cyan); font-size:14px; margin-bottom:10px;">SOAL NOMOR ${i+1}</p>
-                <p style="font-size:17px; line-height:1.6; margin-bottom:20px;">${s.pertanyaan}</p>
+                <p style="font-weight:800; color:var(--neon-cyan); font-size:14px; margin-bottom:15px; letter-spacing:1px;">SOAL NOMOR ${i+1}</p>
+                <p style="font-size:18px; line-height:1.6; margin-bottom:25px; color: #fff;">${s.pertanyaan}</p>
                 ${s.pilihan.map((p, idx) => `
                     <label class="pilihan-label">
                         <input type="radio" name="s${i}" ${jawabanUser[i]==idx?'checked':''} onclick="pilih(${i},${idx})"> 
-                        <span style="margin-left:12px; font-size:15px;">${p}</span>
+                        <span style="margin-left:15px; font-size:16px;">${p}</span>
                     </label>
                 `).join('')}
             </div>`;
@@ -370,7 +410,7 @@
         let kosong = [];
         dataSoal.forEach((_, i) => { if (jawabanUser[i] === undefined) kosong.push(i + 1); });
         if (kosong.length > 0) {
-            document.getElementById('daftar-kosong').innerHTML = kosong.map(num => `<div style="background:var(--neon-pink); padding:5px 10px; border-radius:5px; font-weight:bold;">${num}</div>`).join('');
+            document.getElementById('daftar-kosong').innerHTML = kosong.map(num => `<div style="background:var(--neon-pink); padding:5px 10px; border-radius:5px; font-weight:bold; color: white;">${num}</div>`).join('');
             document.getElementById('modalPeringatan').style.display = 'flex';
         } else {
             bukaModalKonfirmasi();
