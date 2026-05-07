@@ -12,9 +12,10 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body { 
             font-family: 'Poppins', sans-serif; 
-            margin: 0; 
             background-color: #1c1f25; 
             color: #eee; 
             overflow: hidden;
@@ -27,7 +28,6 @@
             --neon-cyan: #45f3ff;
             --neon-pink: #ff2770;
             --dark-bg: #222327;
-            --glass-bg: rgba(25, 25, 25, 0.85);
         }
 
         /* --- HALAMAN VALIDASI DATA --- */
@@ -36,7 +36,7 @@
             top: 0; left: 0; width: 100%; height: 100%;
             background: radial-gradient(circle at center, #2c3e50 0%, #1c1f25 100%);
             display: flex; flex-direction: column; align-items: center; justify-content: center;
-            z-index: 5000; box-sizing: border-box;
+            z-index: 5000;
         }
 
         .validasi-box {
@@ -66,6 +66,7 @@
             background: var(--neon-cyan); color: #1c1c1c; width: 100%; border: none; 
             padding: 14px; border-radius: 10px; font-weight: 800; cursor: pointer; 
             transition: 0.3s; text-transform: uppercase; letter-spacing: 1px;
+            display: flex; align-items: center; justify-content: center; gap: 8px;
             box-shadow: 0 5px 15px rgba(69, 243, 255, 0.3);
         }
 
@@ -74,8 +75,7 @@
             background: var(--dark-bg); color: white; padding: 0 20px; 
             position: fixed; top: 0; width: 100%; height: 75px; 
             display: none; justify-content: space-between; align-items: center; 
-            z-index: 100; box-sizing: border-box; 
-            border-bottom: 2px solid var(--neon-cyan);
+            z-index: 100; border-bottom: 2px solid var(--neon-cyan);
         }
 
         .timer-header { 
@@ -91,11 +91,9 @@
 
         .container { 
             max-width: 800px; margin: 20px auto; background: var(--dark-bg); 
-            border-radius: 15px; padding: 30px; box-sizing: border-box; width: 95%; 
-            border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            border-radius: 15px; padding: 30px; width: 95%; 
+            border: 1px solid rgba(255,255,255,0.1); transition: transform 0.2s ease;
         }
-
-        .soal-card p { font-size: 1.1rem; line-height: 1.6; }
 
         .pilihan-label { 
             display: flex; align-items: center; background: rgba(255,255,255,0.03); 
@@ -105,45 +103,29 @@
         .pilihan-label:hover { background: rgba(69, 243, 255, 0.1); border-color: var(--neon-cyan); }
         .pilihan-label input[type="radio"] { accent-color: var(--neon-cyan); transform: scale(1.3); }
 
+        /* --- MODAL SYSTEM --- */
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); display: none; justify-content: center; align-items: center; z-index: 9000; backdrop-filter: blur(5px); }
+        .modal-box { background: var(--dark-bg); padding: 30px; border-radius: 20px; width: 85%; max-width: 400px; text-align: center; border: 1px solid var(--neon-pink); color: white; }
+
         /* --- NAVIGASI NOMOR --- */
-        .menu-nomor-content { 
-            display: none; position: fixed; top: 85px; right: 20px; 
-            background: var(--dark-bg); width: 280px; border-radius: 12px; 
-            box-shadow: 0 10px 40px rgba(0,0,0,0.5); padding: 20px; z-index: 1000;
-            border: 1px solid var(--neon-cyan);
-        }
+        .menu-nomor-content { display: none; position: fixed; top: 85px; right: 20px; background: var(--dark-bg); width: 280px; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.5); padding: 20px; z-index: 1000; border: 1px solid var(--neon-cyan); }
         .menu-nomor-content.show { display: block; animation: fadeIn 0.3s; }
-        .kotak-nomor { 
-            width: 42px; height: 42px; border: 1px solid rgba(255,255,255,0.2); 
-            text-align: center; line-height: 42px; cursor: pointer; border-radius: 8px; 
-            font-weight: 600; background: rgba(255,255,255,0.05); color: white;
-        }
+        .nomor-navigasi { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+        .kotak-nomor { width: 42px; height: 42px; border: 1px solid rgba(255,255,255,0.2); text-align: center; line-height: 42px; cursor: pointer; border-radius: 8px; font-weight: 600; background: rgba(255,255,255,0.05); color: white; }
         .kotak-nomor.sudah { background: var(--neon-cyan) !important; color: #1c1c1c !important; border-color: var(--neon-cyan); }
         .kotak-nomor.aktif { border: 2px solid var(--neon-pink); transform: scale(1.1); box-shadow: 0 0 10px var(--neon-pink); }
 
         /* --- FOOTER NAV --- */
-        .fixed-footer-nav {
-            position: fixed; bottom: 0; left: 0; width: 100%; height: 70px;
-            background: var(--dark-bg); display: none; justify-content: center;
-            align-items: center; border-top: 1px solid rgba(255,255,255,0.1); z-index: 100;
-        }
-        .btn-group { display: flex; width: 95%; max-width: 800px; gap: 15px; }
-        .btn { flex: 1; padding: 12px; border-radius: 8px; border: none; font-weight: 700; cursor: pointer; transition: 0.2s; display: flex; align-items: center; justify-content: center; gap: 8px; }
-        .btn-back { background: #444; color: white; }
+        .fixed-footer-nav { position: fixed; bottom: 0; left: 0; width: 100%; height: 70px; background: var(--dark-bg); display: none; justify-content: center; align-items: center; border-top: 1px solid rgba(255,255,255,0.1); z-index: 100; }
+        .btn-group { display: flex; width: 95%; max-width: 800px; gap: 10px; }
+        .btn { flex: 1; padding: 12px; border-radius: 8px; border: none; font-weight: 700; cursor: pointer; font-size: 13px; display: flex; align-items: center; justify-content: center; gap: 8px; transition: 0.2s; }
+        .btn-back { background: #333; color: white; }
         .btn-next { background: var(--neon-cyan); color: #1c1c1c; }
-        .btn-finish { background: var(--neon-pink); color: white; box-shadow: 0 0 15px rgba(255, 39, 112, 0.4); }
+        .btn-finish { background: var(--neon-pink); color: white; }
 
-        /* --- MODAL --- */
-        .modal-box { 
-            background: var(--dark-bg); color: white; border: 1px solid var(--neon-pink); 
-            border-radius: 20px; padding: 30px; text-align: center; 
-        }
-
-        /* --- ZOOM --- */
-        .btn-zoom {
-            background: var(--dark-bg); color: var(--neon-cyan); border: 1px solid var(--neon-cyan);
-            width: 45px; height: 45px; margin-bottom: 10px; border-radius: 10px; cursor: pointer;
-        }
+        /* --- ZOOM SYSTEM --- */
+        .zoom-controls { position: fixed; bottom: 85px; right: 20px; z-index: 999; display: flex; flex-direction: column; gap: 10px; }
+        .btn-zoom { width: 45px; height: 45px; border-radius: 10px; border: 1px solid var(--neon-cyan); color: var(--neon-cyan); background: var(--dark-bg); font-size: 20px; cursor: pointer; display: flex; align-items: center; justify-content: center; }
 
         @keyframes fadeIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
     </style>
@@ -152,55 +134,63 @@
 
 <div id="halaman-validasi">
     <div class="validasi-box">
-        <div style="color: var(--neon-cyan); margin-bottom: 15px;">
-            <i class="fa-solid fa-user-shield fa-3x"></i>
-        </div>
-        <h2 style="margin: 0; color: white; letter-spacing: 2px; font-weight: 800;">KONFIRMASI DATA</h2>
+        <div style="color: var(--neon-cyan); margin-bottom: 10px;"><i class="fa-solid fa-file-signature fa-3x"></i></div>
+        <h2 style="color: white; font-weight: 800; letter-spacing: 1px;">KONFIRMASI DATA</h2>
         <div class="data-display">
-            <div class="data-label">Nama Lengkap</div>
+            <div class="data-label">Nama Peserta</div>
             <div id="val-nama" class="data-value">-</div>
             <div class="data-label">Kelas</div>
             <div id="val-kelas" class="data-value">-</div>
             <div class="data-label">Mata Pelajaran</div>
             <div id="val-mapel" class="data-value">-</div>
-            <div class="data-label">Waktu</div>
+            <div class="data-label">Durasi Ujian</div>
             <div id="val-durasi" class="data-value" style="color:var(--neon-pink);">Memuat...</div>
         </div>
-        <button class="btn-start" onclick="mulaiUjianSekarang()">MULAI UJIAN</button>
-        <p onclick="history.back()" style="color:var(--neon-pink); font-size:12px; cursor:pointer; margin-top:15px; font-weight:600;">
-            <i class="fa-solid fa-arrow-left"></i> Kembali ke Login
-        </p>
+        <button class="btn-start" onclick="mulaiUjianSekarang()">MULAI SEKARANG</button>
+        <p onclick="history.back()" style="color:var(--neon-pink); font-size:11px; cursor:pointer; font-weight:bold; margin-top:15px; text-decoration: underline;">DATA SALAH? KEMBALI</p>
     </div>
 </div>
 
-<div id="modalPeringatan" class="modal-overlay">
+<div id="modalPaksaFullscreen" class="modal-overlay">
     <div class="modal-box">
-        <i class="fa-solid fa-circle-exclamation fa-4x" style="color: var(--neon-pink);"></i>
-        <h3 style="color: var(--neon-pink); margin-top: 15px;">Belum Selesai!</h3>
-        <p>Ada soal yang belum dijawab:</p>
-        <div id="daftar-kosong" style="display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin:15px 0;"></div>
-        <button onclick="tutupPeringatan()" class="btn-start">PERIKSA KEMBALI</button>
+        <i class="fa-solid fa-triangle-exclamation fa-4x" style="color:var(--neon-pink);"></i>
+        <h3 style="margin:15px 0; color:var(--neon-pink);">PERINGATAN!</h3>
+        <p style="font-size:14px;">Dilarang keluar dari mode layar penuh selama ujian berlangsung. Pelanggaran ini akan dicatat oleh sistem.</p>
+        <button onclick="kembaliKeFullscreen()" class="btn-start" style="margin-top:20px; background:var(--neon-pink); color:white;">KEMBALI KE UJIAN</button>
+    </div>
+</div>
+
+<div id="modalConfirm" class="modal-overlay">
+    <div class="modal-box" style="border-color: var(--neon-cyan);">
+        <i class="fa-solid fa-circle-question fa-4x" style="color:var(--neon-cyan);"></i>
+        <h3 style="margin:15px 0;">Kirim Jawaban?</h3>
+        <p style="font-size:13px; color:#aaa;">Pastikan semua jawaban sudah benar.</p>
+        <div id="timer-box" style="font-size:28px; font-weight:900; color:var(--neon-pink); margin:15px 0; font-family:monospace;">01:00</div>
+        <div style="display:flex; gap:10px;">
+            <button onclick="tutupModal()" style="flex:1; background:#444; border:none; color:white; border-radius:8px; cursor:pointer;">BATAL</button>
+            <button id="btnKirimFinal" disabled style="flex:1; background:#555; border:none; color:#888; border-radius:8px; cursor:not-allowed;">KIRIM</button>
+        </div>
     </div>
 </div>
 
 <div class="header-ujian">
-    <div style="display: flex; align-items: center; gap: 12px;">
-        <div id="user-initial" style="width:45px; height:45px; background:var(--neon-cyan); color:#1c1c1c; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:20px;">A</div>
+    <div style="display:flex; align-items:center; gap:10px;">
+        <div id="user-initial" style="width:40px; height:40px; background:var(--neon-cyan); color:#1c1c1c; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800;">?</div>
         <div>
-            <div id="user-name" style="font-weight:700; font-size:14px; color:var(--neon-cyan);">SISWA</div>
-            <div id="display-kelas" style="font-size:11px; color:#aaa;">KELAS IX</div>
+            <div id="user-name" style="font-weight:700; font-size:13px; color:var(--neon-cyan);">USER</div>
+            <div id="display-kelas" style="font-size:10px; color:#888;">KELAS -</div>
         </div>
     </div>
-    <div style="display: flex; align-items: center; gap: 15px;">
+    <div style="display:flex; align-items:center; gap:12px;">
         <div id="timer-utama" class="timer-header">00:00:00</div>
-        <button id="btn-menu-nomor" onclick="toggleMenuNomor()" style="background:none; border:1px solid var(--neon-cyan); color:var(--neon-cyan); padding:8px; border-radius:8px; cursor:pointer;">
+        <button id="btn-menu-nomor" onclick="toggleMenuNomor()" style="background:none; border:1px solid var(--neon-cyan); color:var(--neon-cyan); width:38px; height:38px; border-radius:8px; cursor:pointer;">
             <i class="fa-solid fa-grid-view"></i>
         </button>
     </div>
 </div>
 
 <div id="menu-nomor" class="menu-nomor-content">
-    <p style="font-weight:700; color:var(--neon-cyan); margin-bottom:15px;"><i class="fa-solid fa-list-ol"></i> NAVIGASI SOAL</p>
+    <p style="font-weight:800; font-size:12px; margin-bottom:15px; color:var(--neon-cyan); text-transform:uppercase;">Navigasi Soal</p>
     <div class="nomor-navigasi" id="navigasiNomor"></div>
 </div>
 
@@ -210,46 +200,46 @@
             <div id="konten-soal">Memuat soal...</div>
         </div>
 
-        <div id="hasil-akhir" style="display:none; text-align:center; flex-direction:column; align-items:center;">
-            <i class="fa-solid fa-circle-check fa-5x" style="color: var(--neon-cyan); margin-bottom:20px;"></i>
-            <h1 style="color: white; font-weight:800;">UJIAN SELESAI</h1>
-            <div style="background:rgba(255,255,255,0.05); padding:30px; border-radius:20px; margin:20px 0; border:2px dashed var(--neon-cyan); width:100%;">
-                <p style="color:#aaa; font-size:14px;">PEROLEHAN SKOR</p>
+        <div id="hasil-akhir" style="display:none; text-align:center; padding:40px 0;">
+            <i class="fa-solid fa-circle-check fa-5x" style="color:var(--neon-cyan);"></i>
+            <h2 style="margin:20px 0;">UJIAN SELESAI</h2>
+            <div style="background:rgba(255,255,255,0.05); padding:25px; border-radius:15px; border:2px dashed var(--neon-cyan);">
+                <p style="font-size:12px; color:#888; margin-bottom:10px;">JUMLAH PEROLEHAN BENAR</p>
                 <div style="display:flex; align-items:baseline; justify-content:center; gap:10px;">
-                    <span id="benar-tampil" style="font-size:80px; font-weight:900; color:var(--neon-cyan);">0</span>
-                    <span style="font-size:20px; font-weight:700; color:#666;">/</span>
-                    <span id="total-tampil" style="font-size:40px; font-weight:700; color:var(--neon-pink);">0</span>
+                    <span id="benar-tampil" style="font-size:70px; font-weight:900; color:var(--neon-cyan);">0</span>
+                    <span style="font-size:24px; color:#555;">/</span>
+                    <span id="total-tampil" style="font-size:40px; font-weight:800; color:var(--neon-pink);">0</span>
                 </div>
             </div>
-            <button class="btn-start" onclick="kembaliKeLogin()">KELUAR APLIKASI</button>
+            <button class="btn-start" style="margin-top:30px; max-width:250px; margin-inline:auto;" onclick="kembaliKeLogin()">KEMBALI KE LOGIN</button>
         </div>
     </div>
 </div>
 
 <div class="fixed-footer-nav" id="footer-nav">
     <div class="btn-group">
-        <button class="btn btn-back" onclick="navigasi(-1)"><i class="fa-solid fa-chevron-left"></i> KEMBALI</button>
-        <button class="btn btn-next" id="btnNext" onclick="navigasi(1)">LANJUT <i class="fa-solid fa-chevron-right"></i></button>
-        <button class="btn btn-finish" id="btnSubmit" style="display:none;" onclick="cekKelengkapan()">SELESAI <i class="fa-solid fa-paper-plane"></i></button>
+        <button class="btn btn-back" onclick="navigasi(-1)"><i class="fa-solid fa-chevron-left"></i> SEBELUMNYA</button>
+        <button class="btn btn-next" id="btnNext" onclick="navigasi(1)">SELANJUTNYA <i class="fa-solid fa-chevron-right"></i></button>
+        <button class="btn btn-finish" id="btnSubmit" style="display:none;" onclick="cekKelengkapan()">SELESAI <i class="fa-solid fa-check-double"></i></button>
     </div>
 </div>
 
-<div style="position:fixed; bottom:85px; right:20px; display:flex; flex-direction:column; z-index:999;" id="zoom-buttons">
-    <button class="btn-zoom" onclick="zoomAction(0.1)"><i class="fa-solid fa-plus"></i></button>
-    <button class="btn-zoom" onclick="zoomAction(-0.1)"><i class="fa-solid fa-minus"></i></button>
+<div class="zoom-controls" id="zoom-buttons" style="display:none;">
+    <button class="btn-zoom" onclick="zoomAction(0.1)">+</button>
+    <button class="btn-zoom" onclick="zoomAction(-0.1)">-</button>
 </div>
 
 <script>
     let dataSoal = []; 
     let jawabanUser = JSON.parse(localStorage.getItem('drafJawaban')) || {}; 
     let indexSekarang = 0;
-    let totalUjianSeconds = 0;
+    let timeLeft = 60; 
+    let totalUjianSeconds = 0; 
     let countdownInterval;
     let currentZoom = 1.0;
 
-    // PATH DISESUAIKAN KE GITHUB PAGES ANDA
-    const BASE_URL = 'https://azzahrolocare.github.io/cbt/';
     const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyY528MhAel09tDGjpEeXaGNkzf0BCOc8rUJhoW7-F0c8wQ4alSA1L5KZxLy7uT_OQ6/exec';
+    const BASE_URL = 'https://azzahrolocare.github.io/cbt/';
 
     window.onload = function() {
         const userData = JSON.parse(sessionStorage.getItem('userCBT'));
@@ -259,11 +249,11 @@
         }
         
         fetch(`${SCRIPT_URL}?action=getDurasi`)
-        .then(response => response.text())
+        .then(res => res.text())
         .then(menit => {
-            let durasiSet = menit || 60;
-            totalUjianSeconds = parseInt(durasiSet) * 60;
-            document.getElementById('val-durasi').innerText = durasiSet + " Menit";
+            let durasi = menit || 60;
+            totalUjianSeconds = parseInt(durasi) * 60;
+            document.getElementById('val-durasi').innerText = durasi + " Menit";
         })
         .catch(() => {
             totalUjianSeconds = 3600;
@@ -279,11 +269,13 @@
     };
 
     function mulaiUjianSekarang() {
+        trapBackButton();
         requestFullscreen();
         document.getElementById('halaman-validasi').style.display = 'none';
         document.querySelector('.header-ujian').style.display = 'flex';
         document.getElementById('main-wrapper').style.display = 'block';
         document.getElementById('footer-nav').style.display = 'flex';
+        document.getElementById('zoom-buttons').style.display = 'flex';
         muatSoal();
         startTimerUtama();
     }
@@ -291,23 +283,22 @@
     async function muatSoal() { 
         try { 
             const userData = JSON.parse(sessionStorage.getItem('userCBT'));
-            // Mengambil soal dari path yang sudah disesuaikan
             const res = await fetch(BASE_URL + 'mapel/' + userData.fileSoal); 
             dataSoal = await res.json(); 
             renderUjian(); 
-        } catch (e) { alert("Gagal memuat soal. Pastikan file soal ada di folder /mapel/"); } 
+        } catch (e) { alert("Gagal memuat soal. Hubungi admin."); } 
     }
 
     function renderUjian() {
         let html = '';
         dataSoal.forEach((s, i) => {
-            html += `<div class="soal-card ${i === indexSekarang ? 'active' : ''}" style="display:${i === indexSekarang ? 'block' : 'none'}">
-                <p style="font-weight:800; color:var(--neon-cyan); margin-bottom:10px;">SOAL NO. ${i+1}</p>
-                <p style="margin-bottom:25px;">${s.pertanyaan}</p>
+            html += `<div class="soal-card" style="display:${i === indexSekarang ? 'block' : 'none'}">
+                <p style="font-weight:800; color:var(--neon-cyan); font-size:14px; margin-bottom:10px;">SOAL NOMOR ${i+1}</p>
+                <p style="font-size:17px; line-height:1.6; margin-bottom:20px;">${s.pertanyaan}</p>
                 ${s.pilihan.map((p, idx) => `
                     <label class="pilihan-label">
                         <input type="radio" name="s${i}" ${jawabanUser[i]==idx?'checked':''} onclick="pilih(${i},${idx})"> 
-                        <span style="margin-left:15px;">${p}</span>
+                        <span style="margin-left:12px; font-size:15px;">${p}</span>
                     </label>
                 `).join('')}
             </div>`;
@@ -335,16 +326,6 @@
         document.getElementById('btnSubmit').style.display = indexSekarang === dataSoal.length - 1 ? 'flex' : 'none';
     }
 
-    function navigasi(n) { 
-        let target = indexSekarang + n; 
-        if(target >= 0 && target < dataSoal.length){ 
-            indexSekarang = target; 
-            renderUjian(); 
-        } 
-    }
-
-    function keNomor(i) { indexSekarang = i; renderUjian(); toggleMenuNomor(); }
-
     function startTimerUtama() {
         countdownInterval = setInterval(() => {
             if (totalUjianSeconds <= 0) {
@@ -352,73 +333,87 @@
                 kirimJawaban();
             } else {
                 totalUjianSeconds--;
-                updateTampilanTimerUtama();
+                const h = Math.floor(totalUjianSeconds / 3600);
+                const m = Math.floor((totalUjianSeconds % 3600) / 60);
+                const s = totalUjianSeconds % 60;
+                document.getElementById('timer-utama').innerText = `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+                if (totalUjianSeconds <= 300) document.getElementById('timer-utama').style.color = 'var(--neon-pink)';
             }
         }, 1000);
     }
 
-    function updateTampilanTimerUtama() {
-        const h = Math.floor(totalUjianSeconds / 3600);
-        const m = Math.floor((totalUjianSeconds % 3600) / 60);
-        const s = totalUjianSeconds % 60;
-        const display = document.getElementById('timer-utama');
-        display.innerText = `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
-        if(totalUjianSeconds < 300) display.style.color = 'var(--neon-pink)';
-    }
+    function navigasi(n) { let target = indexSekarang + n; if(target >= 0 && target < dataSoal.length){ indexSekarang = target; renderUjian(); } }
+    function keNomor(i) { indexSekarang = i; renderUjian(); toggleMenuNomor(); }
+    function toggleMenuNomor() { document.getElementById('menu-nomor').classList.toggle('show'); }
+    function zoomAction(delta) { currentZoom = Math.min(Math.max(0.6, currentZoom + delta), 1.6); document.getElementById('zoom-container').style.transform = `scale(${currentZoom})`; document.getElementById('zoom-container').style.transformOrigin = 'top center'; }
+
+    function trapBackButton() { window.history.pushState(null, null, window.location.href); window.onpopstate = function() { window.history.pushState(null, null, window.location.href); }; }
+    function requestFullscreen() { let elem = document.documentElement; if (elem.requestFullscreen) elem.requestFullscreen(); else if (elem.webkitRequestFullscreen) elem.webkitRequestFullscreen(); }
+    function kembaliKeFullscreen() { requestFullscreen(); document.getElementById('modalPaksaFullscreen').style.display = 'none'; }
+    
+    document.addEventListener('fullscreenchange', () => { if (!document.fullscreenElement && document.getElementById('main-wrapper').style.display === 'block') document.getElementById('modalPaksaFullscreen').style.display = 'flex'; });
 
     function cekKelengkapan() {
         let kosong = [];
         dataSoal.forEach((_, i) => { if (jawabanUser[i] === undefined) kosong.push(i + 1); });
         if (kosong.length > 0) {
-            document.getElementById('daftar-kosong').innerHTML = kosong.map(num => `<div style="width:30px;height:30px;background:var(--neon-pink);border-radius:5px;line-height:30px;font-weight:bold;">${num}</div>`).join('');
+            document.getElementById('daftar-kosong').innerHTML = kosong.map(num => `<div style="background:var(--neon-pink); padding:5px 10px; border-radius:5px; font-weight:bold;">${num}</div>`).join('');
             document.getElementById('modalPeringatan').style.display = 'flex';
         } else {
-            if(confirm("Apakah Anda yakin ingin mengirim jawaban?")) kirimJawaban();
+            bukaModalKonfirmasi();
         }
     }
 
+    function bukaModalKonfirmasi() {
+        document.getElementById('modalConfirm').style.display = 'flex';
+        let timerSistem = setInterval(() => {
+            if (timeLeft > 0) {
+                timeLeft--;
+                let m = Math.floor(timeLeft / 60); let s = timeLeft % 60;
+                document.getElementById('timer-box').innerText = `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+            } else {
+                clearInterval(timerSistem);
+                const btn = document.getElementById('btnKirimFinal');
+                btn.disabled = false; btn.style.background = 'var(--neon-cyan)'; btn.style.color = '#1c1c1c'; btn.style.cursor = 'pointer'; btn.onclick = kirimJawaban;
+                document.getElementById('timer-box').innerText = "SIAP!";
+            }
+        }, 1000);
+    }
+
+    function tutupModal() { document.getElementById('modalConfirm').style.display = 'none'; }
+    function tutupPeringatan() { document.getElementById('modalPeringatan').style.display = 'none'; }
+
     async function kirimJawaban() {
+        const btn = document.getElementById('btnKirimFinal');
+        if(btn) btn.innerHTML = 'MENGIRIM...';
+        
         const userData = JSON.parse(sessionStorage.getItem('userCBT'));
         let benar = 0; 
-        let detailJawaban = [];
-        const opsiLabel = ["A", "B", "C", "D", "E"];
-
+        let detail = [];
+        const label = ["A", "B", "C", "D", "E"];
+        
         dataSoal.forEach((s, i) => { 
             if(jawabanUser[i] == s.jawaban) benar++; 
-            detailJawaban.push(`No${i+1}:${opsiLabel[jawabanUser[i]] || '-'}`);
+            detail.push(`No${i+1}:${label[jawabanUser[i]] || '-'}`);
         });
 
         try {
-            const finalURL = `${SCRIPT_URL}?nama=${encodeURIComponent(userData.nama)}&kelas=${userData.kelas}&mapel=${encodeURIComponent(userData.mapel)}&benar=${benar}&salah=${dataSoal.length - benar}&jawabanUser=${encodeURIComponent(detailJawaban.join(", "))}`;
-            await fetch(finalURL, { mode: 'no-cors' });
-
+            const url = `${SCRIPT_URL}?nama=${encodeURIComponent(userData.nama)}&kelas=${userData.kelas}&mapel=${encodeURIComponent(userData.mapel)}&benar=${benar}&salah=${dataSoal.length - benar}&jawabanUser=${encodeURIComponent(detail.join(", "))}`;
+            await fetch(url, { mode: 'no-cors' });
+            
+            document.getElementById('modalConfirm').style.display = 'none';
             document.getElementById('konten-ujian').style.display = 'none';
-            document.getElementById('hasil-akhir').style.display = 'flex';
+            document.getElementById('hasil-akhir').style.display = 'block';
             document.getElementById('footer-nav').style.display = 'none';
             document.getElementById('timer-utama').style.display = 'none';
             document.getElementById('benar-tampil').innerText = benar;
             document.getElementById('total-tampil').innerText = dataSoal.length;
-            localStorage.removeItem('drafJawaban'); 
-        } catch (e) { alert("Koneksi bermasalah. Jawaban gagal terkirim!"); }
+            localStorage.removeItem('drafJawaban');
+        } catch (e) { alert("Gagal mengirim jawaban. Cek koneksi."); }
     }
 
-    function zoomAction(delta) {
-        currentZoom = Math.min(Math.max(0.7, currentZoom + delta), 1.5);
-        document.getElementById('zoom-container').style.transform = `scale(${currentZoom})`;
-        document.getElementById('zoom-container').style.transformOrigin = 'top center';
-    }
-
-    function toggleMenuNomor() { document.getElementById('menu-nomor').classList.toggle('show'); }
-    function tutupPeringatan() { document.getElementById('modalPeringatan').style.display = 'none'; }
-    function requestFullscreen() {
-        let elem = document.documentElement;
-        if (elem.requestFullscreen) elem.requestFullscreen();
-    }
-    function kembaliKeLogin() {
-        sessionStorage.clear();
-        window.location.href = 'login.html'; 
-    }
+    function kembaliKeLogin() { sessionStorage.clear(); window.location.href = 'login.html'; }
+    document.addEventListener('contextmenu', e => e.preventDefault());
 </script>
-
 </body>
 </html>
