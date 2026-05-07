@@ -24,7 +24,8 @@
         }
 
         /* UKURAN GAMBAR PADA POSTINGAN */
-        .img-post { max-width: 80%; height: auto; display: block; }
+        .img-post { max-width: 50%; height: auto; display: block; border: 1px solid #ddd;
+  border-radius: 4px; }
 
         /* --- MENYEMBUNYIKAN SCROLLBAR TAPI TETAP BISA SCROLL --- */
         ::-webkit-scrollbar { display: none; }
@@ -153,6 +154,16 @@
         @keyframes moveNeonSoal {
             0% { transform: translateX(-100%); }
             100% { transform: translateX(100%); }
+        }
+
+        /* ANIMASI PERGESERAN HALUS */
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .soal-card {
+            animation: slideIn 0.4s ease-out;
         }
 
         .pilihan-label { 
@@ -491,18 +502,28 @@
     function renderUjian() {
         let html = '';
         dataSoal.forEach((s, i) => {
-            html += `<div class="soal-card" style="display:${i === indexSekarang ? 'block' : 'none'}">
-                <p style="font-weight:800; color:var(--neon-cyan); font-size:14px; margin-bottom:15px; letter-spacing:1px;">SOAL NOMOR ${i+1}</p>
-                <p style="font-size:18px; line-height:1.6; margin-bottom:25px; color: #fff;">${s.pertanyaan}</p>
-                ${s.pilihan.map((p, idx) => `
-                    <label class="pilihan-label">
-                        <input type="radio" name="s${i}" ${jawabanUser[i]==idx?'checked':''} onclick="pilih(${i},${idx})"> 
-                        <span style="margin-left:15px; font-size:16px;">${p}</span>
-                    </label>
-                `).join('')}
-            </div>`;
+            if (i === indexSekarang) {
+                html += `<div class="soal-card">
+                    <p style="font-weight:800; color:var(--neon-cyan); font-size:14px; margin-bottom:15px; letter-spacing:1px;">SOAL NOMOR ${i+1}</p>
+                    <p style="font-size:18px; line-height:1.6; margin-bottom:25px; color: #fff;">${s.pertanyaan}</p>
+                    ${s.pilihan.map((p, idx) => `
+                        <label class="pilihan-label">
+                            <input type="radio" name="s${i}" ${jawabanUser[i]==idx?'checked':''} onclick="pilih(${i},${idx})"> 
+                            <span style="margin-left:15px; font-size:16px;">${p}</span>
+                        </label>
+                    `).join('')}
+                </div>`;
+            }
         });
-        document.getElementById('konten-soal').innerHTML = html; 
+        const containerSoal = document.getElementById('konten-soal');
+        containerSoal.innerHTML = html; 
+        
+        // Memaksa trigger animasi ulang dengan menghapus dan menambah class jika perlu
+        const element = containerSoal.querySelector('.soal-card');
+        element.style.animation = 'none';
+        element.offsetHeight; /* trigger reflow */
+        element.style.animation = null;
+
         document.getElementById('main-wrapper').scrollTop = 0;
         renderNav();
     }
