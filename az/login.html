@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0CA458">
+    <title>Login - CBT SMP Azzahro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+        body {
+            display: flex; justify-content: center; align-items: center; min-height: 100vh;
+            background: #1c1f25; overflow: hidden; position: relative;
+        }
+
+        #bgCanvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none; }
+
+        .box {
+            position: relative; width: 320px; height: 110px; background: #222327;
+            border-radius: 8px; display: flex; justify-content: center; align-items: center;
+            transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1); overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3); z-index: 10;
+        }
+
+        /* Responsive height: Sesuaikan agar muat semua input CBT */
+        .box:hover { width: 350px; height: 580px; border-radius: 12px; }
+
+        .box::before {
+            content: ''; position: absolute; width: 1000px; height: 1000px;
+            background: conic-gradient(transparent 0deg, #45f3ff 40deg, transparent 40.1deg, transparent 90deg, #ff2770 130deg, transparent 130.1deg, transparent 180deg, #45f3ff 220deg, transparent 220.1deg, transparent 270deg, #ff2770 310deg, transparent 310.1deg);
+            animation: animate_neon 2.8s linear infinite; z-index: 1;
+        }
+
+        @keyframes animate_neon { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        .box::after { content: ''; position: absolute; inset: 4px; background: #222327; border-radius: inherit; z-index: 2; }
+
+        .login-inner {
+            position: absolute; inset: 10px; background: linear-gradient(145deg, #222222, #1a1a1a);
+            border-radius: inherit; z-index: 10; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; overflow: hidden; transition: 0.4s;
+        }
+
+        .trigger-label {
+            position: absolute; color: #fff; font-size: 1.1em; font-weight: 600; letter-spacing: 0.15em;
+            display: flex; align-items: center; gap: 10px; text-transform: uppercase; transition: 0.4s; z-index: 100;
+        }
+
+        .box:hover .trigger-label { opacity: 0; visibility: hidden; transform: scale(0.8); }
+
+        .login-content {
+            width: 100%; padding: 25px; opacity: 0; visibility: hidden;
+            transform: translateY(20px); transition: 0.5s; transition-delay: 0.3s;
+        }
+
+        .box:hover .login-content { opacity: 1; visibility: visible; transform: translateY(0); }
+
+        .login-content h2 {
+            color: #fff; text-align: center; text-transform: uppercase; letter-spacing: 0.1em;
+            margin-bottom: 20px; font-size: 1.1em; display: flex; justify-content: center; align-items: center; gap: 8px;
+        }
+
+        .inputBox { position: relative; width: 100%; margin-bottom: 20px; }
+
+        .inputBox input, .inputBox select {
+            width: 100%; background: transparent; border: 1px solid rgba(255, 255, 255, 0.2);
+            outline: none; padding: 10px 15px 10px 40px; border-radius: 6px; color: #fff;
+            font-size: 0.9em; transition: 0.4s; z-index: 11;
+        }
+
+        /* Styling Select agar teks putih */
+        .inputBox select option { background: #222; color: #fff; }
+
+        .inputBox i.icon-main {
+            position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+            color: #45f3ff; font-size: 0.95em; transition: 0.4s; z-index: 12;
+        }
+
+        .inputBox input:focus, .inputBox input:valid, .inputBox select:focus { border: 1px solid #45f3ff; }
+
+        /* Button Styling */
+        .btn-login {
+            width: 100%; background: #45f3ff; color: #1c1c1c; padding: 12px;
+            border: none; border-radius: 6px; font-weight: 700; cursor: pointer;
+            text-transform: uppercase; letter-spacing: 1px; transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(69, 243, 255, 0.3);
+        }
+
+        .btn-login:hover { box-shadow: 0 0 20px rgba(69, 243, 255, 0.6); transform: translateY(-2px); }
+        .btn-login:disabled { background: #444; color: #888; cursor: not-allowed; }
+
+        /* Modal Gagal */
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8); display: none; justify-content: center;
+            align-items: center; z-index: 1000; backdrop-filter: blur(5px);
+        }
+        .modal-box { background: #222; padding: 30px; border-radius: 15px; border: 1px solid #ff2770; text-align: center; color: white; width: 85%; max-width: 300px; }
+
+        /* Dots Animation */
+        .dots::after { content: ''; animation: loading-dots 1.5s infinite; }
+        @keyframes loading-dots { 0% { content: ''; } 25% { content: '.'; } 50% { content: '..'; } 75% { content: '...'; } 100% { content: ''; } }
+
+        .sparkle { position: absolute; width: 3px; height: 3px; border-radius: 50%; pointer-events: none; z-index: 15; opacity: 0; }
+        @keyframes sparkleSideways { 0% { transform: translate(0, 0) scale(1); opacity: 1; } 100% { transform: translate(var(--x), var(--y)) scale(0); opacity: 0; } }
+    </style>
+</head>
+<body>
+
+    <canvas id="bgCanvas"></canvas>
+
+    <div id="customModal" class="modal-overlay">
+        <div class="modal-box">
+            <i class="fa-solid fa-circle-exclamation" style="color: #ff2770; font-size: 3em; margin-bottom: 15px;"></i>
+            <h3 id="modalTitle">Login Gagal</h3>
+            <p id="modalMessage" style="font-size: 0.9em; margin: 10px 0 20px; opacity: 0.8;"></p>
+            <button onclick="closeModal()" style="background:#ff2770; color:white; border:none; padding:8px 20px; border-radius:5px; cursor:pointer;">OKE</button>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="login-inner">
+            <div class="trigger-label">
+                <i class="fa-solid fa-laptop-code"></i> CBT AZ-ZAHRO <i class="fa-solid fa-heart"></i>
+            </div>
+
+            <div class="login-content">
+                <h2><i class="fa-solid fa-user-shield"></i> LOGIN SISWA</h2>
+                
+                <div class="inputBox">
+                    <input type="text" id="nama" required onfocus="spawnSparkles(this)" placeholder="NAMA LENGKAP">
+                    <i class="fa-solid fa-user icon-main"></i>
+                </div>
+
+                <div class="inputBox">
+                    <select id="kelas">
+                        <option value="IX" selected>KELAS IX</option>
+                        <option value="VIII" disabled>KELAS VIII (OFF)</option>
+                        <option value="VII" disabled>KELAS VII (OFF)</option>
+                    </select>
+                    <i class="fa-solid fa-users icon-main"></i>
+                </div>
+
+                <div class="inputBox">
+                    <select id="mapel">
+                        <option value="" disabled selected hidden>PILIH MATA PELAJARAN</option>
+                    </select>
+                    <i class="fa-solid fa-book icon-main"></i>
+                </div>
+
+                <div class="inputBox">
+                    <input type="password" id="tokenInput" required onfocus="spawnSparkles(this)" placeholder="TOKEN UJIAN">
+                    <i class="fa-solid fa-key icon-main"></i>
+                </div>
+
+                <button class="btn-login" id="btnLogin" onclick="validasiLogin()">MASUK</button>
+                
+                <p style="color: #666; font-size: 10px; text-align: center; margin-top: 20px;">
+                    &copy; 2026 SMP & SMK Az-Zahro
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyY528MhAel09tDGjpEeXaGNkzf0BCOc8rUJhoW7-F0c8wQ4alSA1L5KZxLy7uT_OQ6/exec';
+        const ADMIN_TOKEN = 'cbtaz';
+
+        // --- Logika Sistem CBT ---
+        async function loadMapel() {
+            try {
+                const res = await fetch('mata-pelajaran.json');
+                const data = await res.json();
+                const selectMapel = document.getElementById('mapel');
+                data.forEach(m => {
+                    let opt = document.createElement('option');
+                    opt.value = m.file;
+                    opt.textContent = m.nama;
+                    selectMapel.appendChild(opt);
+                });
+            } catch (e) { console.log("Gagal memuat mata-pelajaran.json"); }
+        }
+        window.addEventListener('DOMContentLoaded', loadMapel);
+
+        function showNotif(msg) { 
+            document.getElementById('modalMessage').innerText = msg; 
+            document.getElementById('customModal').style.display = 'flex'; 
+        }
+        function closeModal() { document.getElementById('customModal').style.display = 'none'; }
+
+        async function validasiLogin() {
+            const btn = document.getElementById('btnLogin');
+            if(btn.disabled) return;
+
+            const nama = document.getElementById('nama').value.trim().toUpperCase();
+            const tokenInput = document.getElementById('tokenInput').value.trim();
+            const kelas = document.getElementById('kelas').value;
+            const mapelSelect = document.getElementById('mapel');
+            const mapelFile = mapelSelect.value;
+            const mapelNama = mapelSelect.options[mapelSelect.selectedIndex]?.text;
+
+            if(!nama || !tokenInput || !mapelFile) return showNotif("Harap lengkapi semua data!");
+
+            btn.disabled = true;
+            btn.innerHTML = 'PROSES<span class="dots"></span>';
+
+            try {
+                const resToken = await fetch(`${SCRIPT_URL}?action=getToken&t=${Date.now()}`);
+                const dataToken = await resToken.json();
+                const isTokenValid = (tokenInput === dataToken.token_aktif) || (tokenInput === ADMIN_TOKEN);
+
+                if(!isTokenValid) {
+                    btn.disabled = false; btn.innerHTML = 'MASUK';
+                    return showNotif("Token Salah!");
+                }
+
+                const cekRes = await fetch(`${SCRIPT_URL}?action=checkStatus&nama=${nama}&kelas=${kelas}&t=${Date.now()}`);
+                const status = await cekRes.text();
+
+                if (status === "SUDAH_ADA") {
+                    btn.disabled = false; btn.innerHTML = 'MASUK';
+                    return showNotif("Anda sudah mengerjakan ujian!");
+                }
+
+                sessionStorage.setItem('userCBT', JSON.stringify({ nama, kelas, mapel: mapelNama, fileSoal: mapelFile, isAuth: true }));
+                window.location.href = 'ujian.html';
+            } catch (e) {
+                btn.disabled = false; btn.innerHTML = 'MASUK';
+                showNotif("Gagal koneksi ke server.");
+            }
+        }
+
+        // --- Visual Effects (Canvas & Sparkles) ---
+        const canvas = document.getElementById('bgCanvas');
+        const ctx = canvas.getContext('2d');
+        let particlesArray = [];
+
+        function setCanvasSize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+        window.addEventListener('resize', setCanvasSize);
+
+        class BackgroundParticle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2;
+                this.speedX = (Math.random() - 0.5) * 0.5;
+                this.speedY = (Math.random() - 0.5) * 0.5;
+                this.color = Math.random() > 0.5 ? 'rgba(69, 243, 255, 0.3)' : 'rgba(255, 39, 112, 0.2)';
+            }
+            update() { this.x += this.speedX; this.y += this.speedY; }
+            draw() { ctx.fillStyle = this.color; ctx.beginPath(); ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2); ctx.fill(); }
+        }
+
+        function initBG() {
+            setCanvasSize();
+            for(let i=0; i<100; i++) particlesArray.push(new BackgroundParticle());
+        }
+
+        function animate() {
+            ctx.clearRect(0,0,canvas.width, canvas.height);
+            particlesArray.forEach(p => { p.update(); p.draw(); });
+            requestAnimationFrame(animate);
+        }
+        initBG(); animate();
+
+        function spawnSparkles(input) {
+            const container = input.parentElement;
+            for (let i = 0; i < 10; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.classList.add('sparkle');
+                sparkle.style.left = '20px'; sparkle.style.top = '20px';
+                const moveX = (Math.random() * 50) + 20;
+                const moveY = (Math.random() - 0.5) * 30;
+                sparkle.style.setProperty('--x', moveX + 'px');
+                sparkle.style.setProperty('--y', moveY + 'px');
+                sparkle.style.background = Math.random() > 0.5 ? '#45f3ff' : '#ff2770';
+                sparkle.style.animation = `sparkleSideways 1s ease-out forwards`;
+                container.appendChild(sparkle);
+                setTimeout(() => sparkle.remove(), 1000);
+            }
+        }
+    </script>
+</body>
+</html>
